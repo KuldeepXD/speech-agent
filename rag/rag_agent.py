@@ -88,7 +88,7 @@ def _format_retrieved_docs(docs: list) -> str:
     return "\n".join(formatted)
 
 
-def _invoke_with_retry(chain, params: dict, agent_name: str = "Agent", max_retries: int = 3, base_delay: float = 35.0):
+def _invoke_with_retry(chain, params: dict, agent_name: str = "Agent", max_retries: int = 3, base_delay: float = 15.0):
     """Invoke an LLM chain with retry logic for 429 rate-limit errors.
 
     Args:

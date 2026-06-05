@@ -162,6 +162,36 @@ print(result["result"])
 python langgraph_bridge.py
 ```
 
+## 📊 Evaluation Benchmarking Framework
+
+A comprehensive benchmarking suite is included to evaluate the performance of the Proposed Therapy Guide-MAS against baselines. It uses **RAGAS**, **Cosine Similarity**, and an **LLM Judge** to compute metrics like Answer Correctness, Context Precision, and Latency across curated test queries.
+
+### Baselines
+1. **Baseline 1**: Single LLM + Web Search Tool (ReAct agent)
+2. **Baseline 2**: Vanilla RAG (Retrieve + Generate directly)
+3. **Proposed**: Full LangGraph Multi-Agent System (Therapy Guide-MAS)
+
+### Running Evaluations
+
+Use the CLI orchestrator to run benchmarks or compute metrics:
+
+```bash
+# Run the entire pipeline (all baselines + metrics + report)
+python -m evaluation.run_evaluation --all
+
+# Run only a specific baseline
+python -m evaluation.run_evaluation --baseline1
+python -m evaluation.run_evaluation --proposed
+
+# Dry run with only 2 test queries
+python -m evaluation.run_evaluation --all --limit 2
+
+# Only compute metrics and generate the report (if logs already exist)
+python -m evaluation.run_evaluation --metrics --report
+```
+
+Output reports (CSV, Tables, Radar Charts) will be saved in `evaluation/results/`.
+
 ## 📁 Project Structure
 
 ```
@@ -175,6 +205,14 @@ Speech_Agent/
 │   ├── prompts.py                  # System instructions
 │   ├── tools.py                    # Tool functions
 │   └── speech_feeding_agent.py     # Agent + Runner factory
+├── evaluation/                     # Benchmarking framework
+│   ├── baseline1_single_llm.py     # Baseline 1 (Single LLM + Tool)
+│   ├── baseline2_vanilla_rag.py    # Baseline 2 (Vanilla RAG)
+│   ├── proposed_mas.py             # Proposed LangGraph MAS
+│   ├── metrics.py                  # Evaluation metrics engine
+│   ├── generate_report.py          # Tables and charts generator
+│   ├── run_evaluation.py           # CLI orchestrator
+│   └── test_queries.py             # Curated benchmark dataset
 ├── main.py                         # CLI entry point
 ├── langgraph_bridge.py             # LangGraph integration
 ├── requirements.txt                # Dependencies
