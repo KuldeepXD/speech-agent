@@ -30,6 +30,8 @@ from duckduckgo_search import DDGS
 from evaluation.test_queries import TEST_QUERIES
 
 
+import pandas as pd
+
 # ── Config ─────────────────────────────────────────────────────────────
 LLM_MODEL = "gemini-2.5-flash"
 RESULTS_DIR = Path(__file__).resolve().parent / "results"
@@ -166,11 +168,11 @@ def run_baseline1(
             inputs = {"messages": [("system", system_prompt), ("user", query_text)]}
 
             # Step 1 & 2: Agent execution (automatically handles tool calls)
-            # Limit to 3 steps max to avoid infinite tool loops and rate limits
+            # Limit to 10 steps max to allow agent to complete tool use and reasoning
             response = _invoke_with_retry(
                 agent_executor, 
                 inputs,
-                config={"recursion_limit": 3}
+                config={"recursion_limit": 10}
             )
             
             # Extract final answer
@@ -223,6 +225,13 @@ def run_baseline1(
         # Rate-limit delay
         if i < len(queries):
             time.sleep(delay)
+
+    dataframe = pd.DataFrame(results)
+
+    # Format timestamp for filesystem (remove colons and special characters)
+    safe_timestamp = result['timestamp'].replace(':', '-').replace('+', '_')
+    dataframe.to_excel(f"baseline1_results_{safe_timestamp}.xlsx", index=False)
+    print("\n  📁 Saved results → baseline1_results.xlsx")
 
     # Save results
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
