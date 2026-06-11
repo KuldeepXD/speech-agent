@@ -21,6 +21,5 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG.MODEL_PROVIDER: "google"
-          CONFIG.MODEL: "gemini/gemini-1.5-flash"
+          CONFIG.MODEL: "gemini/gemini-2.5-flash"
           CONFIG.FALLBACK_MODELS: "gemini/gemini-1.5-pro"
-          CONFIG.GIT_PROVIDER: "github"
