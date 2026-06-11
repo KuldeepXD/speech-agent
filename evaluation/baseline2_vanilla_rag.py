@@ -15,6 +15,7 @@ Usage:
 """
 
 import json
+import os
 import time
 from pathlib import Path
 from datetime import datetime, timezone
@@ -30,7 +31,7 @@ from evaluation.test_queries import TEST_QUERIES
 
 
 # ── Config ─────────────────────────────────────────────────────────────
-LLM_MODEL = "gemini-2.5-flash"
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
 RESULTS_DIR = Path(__file__).resolve().parent / "results"
 LOG_FILE = RESULTS_DIR / "baseline2_logs.json"
 

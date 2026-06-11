@@ -257,10 +257,10 @@ async def single_query_mode(query: str):
 
 
 def pipeline_mode(query: str):
-    """Run the full LangGraph pipeline (classification + parallel RAG & Web Search + synthesis).
+    """Run the full LangGraph pipeline (classification + parallel RAG & PubMed Search + synthesis).
 
     This runs the complete pipeline:
-        Classification → Parallel [RAG (conditional) + Web Search (always)] → Synthesis
+        Classification → Parallel [RAG (conditional) + PubMed Search (always)] → Synthesis
 
     Args:
         query: The user's query text.
@@ -268,7 +268,7 @@ def pipeline_mode(query: str):
     from langchain_core.messages import HumanMessage
     from langgraph_bridge import create_pipeline
 
-    print(f"\n[Running full LangGraph pipeline (RAG + Web Search + Synthesis)...]")
+    print(f"\n[Running full LangGraph pipeline (RAG + PubMed Search + Synthesis)...]")
     print(f"   Query: {query}\n")
 
     pipeline = create_pipeline()
@@ -291,7 +291,7 @@ def pipeline_mode(query: str):
     # Print web search results
     web_search_context = result.get("web_search_context", {})
     if web_search_context:
-        print(f"[Web Search] Results for {len(web_search_context)} questions:")
+        print(f"[PubMed Search] Results for {len(web_search_context)} questions:")
         for key, entry in web_search_context.items():
             print(f"  • {entry.get('original_question', key)}")
             print(f"    Query: {entry.get('query', 'N/A')}")
@@ -308,7 +308,7 @@ def pipeline_mode(query: str):
     if final_output:
         synthesis = final_output.get("synthesis_response", "")
         if synthesis:
-            print(f"[Synthesis] Combined RAG + Web Search Answer:")
+            print(f"[Synthesis] Combined RAG + PubMed Search Answer:")
             print(f"{synthesis}\n")
         else:
             print(f"[Final Output] (dict):")

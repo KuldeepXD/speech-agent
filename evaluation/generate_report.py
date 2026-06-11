@@ -16,9 +16,13 @@ import json
 import csv
 from pathlib import Path
 
+import os
 import numpy as np
 import matplotlib
-matplotlib.use("Agg")  # Non-interactive backend
+# Use non-interactive backend only when no display is available (e.g. CI, headless servers).
+# This preserves GUI backends (TkAgg, Qt5Agg, etc.) for interactive/local use.
+if os.environ.get("MPLBACKEND") is None and not os.environ.get("DISPLAY"):
+    matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 

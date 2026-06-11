@@ -1,11 +1,12 @@
 """
-Synthesis Agent Node — Combines RAG context and Web Search context.
+Synthesis Agent Node — Combines RAG context and PubMed Research context.
 
 This LangGraph node merges the outputs from the RAG agent (conditional)
-and the Web Search agent (always-on parallel) to produce a comprehensive
+and the PubMed Search agent (always-on parallel) to produce a comprehensive
 final answer using Gemini LLM.
 """
 
+import os
 import time
 
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -14,7 +15,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 
 # ── LLM Config ─────────────────────────────────────────────────────────
-LLM_MODEL = "gemini-2.5-flash"
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
 
 # ── Synthesis Prompt ───────────────────────────────────────────────────
 
@@ -24,7 +25,7 @@ Your task is to **answer the user's original query** using all the gathered cont
 
 You have access to TWO sources of information that were gathered to help you answer:
 1. **Clinical Reference Materials** (from RAG retrieval over curated clinical documents)
-2. **Web Search Results** (from live web searches)
+2. **PubMed Research** (peer-reviewed biomedical literature from PubMed/MEDLINE)
 
 ## User's Original Query
 {query}
@@ -39,7 +40,7 @@ You have access to TWO sources of information that were gathered to help you ans
 ## Source 1: Clinical Reference Materials (RAG)
 {rag_context}
 
-## Source 2: Web Search Results
+## Source 2: PubMed Research (Peer-Reviewed Literature)
 {web_search_summary}
 
 ## Instructions
@@ -48,10 +49,10 @@ Using ALL the context above, provide a direct, comprehensive answer to the **use
 Your response should:
 1. **Directly address what the user asked** — focus entirely on their query, not on the internal treatment questions.
 2. **Clinical Overview**: Explain the identified condition in clear, accessible terms relevant to the user's concern.
-3. **Evidence-Based Guidance**: Provide treatment approaches, assessment recommendations, and actionable strategies drawn from both clinical references and web search results.
+3. **Evidence-Based Guidance**: Provide treatment approaches, assessment recommendations, and actionable strategies drawn from both clinical references and PubMed research.
 4. **Practical Next Steps**: What should the user do next? Include referrals, home strategies, or professional guidance as appropriate.
 
-Be empathetic, clinically accurate, and practical. Cite relevant information from both sources where helpful.
+Be empathetic, clinically accurate, and practical. Cite relevant information from both sources where helpful. When citing PubMed articles, include the PMID for reference.
 Do NOT list or answer the 3 treatment questions — they were only used to gather information for you.
 Format your response in a clear, structured manner.
 """)
@@ -98,7 +99,7 @@ def _format_treatment_questions(questions: list[str]) -> str:
 def synthesis_node(state: dict) -> dict:
     """LangGraph node: Synthesis Agent.
 
-    Merges RAG context and Web Search context, then uses Gemini to
+    Merges RAG context and PubMed Research context, then uses Gemini to
     produce a comprehensive final answer.
 
     Args:
@@ -115,7 +116,7 @@ def synthesis_node(state: dict) -> dict:
     treatment_questions = state.get("treatment_questions", [])
 
     print(f"\n{'='*60}")
-    print(f"🧪 [Synthesis Agent] Combining RAG + Web Search context...")
+    print(f"🧪 [Synthesis Agent] Combining RAG + PubMed Research context...")
     print(f"   Query: \"{query}\"")
     print(f"   Ailment: {ailment} | Category: {category}")
 
@@ -129,7 +130,7 @@ def synthesis_node(state: dict) -> dict:
     web_search_summary = state.get(
         "web_search_summary", "(No web search context available)"
     )
-    print(f"   Web search context: {len(web_search_summary)} chars ({len(web_search_context)} questions)")
+    print(f"   PubMed context: {len(web_search_summary)} chars ({len(web_search_context)} questions)")
 
     # Generate synthesized response with Gemini (with retry for rate limits)
     print(f"   🤖 Generating synthesized answer with Gemini...")

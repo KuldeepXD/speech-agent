@@ -5,6 +5,7 @@ Provides functions to load the Speech and Feeding FAISS indexes
 and return LangChain retrievers for use in the RAG pipeline.
 """
 
+import os
 from pathlib import Path
 
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
@@ -18,7 +19,7 @@ SPEECH_INDEX_DIR = VECTOR_STORES_DIR / "speech_index"
 FEEDING_INDEX_DIR = VECTOR_STORES_DIR / "feeding_index"
 
 # ── Embedding Model (must match ingestion) ─────────────────────────────
-EMBEDDING_MODEL = "gemini-embedding-2"
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "gemini-embedding-2")
 
 # ── Retrieval Config ───────────────────────────────────────────────────
 DEFAULT_K = 5  # Number of top documents to retrieve

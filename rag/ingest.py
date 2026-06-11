@@ -37,7 +37,7 @@ CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 
 # ── Embedding Model ────────────────────────────────────────────────────
-EMBEDDING_MODEL = "gemini-embedding-2"
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "gemini-embedding-2")
 
 
 def get_embeddings() -> GoogleGenerativeAIEmbeddings:

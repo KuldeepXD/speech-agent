@@ -2,7 +2,7 @@
 Proposed System: Therapy Guide-MAS — Full LangGraph Pipeline.
 
 Runs each test query through the complete multi-agent system:
-  Classification → Parallel [RAG (conditional) + Web Search] → Synthesis
+  Classification → Parallel [RAG (conditional) + PubMed Search] → Synthesis
 
 Uses the existing pipeline from langgraph_bridge.create_pipeline().
 No new ingestion — uses existing vector stores and the full workflow.

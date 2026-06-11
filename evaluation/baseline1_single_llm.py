@@ -30,10 +30,11 @@ from duckduckgo_search import DDGS
 from evaluation.test_queries import TEST_QUERIES
 
 
+import os
 import pandas as pd
 
 # ── Config ─────────────────────────────────────────────────────────────
-LLM_MODEL = "gemini-2.5-flash"
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
 RESULTS_DIR = Path(__file__).resolve().parent / "results"
 LOG_FILE = RESULTS_DIR / "baseline1_logs.json"
 

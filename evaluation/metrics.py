@@ -15,6 +15,8 @@ Usage:
 """
 
 import json
+import os
+import random
 import time
 import numpy as np
 from pathlib import Path
@@ -36,8 +38,8 @@ from datasets import Dataset
 
 
 # ── Config ─────────────────────────────────────────────────────────────
-LLM_MODEL = "gemini-2.5-flash"
-EMBEDDING_MODEL = "gemini-embedding-2"
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "gemini-embedding-2")
 RESULTS_DIR = Path(__file__).resolve().parent / "results"
 
 BASELINE1_LOG = RESULTS_DIR / "baseline1_logs.json"
@@ -97,8 +99,18 @@ def _load_results(log_file: Path) -> list[dict]:
         return json.load(f)
 
 
-def _invoke_with_retry(chain, params: dict, max_retries: int = 3, base_delay: float = 15.0):
-    """Invoke an LLM chain with retry logic for rate limits."""
+def _invoke_with_retry(chain, params: dict, max_retries: int = 3, base_delay: float = 2.0, max_delay: float = 60.0):
+    """Invoke an LLM chain with retry logic for rate limits.
+
+    Uses exponential backoff with jitter: delay = min(base_delay * 2^attempt + jitter, max_delay).
+
+    Args:
+        chain: The LLM chain to invoke.
+        params: Parameters to pass to the chain.
+        max_retries: Maximum number of retry attempts.
+        base_delay: Initial delay in seconds before the first retry.
+        max_delay: Upper cap on the wait time in seconds.
+    """
     for attempt in range(1, max_retries + 1):
         try:
             return chain.invoke(params)
@@ -106,8 +118,9 @@ def _invoke_with_retry(chain, params: dict, max_retries: int = 3, base_delay: fl
             error_str = str(e)
             if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
                 if attempt < max_retries:
-                    wait_time = base_delay * attempt
-                    print(f"       ⏳ Rate limited. Retrying in {wait_time:.0f}s... ({attempt}/{max_retries})")
+                    jitter = random.uniform(0, 1)
+                    wait_time = min(base_delay * (2 ** attempt) + jitter, max_delay)
+                    print(f"       ⏳ Rate limited. Retrying in {wait_time:.1f}s... ({attempt}/{max_retries})")
                     time.sleep(wait_time)
                 else:
                     raise

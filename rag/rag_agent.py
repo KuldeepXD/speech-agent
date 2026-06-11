@@ -6,6 +6,7 @@ store and uses Gemini to generate evidence-based treatment recommendations.
 """
 
 import json
+import os
 import time
 from typing import Any
 
@@ -17,7 +18,7 @@ from rag.retriever import load_speech_retriever, load_feeding_retriever
 
 
 # ── LLM Config ─────────────────────────────────────────────────────────
-LLM_MODEL = "gemini-2.5-flash"
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
 
 # ── RAG Prompts ────────────────────────────────────────────────────────
 

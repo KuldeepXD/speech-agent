@@ -1,10 +1,10 @@
 """
-LangGraph Pipeline — Full Speech/Feeding classification + parallel RAG & Web Search + Synthesis.
+LangGraph Pipeline — Full Speech/Feeding classification + parallel RAG & PubMed Search + Synthesis.
 
 This module implements the complete LangGraph pipeline:
   Node 1 (Classification) → Fan-out:
       Branch A: Conditional Router → Speech RAG or Feeding RAG
-      Branch B: Web Search Agent (always)
+      Branch B: PubMed Search Agent (always)
   → Synthesis Agent (combines all context) → END
 
 Usage:
@@ -46,8 +46,8 @@ class PipelineState(TypedDict):
     treatment_questions: list[str]                               # 3 questions from Node 1
     rag_context: str                                             # Retrieved documents
     rag_response: str                                            # RAG-enriched response
-    web_search_context: dict                                     # Web search results dict
-    web_search_summary: str                                      # Formatted web context
+    web_search_context: dict                                     # PubMed search results dict
+    web_search_summary: str                                      # Formatted PubMed context
     synthesis_response: str                                      # Final synthesized answer
     final_output: dict                                           # Final dictionary output
 
@@ -215,12 +215,12 @@ def route_by_category(state: PipelineState) -> Literal["speech_rag", "feeding_ra
 # ── Pipeline Factory ───────────────────────────────────────────────────
 
 def create_pipeline():
-    """Create the full LangGraph pipeline with parallel RAG + Web Search.
+    """Create the full LangGraph pipeline with parallel RAG + PubMed Search.
 
     Pipeline flow:
         START → classification_node → fan-out:
             Branch A: route_by_category → speech_rag / feeding_rag
-            Branch B: web_search_node (always)
+            Branch B: pubmed_search_node (always)
         → synthesis_node (waits for both branches) → END
 
     Returns:
@@ -248,7 +248,7 @@ def create_pipeline():
     # START → classification
     builder.add_edge(START, "classification")
 
-    # classification → fan-out to BOTH conditional RAG and web_search
+    # classification → fan-out to BOTH conditional RAG and pubmed_search
     # Branch A: conditional routing to the appropriate RAG agent
     builder.add_conditional_edges(
         "classification",
@@ -258,10 +258,10 @@ def create_pipeline():
             "feeding_rag": "feeding_rag",
         },
     )
-    # Branch B: always run web search in parallel
+    # Branch B: always run PubMed search in parallel
     builder.add_edge("classification", "web_search")
 
-    # Both RAG nodes and web_search converge at synthesis
+    # Both RAG nodes and pubmed_search converge at synthesis
     builder.add_edge("speech_rag", "synthesis")
     builder.add_edge("feeding_rag", "synthesis")
     builder.add_edge("web_search", "synthesis")
@@ -277,7 +277,7 @@ def create_pipeline():
 # ── Quick Test ──────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    print("🏥 Testing LangGraph Pipeline with Parallel RAG + Web Search...\n")
+    print("🏥 Testing LangGraph Pipeline with Parallel RAG + PubMed Search...\n")
 
     pipeline = create_pipeline()
 
