@@ -49,6 +49,7 @@ class PipelineState(TypedDict):
     web_search_context: dict                                     # PubMed search results dict
     web_search_summary: str                                      # Formatted PubMed context
     synthesis_response: str                                      # Final synthesized answer
+    session_history: list[dict]                                   # Last N conversation entries (for synthesis only)
     final_output: dict                                           # Final dictionary output
 
 

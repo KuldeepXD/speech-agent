@@ -8,6 +8,7 @@ langchain-community>=0.3.0
 faiss-cpu>=1.9.0
 pypdf>=5.0.0
 biopython>=1.80
+streamlit>=1.45.0
 # Evaluation dependencies
 ragas>=0.2.0
 matplotlib>=3.9.0
