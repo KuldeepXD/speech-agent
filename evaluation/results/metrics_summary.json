@@ -1,0 +1,88 @@
+{
+  "Baseline 1: Single LLM + Tool": {
+    "ragas": {
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    "cosine_similarity": 0.7749468218503207,
+    "llm_judge": {
+      "average_score": 3.0,
+      "per_query_scores": [
+        {
+          "query_id": "S001",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "S002",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "S003",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "F001",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "F002",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        }
+      ]
+    },
+    "accuracy": {
+      "classification_accuracy": null,
+      "classification_correct": 0,
+      "classification_total": 0,
+      "ailment_accuracy": null,
+      "ailment_correct": 0,
+      "ailment_total": 0
+    },
+    "avg_latency_seconds": 14.080080032348633,
+    "num_queries": 5
+  },
+  "Baseline 2: Vanilla RAG": {
+    "error": "Results file not found: C:\\Users\\Kuldeep Dhiman\\Downloads\\speech-agent\\evaluation\\results\\baseline2_logs.json. Run the corresponding baseline first."
+  },
+  "Proposed: Therapy Guide-MAS": {
+    "ragas": {
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    "cosine_similarity": 0.8064481688892864,
+    "llm_judge": {
+      "average_score": 3.0,
+      "per_query_scores": [
+        {
+          "query_id": "E001",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "E002",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        }
+      ]
+    },
+    "accuracy": {
+      "classification_accuracy": 0.5,
+      "classification_correct": 1,
+      "classification_total": 2,
+      "ailment_accuracy": 0.0,
+      "ailment_correct": 0,
+      "ailment_total": 2
+    },
+    "avg_latency_seconds": 20.898488640785217,
+    "num_queries": 2
+  }
+}

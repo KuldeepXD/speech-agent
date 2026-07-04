@@ -54,13 +54,13 @@ Examples:
     run_metrics = args.all or args.metrics
     run_report = args.all or args.report
 
-    print(f"\n{'═'*70}")
-    print(f"  🏥 EVALUATION BENCHMARKING FRAMEWORK")
-    print(f"     Therapy Guide-MAS vs. Baselines")
-    print(f"     Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"\n{'='*70}")
+    print(f"  [*] EVALUATION BENCHMARKING FRAMEWORK")
+    print(f"      Therapy Guide-MAS vs. Baselines")
+    print(f"      Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     if args.limit:
-        print(f"     ⚡ Limited to {args.limit} queries (dry run)")
-    print(f"{'═'*70}\n")
+        print(f"      >> Limited to {args.limit} queries (dry run)")
+    print(f"{'='*70}\n")
 
     overall_start = time.time()
 
@@ -89,11 +89,11 @@ Examples:
 
     # ── Done ───────────────────────────────────────────────────────────
     elapsed = time.time() - overall_start
-    print(f"\n{'═'*70}")
-    print(f"  ✅ EVALUATION COMPLETE")
-    print(f"     Total time: {elapsed:.1f}s ({elapsed/60:.1f} minutes)")
-    print(f"     Finished: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"{'═'*70}\n")
+    print(f"\n{'='*70}")
+    print(f"  [OK] EVALUATION COMPLETE")
+    print(f"       Total time: {elapsed:.1f}s ({elapsed/60:.1f} minutes)")
+    print(f"       Finished: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"{'='*70}\n")
 
 
 if __name__ == "__main__":
