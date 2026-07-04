@@ -198,6 +198,33 @@ python -m evaluation.run_evaluation --all --limit 2
 python -m evaluation.run_evaluation --metrics --report
 ```
 
+### Batch Evaluation (100+ Queries)
+
+For large-scale evaluation runs, the framework supports **batch processing** with automatic rate-limit management and **crash-safe resume**:
+
+```bash
+# Run proposed system in batches of 5 queries, with 30s cooldown between batches
+python -m evaluation.run_evaluation --proposed --batch-size 5 --batch-delay 30
+
+# If the run fails or is interrupted, resume from where it left off
+python -m evaluation.run_evaluation --proposed --resume --batch-size 5 --batch-delay 30
+
+# Once all logs are collected, compute metrics and generate reports
+python -m evaluation.run_evaluation --metrics --report
+```
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--batch-size` | 5 | Number of queries per batch before a cooldown pause |
+| `--batch-delay` | 30s | Cooldown duration between batches (avoids rate limits) |
+| `--delay` | 3s | Delay between individual queries within a batch |
+| `--resume` | off | Skip queries already present in existing log files |
+
+**Key features:**
+- **Incremental saves** — Results are written to disk after every single query, so progress is never lost
+- **Resume support** — Re-run with `--resume` to skip already-completed queries and continue from where you left off
+- **Retry with backoff** — Automatic retry (5 attempts, 30s base delay) on Google API 429/RESOURCE_EXHAUSTED errors
+
 Output reports (CSV, Tables, Radar Charts) will be saved in `evaluation/results/`.
 
 ## 📁 Project Structure

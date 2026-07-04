@@ -9,9 +9,12 @@ For each test query:
 No classification agent, no web search, no synthesis agent.
 Uses the existing vector stores from vector_stores/ (no new ingestion).
 
+Supports batch evaluation with resume capability for 100+ queries.
+
 Usage:
     from evaluation.baseline2_vanilla_rag import run_baseline2
-    results = asyncio.run(run_baseline2(limit=5))
+    results = run_baseline2(limit=5)
+    results = run_baseline2(batch_size=5, batch_delay=30, resume=True)
 """
 
 import json
@@ -97,8 +100,8 @@ def _format_retrieved_docs(docs: list) -> str:
 def _invoke_with_retry(
     chain,
     params: dict,
-    max_retries: int = 3,
-    base_delay: float = 15.0,
+    max_retries: int = 5,
+    base_delay: float = 30.0,
 ):
     """Invoke an LLM chain with retry logic for 429 rate-limit errors.
 
@@ -127,39 +130,94 @@ def _invoke_with_retry(
                 raise
 
 
+# ── Log Management ───────────────────────────────────────────────────
+
+def _load_existing_logs(log_file: Path) -> list[dict]:
+    """Load existing log entries from a JSON file.
+
+    Args:
+        log_file: Path to the JSON log file.
+
+    Returns:
+        List of existing result dictionaries, or empty list if file doesn't exist.
+    """
+    if log_file.exists():
+        try:
+            with open(log_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            print(f"       ⚠️  Could not read existing log file, starting fresh")
+            return []
+    return []
+
+
+def _save_logs(log_file: Path, results: list[dict]) -> None:
+    """Save results to a JSON log file (atomic write).
+
+    Args:
+        log_file: Path to the JSON log file.
+        results: List of result dictionaries to save.
+    """
+    log_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(log_file, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False, default=str)
+
+
 def run_baseline2(
     queries: list[dict] | None = None,
     limit: int | None = None,
-    delay: float = 2.0,
+    delay: float = 3.0,
+    batch_size: int = 5,
+    batch_delay: float = 30.0,
+    resume: bool = False,
 ) -> list[dict]:
     """Run Baseline 2 evaluation: Vanilla RAG (retrieve + generate).
+
+    Supports batch evaluation with resume capability.
 
     Args:
         queries: Optional list of query dicts. Defaults to TEST_QUERIES.
         limit: Optional limit on number of queries to run.
         delay: Delay in seconds between queries to avoid rate limits.
+        batch_size: Number of queries per batch before a longer cooldown.
+        batch_delay: Cooldown in seconds between batches.
+        resume: If True, skip queries already present in existing logs.
 
     Returns:
-        List of result dictionaries with logs and outputs.
+        List of all result dictionaries (existing + new).
     """
     queries = queries or TEST_QUERIES
     if limit:
         queries = queries[:limit]
 
+    # Load existing logs for resume support
+    existing_results = _load_existing_logs(LOG_FILE) if resume else []
+    completed_ids = {r["query_id"] for r in existing_results}
+
+    # Filter out already-completed queries
+    pending_queries = [q for q in queries if q["id"] not in completed_ids]
+
     print(f"\n{'='*70}")
     print(f"🔬 BASELINE 2: Vanilla RAG (Retrieve + Generate)")
-    print(f"   Running {len(queries)} queries...")
+    print(f"   Total queries: {len(queries)} | Already completed: {len(completed_ids)} | Pending: {len(pending_queries)}")
+    print(f"   Batch size: {batch_size} | Batch delay: {batch_delay}s | Query delay: {delay}s")
     print(f"{'='*70}\n")
+
+    if not pending_queries:
+        print(f"  ✅ All queries already completed. Nothing to do.")
+        return existing_results
 
     llm = ChatGoogleGenerativeAI(model=LLM_MODEL)
     chain = VANILLA_RAG_PROMPT | llm
-    results = []
 
-    for i, entry in enumerate(queries, 1):
+    all_results = list(existing_results)  # Start with existing results
+    new_count = 0
+
+    for i, entry in enumerate(pending_queries, 1):
         query_id = entry["id"]
         query_text = entry["query"]
 
-        print(f"  [{i}/{len(queries)}] {query_id}: {query_text[:60]}...")
+        print(f"  [{i}/{len(pending_queries)}] {query_id}: {query_text[:60]}...")
 
         start_time = time.time()
         try:
@@ -223,23 +281,27 @@ def run_baseline2(
             "error": error,
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
-        results.append(result)
+        all_results.append(result)
+        new_count += 1
 
-        # Rate-limit delay
-        if i < len(queries):
-            time.sleep(delay)
+        # Save after every query (incremental save for crash safety)
+        _save_logs(LOG_FILE, all_results)
 
-    # Save results
-    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-    with open(LOG_FILE, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
+        # Rate-limit delay + batch cooldown
+        if i < len(pending_queries):
+            if i % batch_size == 0:
+                print(f"\n  ⏸️  Batch {i // batch_size} complete. Cooling down for {batch_delay}s...")
+                time.sleep(batch_delay)
+            else:
+                time.sleep(delay)
 
-    print(f"\n  📁 Saved {len(results)} results → {LOG_FILE}")
-    print(f"  ⏱️  Avg latency: {sum(r['latency_seconds'] for r in results) / len(results):.1f}s")
+    print(f"\n  📁 Saved {len(all_results)} total results ({new_count} new) → {LOG_FILE}")
+    print(f"  ⏱️  Avg latency (new): {sum(r['latency_seconds'] for r in all_results[-new_count:]) / new_count:.1f}s")
     print(f"{'='*70}\n")
 
-    return results
+    return all_results
 
 
 if __name__ == "__main__":
     run_baseline2()
+

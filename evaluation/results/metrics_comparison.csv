@@ -3,8 +3,8 @@ Faithfulness,0.0,0.0,0.0
 Answer Relevancy,0.0,0.0,0.0
 Context Precision,0.0,0.0,0.0
 Context Recall,0.0,0.0,0.0
-Cosine Similarity,0.7749468218503207,0.0,0.8064481688892864
-LLM Judge Score,3.0,0.0,3.0
-Classification Accuracy,0.0,0.0,0.5
-Ailment Accuracy,0.0,0.0,0.0
-Avg Latency (s),14.080080032348633,0.0,20.898488640785217
+Cosine Similarity,0.7749468218503207,0.0,0.7794869902473649
+LLM Judge Score,3.0,0.0,2.92
+Classification Accuracy,0.0,0.0,0.9166666666666666
+Ailment Accuracy,0.0,0.0,0.16666666666666666
+Avg Latency (s),14.080080032348633,0.0,34.75285894393921

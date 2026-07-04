@@ -58,9 +58,9 @@
       "context_precision": null,
       "context_recall": null
     },
-    "cosine_similarity": 0.8064481688892864,
+    "cosine_similarity": 0.7794869902473649,
     "llm_judge": {
-      "average_score": 3.0,
+      "average_score": 2.92,
       "per_query_scores": [
         {
           "query_id": "E001",
@@ -71,18 +71,133 @@
           "query_id": "E002",
           "score": 3,
           "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "E003",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "E004",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "E005",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "E006",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "E007",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "E008",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M001",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M002",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M003",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M004",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M005",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M006",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M007",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M008",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "M009",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "H001",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "H002",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "H003",
+          "score": 1,
+          "reasoning": "Error or no response generated"
+        },
+        {
+          "query_id": "H004",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "H005",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "H006",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "H007",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
+        },
+        {
+          "query_id": "H008",
+          "score": 3,
+          "reasoning": "Judge evaluation failed: 'list' object has no attribute 'strip'"
         }
       ]
     },
     "accuracy": {
-      "classification_accuracy": 0.5,
-      "classification_correct": 1,
-      "classification_total": 2,
-      "ailment_accuracy": 0.0,
-      "ailment_correct": 0,
-      "ailment_total": 2
+      "classification_accuracy": 0.9166666666666666,
+      "classification_correct": 22,
+      "classification_total": 24,
+      "ailment_accuracy": 0.16666666666666666,
+      "ailment_correct": 4,
+      "ailment_total": 24
     },
-    "avg_latency_seconds": 20.898488640785217,
-    "num_queries": 2
+    "avg_latency_seconds": 34.75285894393921,
+    "num_queries": 25
   }
 }
