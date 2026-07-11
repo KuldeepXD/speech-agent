@@ -1,8 +1,11 @@
 """
-LangGraph Pipeline — Full Speech/Feeding classification + RAG workflow.
+LangGraph Pipeline — Full Speech/Feeding classification + parallel RAG & PubMed Search + Synthesis.
 
 This module implements the complete LangGraph pipeline:
-  Node 1 (Classification) → Conditional Router → Speech RAG or Feeding RAG
+  Node 1 (Classification) → Fan-out:
+      Branch A: Conditional Router → Speech RAG or Feeding RAG
+      Branch B: PubMed Search Agent (always)
+  → Synthesis Agent (combines all context) → END
 
 Usage:
     from langgraph_bridge import create_pipeline
@@ -26,6 +29,8 @@ from google.genai import types
 from agent.speech_feeding_agent import create_agent, create_runner
 from agent.config import AGENT_NAME
 from rag.rag_agent import speech_rag_node, feeding_rag_node
+from rag.web_search_agent import web_search_node
+from rag.synthesis_agent import synthesis_node
 
 
 # ── Pipeline State Schema ──────────────────────────────────────────────
@@ -41,6 +46,10 @@ class PipelineState(TypedDict):
     treatment_questions: list[str]                               # 3 questions from Node 1
     rag_context: str                                             # Retrieved documents
     rag_response: str                                            # RAG-enriched response
+    web_search_context: dict                                     # PubMed search results dict
+    web_search_summary: str                                      # Formatted PubMed context
+    synthesis_response: str                                      # Final synthesized answer
+    session_history: list[dict]                                   # Last N conversation entries (for synthesis only)
     final_output: dict                                           # Final dictionary output
 
 
@@ -61,23 +70,44 @@ def classification_node(state: PipelineState) -> dict:
     """
     query = state["query"]
 
+    print(f"\n{'='*60}")
+    print(f"🔍 [Classification Agent] Processing query...")
+    print(f"   Query: \"{query}\"")
+    print(f"{'='*60}")
+
     # Run the ADK agent synchronously
     classification_dict = asyncio.run(_run_classification_agent(query))
 
     if classification_dict:
+        category = classification_dict.get("category", "Speech")
+        ailment = classification_dict.get("ailment", "Unknown")
+        questions = classification_dict.get("treatment_questions", [])
+
+        print(f"✅ [Classification Agent] Done!")
+        print(f"   Category: {category}")
+        print(f"   Ailment:  {ailment}")
+        print(f"   Treatment Questions Generated:")
+        for i, q in enumerate(questions, 1):
+            print(f"     {i}. {q}")
+        print(f"{'='*60}\n")
+
         return {
             "classification": classification_dict,
-            "category": classification_dict.get("category", "Speech"),
-            "ailment": classification_dict.get("ailment", "Unknown"),
+            "category": category,
+            "ailment": ailment,
             "ailment_description": classification_dict.get("ailment_description", ""),
-            "treatment_questions": classification_dict.get("treatment_questions", []),
+            "treatment_questions": questions,
             "messages": [
                 AIMessage(content=f"Classification: {json.dumps(classification_dict, indent=2)}")
             ],
         }
     else:
+        print(f"⚠️  [Classification Agent] ADK agent failed, using keyword fallback...")
         # Fallback — keyword-based classification if ADK agent fails
-        return _fallback_classification(query)
+        result = _fallback_classification(query)
+        print(f"   Fallback Category: {result['category']}")
+        print(f"{'='*60}\n")
+        return result
 
 
 async def _run_classification_agent(query: str) -> dict | None:
@@ -186,11 +216,13 @@ def route_by_category(state: PipelineState) -> Literal["speech_rag", "feeding_ra
 # ── Pipeline Factory ───────────────────────────────────────────────────
 
 def create_pipeline():
-    """Create the full LangGraph pipeline with conditional routing.
+    """Create the full LangGraph pipeline with parallel RAG + PubMed Search.
 
     Pipeline flow:
-        START → classification_node → route_by_category →
-            speech_rag_node (if Speech) / feeding_rag_node (if Feeding) → END
+        START → classification_node → fan-out:
+            Branch A: route_by_category → speech_rag / feeding_rag
+            Branch B: pubmed_search_node (always)
+        → synthesis_node (waits for both branches) → END
 
     Returns:
         A compiled LangGraph StateGraph ready for invocation.
@@ -205,15 +237,20 @@ def create_pipeline():
     """
     builder = StateGraph(PipelineState)
 
-    # Add nodes
+    # Add all nodes
     builder.add_node("classification", classification_node)
     builder.add_node("speech_rag", speech_rag_node)
     builder.add_node("feeding_rag", feeding_rag_node)
+    builder.add_node("web_search", web_search_node)
+    builder.add_node("synthesis", synthesis_node)
 
-    # Define edges
+    # ── Edges ──────────────────────────────────────────────────────────
+
+    # START → classification
     builder.add_edge(START, "classification")
 
-    # Conditional routing based on category
+    # classification → fan-out to BOTH conditional RAG and pubmed_search
+    # Branch A: conditional routing to the appropriate RAG agent
     builder.add_conditional_edges(
         "classification",
         route_by_category,
@@ -222,10 +259,16 @@ def create_pipeline():
             "feeding_rag": "feeding_rag",
         },
     )
+    # Branch B: always run PubMed search in parallel
+    builder.add_edge("classification", "web_search")
 
-    # Both RAG nodes lead to END
-    builder.add_edge("speech_rag", END)
-    builder.add_edge("feeding_rag", END)
+    # Both RAG nodes and pubmed_search converge at synthesis
+    builder.add_edge("speech_rag", "synthesis")
+    builder.add_edge("feeding_rag", "synthesis")
+    builder.add_edge("web_search", "synthesis")
+
+    # Synthesis → END
+    builder.add_edge("synthesis", END)
 
     # Compile
     compiled = builder.compile()
@@ -235,7 +278,7 @@ def create_pipeline():
 # ── Quick Test ──────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    print("🏥 Testing LangGraph Pipeline with Conditional Routing...\n")
+    print("🏥 Testing LangGraph Pipeline with Parallel RAG + PubMed Search...\n")
 
     pipeline = create_pipeline()
 
@@ -255,5 +298,8 @@ if __name__ == "__main__":
         })
 
         print(f"\n📋 Final Output:")
-        print(json.dumps(result.get("final_output", {}), indent=2))
+        final_output = result.get("final_output", {})
+        # Print synthesis response
+        print(f"\n🔬 Synthesized Response:")
+        print(final_output.get("synthesis_response", "(No synthesis)"))
         print(f"\n{'='*60}\n")

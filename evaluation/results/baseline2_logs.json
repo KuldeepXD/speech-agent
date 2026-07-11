@@ -1,0 +1,1102 @@
+[
+  {
+    "query_id": "E001",
+    "query": "How would you start intervention for a child with speech delay?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Speech Delay",
+    "reference_answer": "The initial approach to speech delay should include ruling out hearing loss, assessing receptive and expressive language abilities, and obtaining a detailed developmental history. Intervention should focus on increasing communication opportunities through play, modeling simple language, and training parents to use language stimulation techniques during everyday activities. Make the environmental learning age appropriate.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference manual, starting an intervention for a child with a speech delay involves a process that begins with obtaining preassessment information and concludes with formal planning.\n\n### Preassessment and Information Gathering\nBefore beginning intervention, the following steps are recommended to gather necessary background information:\n*   **Case Histories:** Obtain written case histories and conduct information-gathering interviews to understand the child's specific needs.\n*   **Professional Collaboration:** Gather information from other professionals and, if necessary, request a medical evaluation.\n*   **Inquiry:** Address specific questions common to communicative disorders to help inform the clinical approach.\n\n### Assessment and Goal Setting\nEffective intervention requires a foundation based on developmental milestones and diagnostic standards:\n*   **Assessment Tools:** Utilize formal tests for the assessment of language and determine if the child meets specific diagnostic criteria for conditions such as Autism Spectrum Disorder (if applicable).\n*   **Developmental Benchmarks:** Use established norms to guide your assessment, such as:\n    *   **Language Acquisition:** Refer to major milestones of language acquisition, Brown’s Stages of Language Development, and Mean Length of Utterance (MLU) norms.\n    *   **Cognitive Development:** Reference Piaget’s stages of cognitive development.\n    *   **Phonology:** Assess developmental norms for phonological processes and the stimulability of specific words and phrases.\n*   **Consideration of Hearing:** Evaluate the potential effects of hearing loss on communication, as this impacts the type of habilitative intervention required.\n\n### Planning the Intervention\nOnce the assessment is complete, the intervention process involves formal reporting and documentation:\n*   **Reporting:** Clearly report assessment findings through information-giving conferences and written reports.\n*   **Formal Plans:** Develop Individualized Family Service Plans (IFSPs) or Individualized Education Programs (IEPs), as appropriate for the child's age and needs. \n*   **Documentation:** Maintain clinical records, including the use of SOAP notes to track progress during the intervention process.",
+        "extras": {
+          "signature": "EjQKMgERTTIPeWfEivSVQWFjcPRDNSlSg1DumwMjdLpzqCO8+F9sqXv7oQAA8K4JD0rNB4FJ"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n2-9 Articulation Differences Commonly Observed Among Spanish Speakers 55\n 2-10 Language Differences Commonly Observed Among Spanish Speakers 56\n 2-11 Lexical Acquisition in Spanish Speakers 57\n 2-12 Acquisition of Morphology and Syntax in Spanish 58\n 2-13 Norms for Morphosyntactic Development in Spanish 60\n 2-14 Articulation Differences Commonly Observed Among Asian Speakers 61\n 2-15 Syntactic and Morphologic Differences Commonly Observed Among Asian Speakers 62\n 4-1 Differences and Similarities of the IFSP and IEP 98\n 4–2 Common Medical Abbreviations 101\n 5-1 Normal Rates of Speech 137\n 5-2 Syllable-by-Syllable Stimulus Phrases 140\n 6–1 Phonetic Symbols of the English Language 185\n 6-2 Five Commonly Cited Norms for Consonant Development 190\n 6-3 Age of Acquisition of Consonant Clusters in Word Initial Positions 191\n 6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n 6-6 Distinctive Features of English Consonants 196\n 6-7 Developmental Norms for Phonological Processes 201\n 6-8 Communicative Behaviors Associated with Childhood Apraxia of Speech 203\n 6-9 Words and Phrases for Assessing Stimulability 217\n 7-1 Major Milestones of Language Acquisition in Children 229\n 7-2 Piaget’s Stages of Cognitive Development 232\n 7-3 The Six Substages of Piaget’s Sensorimotor Stage of Cognitive Development 232\n 7-4 Several Formal Tests for the Assessment of Language 236\n 7-5 Derivational and Inflectional Morphemes 240\n 7-6 Brown’s Stages of Language Development 241\n 7-7 Order of Acquisition of Brown’s 14 Grammatical Morphemes 242\n 7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      }
+    ],
+    "latency_seconds": 3.570697784423828,
+    "error": null,
+    "timestamp": "2026-07-04T10:16:35.099255+00:00"
+  },
+  {
+    "query_id": "E002",
+    "query": "What would you do for oro-motor weakness?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Oro-Motor Weakness",
+    "reference_answer": "Management of oro-motor weakness should primarily focus on improving postural stability and promoting functional oral movements during speech and feeding activities. Therapy should aim to enhance lip closure, tongue mobility, jaw stability, and chewing skills through age-appropriate and meaningful tasks rather than isolated exercises. Isometric and isotonic exercises should be incorporated. Feeding activities and sensory input can also be incorporated to facilitate better oral control.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference documents, oro-motor weakness is addressed within the scope of \"Assessment of Motor Speech Disorders\" (Chapter 14).\n\nTo address conditions involving motor speech—such as dysarthria and apraxia, which are associated with oro-motor issues—the provided text outlines the following clinical approach:\n\n*   **Assessment:** The clinical manual specifies that the assessment process for these conditions involves:\n    *   Reviewing the role of the **cranial nerves and the brain** (page 508).\n    *   Identifying the **differential characteristics of dysarthria and apraxia** (page 510).\n    *   Conducting a formal **assessment of dysarthria** (page 511).\n    *   Conducting a formal **assessment of apraxia** (page 513).\n    *   Utilizing differential diagnostic tools, such as the table for \"Differentiating the Six Dysarthrias\" (page 512).\n\nThe provided text does not list specific therapeutic exercises for oro-motor weakness, but it identifies these assessments as the primary professional steps required to evaluate motor speech function. If you are experiencing symptoms, it is recommended to consult a speech-language pathologist who can utilize these diagnostic frameworks to determine the nature of the weakness and an appropriate course of action.",
+        "extras": {
+          "signature": "EjQKMgERTTIP2+WX1Z9/waBuJsiZmJQKj4/Gflcl+lG2iIg7XCHmeELIqJDXGBLVEMKVfzyT"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nand Clients with Cleft Lip and/or Palate 430\nAssessment of Alaryngeal Clients 430\nAlaryngeal Communication Options 432\nAssessment of Clients with Cleft Lip and/or Palate 432\nConcluding Comments 435\nChapter 12 Forms 437\nChapter 13 Assessment of Neurocognitive Disorders 457\nOverview of Assessment 458\nAssessment of Aphasia 459\nAssessment of Right Hemisphere Syndrome 462\nAssessment of Clients with Traumatic Brain Injury 465\nAssessment of Clients with Dementia  \n(Major Neurocognitive Disorder) 469\nConcluding Comments 472\nChapter 13 Forms 475\nChapter 14 Assessment of Motor Speech Disorders 507\nOverview of Assessment 508\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 10) ---\nAssessing Sensory and Motor Capabilities 366\nAssessing Language and Cognitive Skills 367\nDetermining the Most Appropriate AAC System 368\nApps for AAC 369\nConcluding Comments 370\nChapter 10 Forms 371\nChapter 11 Assessment of Stuttering and Cluttering 381\nOverview of Assessment 382\nDefining Stuttering 383\nSpeech Sampling 384\nDisfluency Indexes 385\nAccessory Behaviors 386\nSpeech Rate 388\nAssessing Feelings and Attitudes 388\nCriteria for Diagnosing Stuttering 389\nStimulability 390\nCluttering 391\nAssessment 391\nStimulability 393\nConcluding Comments 393\nChapter 11 Forms 395\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 10
+      }
+    ],
+    "latency_seconds": 2.487104654312134,
+    "error": null,
+    "timestamp": "2026-07-04T10:16:40.587751+00:00"
+  },
+  {
+    "query_id": "E003",
+    "query": "What would you do to reduce drooling?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Drooling",
+    "reference_answer": "Reducing drooling involves addressing the underlying factors contributing to poor saliva management. Improving posture, breathing and head control, increasing oral sensory awareness, promoting lip closure, and encouraging frequent swallowing are important components of intervention.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference context provided, there is no information available regarding methods to reduce drooling or specific treatment recommendations for this condition. The provided text outlines tables of contents and resource lists for assessing various conditions, such as motor speech disorders, dysphagia, stuttering, and hearing loss, but it does not contain clinical guidance for managing drooling.",
+        "extras": {
+          "signature": "EjQKMgERTTIP1j9OBoMYr/y1UAMR5DlL+neivkS5/l0nTxo4v8LEcbeyO9rQ7BvPebbs3SLI"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nand Clients with Cleft Lip and/or Palate 430\nAssessment of Alaryngeal Clients 430\nAlaryngeal Communication Options 432\nAssessment of Clients with Cleft Lip and/or Palate 432\nConcluding Comments 435\nChapter 12 Forms 437\nChapter 13 Assessment of Neurocognitive Disorders 457\nOverview of Assessment 458\nAssessment of Aphasia 459\nAssessment of Right Hemisphere Syndrome 462\nAssessment of Clients with Traumatic Brain Injury 465\nAssessment of Clients with Dementia  \n(Major Neurocognitive Disorder) 469\nConcluding Comments 472\nChapter 13 Forms 475\nChapter 14 Assessment of Motor Speech Disorders 507\nOverview of Assessment 508\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 18) ---\n12-5 Clefts of the Lip and Palate 434\n 14-1 The Brain 509\n 15-1 Stages of a Normal Swallow 527\n 15-2 Anatomical Structures Involved in Swallowing 528\n 16-1 The Ear 586\n 16-2 The Speech Banana 590\n 16-3 Audiogram of a Conductive Hearing Loss.  592\n 16-4 Audiogram of a Sensorineural Hearing Loss 593\n 16-5 Audiogram of a Mixed Hearing Loss 593\n 16-6 Audiogram of a Conductive Hearing Loss Caused by Otosclerosis.  594\n 16-7 Audiogram of a Hearing Loss Caused by Presbycusis 594\n 16-8 Audiogram of a Noise-Induced Sensorineural Hearing Loss 595\n 16-9 Audiogram of a Moderate Sensorineural Hearing Loss 595\n 16-10 Type A Tympanogram—Normal Pressure and Compliance Functions 596\n 16-11 Type B Tympanogram—Fluid in the Middle Ear (flat). This May Indicate Otitis Media 597\n 16-12 Type C Tympanogram—Retracted Tympanic Membranes (Shift to Negative Side).  \nThis May Indicate Eustachian Tube Blockage or Otitis Media 597\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 17) ---\nand Caregiver Questionnaire—Infant 0–6 months 551\n 15-2 Pediatric Dysphagia Case History Form and Caregiver Questionnaire 557\n 15-3 Pediatric Dysphagia Clinical Evaluation 567\n 15-4 Adult Bedside Dysphagia Evaluation 577\n 15-5 Blue-Dye Test Worksheet 581\n 16-1 Hearing Screening Form 605\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 10) ---\nAssessing Sensory and Motor Capabilities 366\nAssessing Language and Cognitive Skills 367\nDetermining the Most Appropriate AAC System 368\nApps for AAC 369\nConcluding Comments 370\nChapter 10 Forms 371\nChapter 11 Assessment of Stuttering and Cluttering 381\nOverview of Assessment 382\nDefining Stuttering 383\nSpeech Sampling 384\nDisfluency Indexes 385\nAccessory Behaviors 386\nSpeech Rate 388\nAssessing Feelings and Attitudes 388\nCriteria for Diagnosing Stuttering 389\nStimulability 390\nCluttering 391\nAssessment 391\nStimulability 393\nConcluding Comments 393\nChapter 11 Forms 395\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 18
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 17
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 10
+      }
+    ],
+    "latency_seconds": 1.9598557949066162,
+    "error": null,
+    "timestamp": "2026-07-04T10:16:45.548923+00:00"
+  },
+  {
+    "query_id": "E004",
+    "query": "How would you start intervention for a non-verbal child with autism?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Non-Verbal Autism",
+    "reference_answer": "The initial focus should be on developing communication intent and establishing joint attention rather than immediately targeting speech production. Check for all the primitive reflex integration. Functional communication can be encouraged through play-based interactions, gestures, sign language, picture exchange systems, or augmentative and alternative communication (AAC) methods.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference materials, the assessment and intervention process for a non-verbal child with autism involves a structured approach that prioritizes comprehensive data gathering and specific developmental evaluations.\n\n### Initial Assessment Guidance\nTo begin, you should focus on gathering background information and conducting thorough clinical assessments:\n\n*   **Information Gathering:** Utilize formal tools such as the \"Autism and Social Communication Disorder Screening Form\" (Reference 4, p. 351) and the \"Behavioral Analysis Worksheet\" (Reference 4, p. 353). It is also recommended to obtain medical information and collaborate with other professionals (Reference 1, p. 72).\n*   **Assessment Areas:**\n    *   **Sensory and Motor:** Evaluate sensory and motor capabilities (Reference 2, p. 366).\n    *   **Language and Cognitive:** Perform assessments of language and cognitive skills (Reference 2, p. 367).\n    *   **Social Communication:** Utilize benchmarks for social communication (Reference 3, p. 342) and assess pragmatic skills (Reference 4, p. 279).\n*   **Clinical Criteria:** Reference the diagnostic criteria for Autism Spectrum Disorder and severity indicators to guide your clinical understanding (Reference 3, p. 339–340).\n\n### Intervention and Systems\nOnce the assessment is complete, the focus for a non-verbal child often shifts to providing alternative means of communication:\n\n*   **AAC Systems:** A critical step in intervention is determining the most appropriate Augmentative and Alternative Communication (AAC) system for the child (Reference 2, p. 368). \n*   **Technology:** You may explore the use of applications (apps) designed specifically for AAC (Reference 2, p. 369).\n*   **Goal Setting:** Clinical documentation for intervention should be guided by the development of Individualized Education Programs (IEPs) or Individualized Family Service Plans (IFSPs) (Reference 1, p. 97).\n\nFor further clinical planning, you should refer to the specific assessment forms and worksheets provided in the manual, such as those for analyzing child-caregiver interactions and general language development (Reference 4, p. 251, 263).",
+        "extras": {
+          "signature": "EjQKMgERTTIP+MSWH+Qted0Q+D/754jHrovoRNWuLgdWNWAdeoN5LBvw63uiHAudy952WeTV"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 10) ---\nAssessing Sensory and Motor Capabilities 366\nAssessing Language and Cognitive Skills 367\nDetermining the Most Appropriate AAC System 368\nApps for AAC 369\nConcluding Comments 370\nChapter 10 Forms 371\nChapter 11 Assessment of Stuttering and Cluttering 381\nOverview of Assessment 382\nDefining Stuttering 383\nSpeech Sampling 384\nDisfluency Indexes 385\nAccessory Behaviors 386\nSpeech Rate 388\nAssessing Feelings and Attitudes 388\nCriteria for Diagnosing Stuttering 389\nStimulability 390\nCluttering 391\nAssessment 391\nStimulability 393\nConcluding Comments 393\nChapter 11 Forms 395\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 16) ---\n6-2 Sounds That Are Stimulable 211\n 6-3 Phonological Processes Worksheet 213\n 7-1 Worksheet for Analyzing Child–Caregiver Interactions 251\n 7-2 Language Development Survey 259\n 7-3 Assessment of Language Development 263\n 7-4 Parent Questionnaire for Early Language Development 269\n 7-5 Checklist for an Informal Assessment of Language 271\n 7-6 Worksheet for Recording a Language Sample 275\n 7-7 Assessment of Morphologic Features 277\n 7-8 Assessment of Pragmatic Skills 279\n 7-9 Assessment of Semantic Skills 281\n 7-10 Assessment of Syntactic Skills 285\n 8-1 Checklist of Early Literacy Skills 309\n 8-2 Assessment of Phonemic Awareness 313\n 8-3 Worksheet for Narrative Analysis 317\n 8-4 Informal Reading Inventory 321\n 8-5 Worksheet for Analyzing a Writing Sample 323\n 8-6 Worksheet for Expository Writing Analysis 329\n 8-7 Worksheet for Persuasive Writing Analysis 333\n 9-1 Autism and Social Communication Disorder Screening Form 351\n 9-2 Behavioral Analysis Worksheet 353\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 8) ---\nSyllable-by-Syllable Stimulus Phrases 139\nCharting 142\nConcluding Comments 143\nChapter 5 Forms 145\nAppendix 5-A 159\nAppendix 5-B 168\nPART III RESOURCES FOR ASSESSING COMMUNICATIVE \nDISORDERS 181\nChapter 6 Assessment of Speech Sound Disorders 183\nOverview of Assessment 184\nScreening 186\nFormal Tests 186\nIdentifying Sound Errors from a Speech Sample 188\nStimulability 188\nDevelopmental Norms for Phonemes and Blends 189\nFrequency of Occurrence of Consonants 193\nDescriptive Features of Phonemes 194\nDistinctive Features of Consonants 195\nPhonological Processes 196\nChildhood Apraxia of Speech 201\nConcluding Comments 204\nChapter 6 Forms 207\nAppendix 6-A 217\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 10
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 16
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 8
+      }
+    ],
+    "latency_seconds": 2.984955072402954,
+    "error": null,
+    "timestamp": "2026-07-04T10:16:51.536929+00:00"
+  },
+  {
+    "query_id": "E005",
+    "query": "What would you do for a child who stores food in the cheeks?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Oral Pocketing",
+    "reference_answer": "Intervention should aim to improve oral awareness and chewing efficiency. Small bite sizes, alternating solids with liquids, encouraging tongue lateralization, and checking for residual food after meals are helpful strategies. Therapy should focus on developing effective chewing patterns and safe oral clearance during feeding.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference text, there is no specific information regarding how to manage a child who stores food in the cheeks. \n\nHowever, the provided documents indicate that this behavior should be addressed through the appropriate clinical assessment process for swallowing disorders. You may refer to the following resources found in the text for guidance on evaluating such concerns:\n\n*   **Pediatric Dysphagia Case History Form and Caregiver Questionnaire:** (Reference 3, Page 17, item 15-2) This can be used to gather detailed information regarding the child's feeding behaviors.\n*   **Pediatric Dysphagia Clinical Evaluation:** (Reference 3, Page 17, item 15-3) This tool is specifically intended for the clinical assessment of pediatric swallowing.\n\nIt is recommended that you consult a speech-language pathologist to utilize these formal evaluation tools to properly assess the child's feeding and swallowing function.",
+        "extras": {
+          "signature": "EjQKMgERTTIP1QYZDzc/SLL89KcW5HlU+IyZ+DccySfFUSu/HZSYvlLRc22cg2+y/wSa+VuG"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 17) ---\nand Caregiver Questionnaire—Infant 0–6 months 551\n 15-2 Pediatric Dysphagia Case History Form and Caregiver Questionnaire 557\n 15-3 Pediatric Dysphagia Clinical Evaluation 567\n 15-4 Adult Bedside Dysphagia Evaluation 577\n 15-5 Blue-Dye Test Worksheet 581\n 16-1 Hearing Screening Form 605\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 18) ---\n16-12 Type C Tympanogram—Retracted Tympanic Membranes (Shift to Negative Side).  \nThis May Indicate Eustachian Tube Blockage or Otitis Media 597\n 16-13 Type As Tympanogram—Shallow. This May Indicate Otosclerosis or Tympanosclerosis 598\n 16-14 Type Ad Tympanogram—Deep. This May Indicate Ossicular Chain Discontinuity  \nor Flaccid Tympanic Membrane 598\n  Age Ranges of Normal Consonant Development 645\n  Oral Structures 659\n  Anatomy of the Vocal Mechanism 660\n  The Vocal Folds 661\n  Larynx (a) Before Laryngectomy and (b) After Laryngectomy 662\n  The Brain 663\n  Stages of a Normal Swallow 664\n  Anatomical Structures Involved in Swallowing 665\n  The Ear 666\n  The Speech Banana 667\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 17
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 18
+      }
+    ],
+    "latency_seconds": 1.9933655261993408,
+    "error": null,
+    "timestamp": "2026-07-04T10:16:56.531641+00:00"
+  },
+  {
+    "query_id": "E006",
+    "query": "How would you start therapy for a late talker?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Late Talker",
+    "reference_answer": "Therapy for a late talker should be child-centered and based on the child's interests. The clinician should model simple words and short phrases, expand the child's attempts to communicate, and create opportunities that encourage requesting and interaction. Parents should be actively involved and taught language facilitation strategies to use during everyday routines.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference manual, there is no specific protocol outlined for \"starting therapy\" for a late talker. However, the manual provides the following steps and resources relevant to the assessment and planning process that would precede the initiation of therapy:\n\n**1. Information Gathering**\nBefore beginning any intervention, it is standard practice to obtain pre-assessment information. This includes:\n*   **Case Histories:** Collecting written case histories (Chapter 3).\n*   **Interviews:** Conducting information-gathering interviews and asking questions common to communicative disorders (Chapter 3).\n*   **External Input:** Obtaining information from other professionals and, if necessary, requesting a medical evaluation (Appendix 3-C).\n\n**2. Assessment and Developmental Benchmarks**\nTo determine the focus of therapy, you must first assess the child's current development using established milestones and normative data provided in the manual, such as:\n*   **Language Acquisition:** Assessing against major milestones (7-1), Brown’s Stages of Language Development (7-6), Mean Length of Utterance norms (7-8), and developmental stages in early syntactic acquisition (7-10).\n*   **Cognitive Development:** Considering Piaget’s stages of cognitive development (7-2 and 7-3).\n*   **Formal Testing:** Utilizing formal tests for the assessment of language (7-4).\n\n**3. Planning and Documentation**\nOnce an assessment is completed, the clinical process requires specific documentation to guide intervention:\n*   **Reporting:** Writing assessment reports that summarize the findings (Chapter 4).\n*   **Goal Setting:** Developing Individualized Family Service Plans (IFSPs) or Individualized Education Programs (IEPs), which are used for ongoing intervention planning (Chapter 4).\n*   **Monitoring:** Using SOAP notes (Subjective, Objective, Assessment, Plan) to track progress during therapy sessions (Chapter 4).\n\nIf you are a parent or caregiver, it is recommended that you consult with a certified speech-language pathologist who can use these assessment tools and clinical reporting processes to create a treatment plan tailored to the child's specific needs.",
+        "extras": {
+          "signature": "EjQKMgERTTIPAGNkk199A/6vIMCj8pYBxf0OBSLKPcb8g7RSDlZatgyyUrQi3G+K1rH4qH4q"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n2-9 Articulation Differences Commonly Observed Among Spanish Speakers 55\n 2-10 Language Differences Commonly Observed Among Spanish Speakers 56\n 2-11 Lexical Acquisition in Spanish Speakers 57\n 2-12 Acquisition of Morphology and Syntax in Spanish 58\n 2-13 Norms for Morphosyntactic Development in Spanish 60\n 2-14 Articulation Differences Commonly Observed Among Asian Speakers 61\n 2-15 Syntactic and Morphologic Differences Commonly Observed Among Asian Speakers 62\n 4-1 Differences and Similarities of the IFSP and IEP 98\n 4–2 Common Medical Abbreviations 101\n 5-1 Normal Rates of Speech 137\n 5-2 Syllable-by-Syllable Stimulus Phrases 140\n 6–1 Phonetic Symbols of the English Language 185\n 6-2 Five Commonly Cited Norms for Consonant Development 190\n 6-3 Age of Acquisition of Consonant Clusters in Word Initial Positions 191\n 6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n 6-6 Distinctive Features of English Consonants 196\n 6-7 Developmental Norms for Phonological Processes 201\n 6-8 Communicative Behaviors Associated with Childhood Apraxia of Speech 203\n 6-9 Words and Phrases for Assessing Stimulability 217\n 7-1 Major Milestones of Language Acquisition in Children 229\n 7-2 Piaget’s Stages of Cognitive Development 232\n 7-3 The Six Substages of Piaget’s Sensorimotor Stage of Cognitive Development 232\n 7-4 Several Formal Tests for the Assessment of Language 236\n 7-5 Derivational and Inflectional Morphemes 240\n 7-6 Brown’s Stages of Language Development 241\n 7-7 Order of Acquisition of Brown’s 14 Grammatical Morphemes 242\n 7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 10) ---\nAssessing Sensory and Motor Capabilities 366\nAssessing Language and Cognitive Skills 367\nDetermining the Most Appropriate AAC System 368\nApps for AAC 369\nConcluding Comments 370\nChapter 10 Forms 371\nChapter 11 Assessment of Stuttering and Cluttering 381\nOverview of Assessment 382\nDefining Stuttering 383\nSpeech Sampling 384\nDisfluency Indexes 385\nAccessory Behaviors 386\nSpeech Rate 388\nAssessing Feelings and Attitudes 388\nCriteria for Diagnosing Stuttering 389\nStimulability 390\nCluttering 391\nAssessment 391\nStimulability 393\nConcluding Comments 393\nChapter 11 Forms 395\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 10
+      }
+    ],
+    "latency_seconds": 3.097592353820801,
+    "error": null,
+    "timestamp": "2026-07-04T10:17:29.631856+00:00"
+  },
+  {
+    "query_id": "E007",
+    "query": "How would you improve lip closure?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Poor Lip Closure",
+    "reference_answer": "Improving lip closure requires addressing posture and oral control while incorporating functional activities. Speech sounds requiring bilabial closure, drinking through straws, and feeding tasks that encourage lip activity can be used to facilitate better lip strength and coordination. Therapy should emphasize functional use rather than isolated strengthening exercises.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference context provided, there is no information available regarding techniques or recommendations to improve lip closure. The documents consist of a table of contents and indexes outlining chapters on topics such as cleft lip and palate assessment, motor speech disorders, dysphagia (swallowing), and hearing assessments, but they do not contain specific clinical instructions or treatment guidance for improving lip closure.",
+        "extras": {
+          "signature": "EjQKMgERTTIPnM+nYWisCRrjtp+hn8viQfvt1btFCHV5jHBpeFFE+uUjRNEbrBNi0oA7s59N"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 18) ---\n12-5 Clefts of the Lip and Palate 434\n 14-1 The Brain 509\n 15-1 Stages of a Normal Swallow 527\n 15-2 Anatomical Structures Involved in Swallowing 528\n 16-1 The Ear 586\n 16-2 The Speech Banana 590\n 16-3 Audiogram of a Conductive Hearing Loss.  592\n 16-4 Audiogram of a Sensorineural Hearing Loss 593\n 16-5 Audiogram of a Mixed Hearing Loss 593\n 16-6 Audiogram of a Conductive Hearing Loss Caused by Otosclerosis.  594\n 16-7 Audiogram of a Hearing Loss Caused by Presbycusis 594\n 16-8 Audiogram of a Noise-Induced Sensorineural Hearing Loss 595\n 16-9 Audiogram of a Moderate Sensorineural Hearing Loss 595\n 16-10 Type A Tympanogram—Normal Pressure and Compliance Functions 596\n 16-11 Type B Tympanogram—Fluid in the Middle Ear (flat). This May Indicate Otitis Media 597\n 16-12 Type C Tympanogram—Retracted Tympanic Membranes (Shift to Negative Side).  \nThis May Indicate Eustachian Tube Blockage or Otitis Media 597\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nand Clients with Cleft Lip and/or Palate 430\nAssessment of Alaryngeal Clients 430\nAlaryngeal Communication Options 432\nAssessment of Clients with Cleft Lip and/or Palate 432\nConcluding Comments 435\nChapter 12 Forms 437\nChapter 13 Assessment of Neurocognitive Disorders 457\nOverview of Assessment 458\nAssessment of Aphasia 459\nAssessment of Right Hemisphere Syndrome 462\nAssessment of Clients with Traumatic Brain Injury 465\nAssessment of Clients with Dementia  \n(Major Neurocognitive Disorder) 469\nConcluding Comments 472\nChapter 13 Forms 475\nChapter 14 Assessment of Motor Speech Disorders 507\nOverview of Assessment 508\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 18) ---\n16-12 Type C Tympanogram—Retracted Tympanic Membranes (Shift to Negative Side).  \nThis May Indicate Eustachian Tube Blockage or Otitis Media 597\n 16-13 Type As Tympanogram—Shallow. This May Indicate Otosclerosis or Tympanosclerosis 598\n 16-14 Type Ad Tympanogram—Deep. This May Indicate Ossicular Chain Discontinuity  \nor Flaccid Tympanic Membrane 598\n  Age Ranges of Normal Consonant Development 645\n  Oral Structures 659\n  Anatomy of the Vocal Mechanism 660\n  The Vocal Folds 661\n  Larynx (a) Before Laryngectomy and (b) After Laryngectomy 662\n  The Brain 663\n  Stages of a Normal Swallow 664\n  Anatomical Structures Involved in Swallowing 665\n  The Ear 666\n  The Speech Banana 667\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 10) ---\nAssessing Sensory and Motor Capabilities 366\nAssessing Language and Cognitive Skills 367\nDetermining the Most Appropriate AAC System 368\nApps for AAC 369\nConcluding Comments 370\nChapter 10 Forms 371\nChapter 11 Assessment of Stuttering and Cluttering 381\nOverview of Assessment 382\nDefining Stuttering 383\nSpeech Sampling 384\nDisfluency Indexes 385\nAccessory Behaviors 386\nSpeech Rate 388\nAssessing Feelings and Attitudes 388\nCriteria for Diagnosing Stuttering 389\nStimulability 390\nCluttering 391\nAssessment 391\nStimulability 393\nConcluding Comments 393\nChapter 11 Forms 395\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 18
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 18
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 10
+      }
+    ],
+    "latency_seconds": 1.9816288948059082,
+    "error": null,
+    "timestamp": "2026-07-04T10:17:34.615412+00:00"
+  },
+  {
+    "query_id": "E008",
+    "query": "What would you do for poor chewing skills?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Poor Chewing Skills",
+    "reference_answer": "Management should begin with textures that the child can safely handle and gradually progress to more challenging consistencies. Tool based therapy can be used. Therapy should encourage bilateral chewing, jaw stability, and tongue lateralization while ensuring proper positioning during meals. Caregiver education is important to promote consistent practice during daily feeding activities.",
+    "predicted_category": "Feeding",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical context provided, there is no information available regarding specific treatment recommendations or assessment guidance for poor chewing skills. The provided text focuses on the definition of dysphagia, its prevalence in aging populations, the anatomical structures involved in swallowing, and the potential morbidity and mortality associated with swallowing disorders.",
+        "extras": {
+          "signature": "EjQKMgERTTIPFaQmgcciEleFocMAiWyWQ7K6722aMMVXoof2soY+epSG6JIVvPT7jR3umqmO"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 1) ---\nDysphagia Evaluation and Treatment\n\n--- Reference 2 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 6) ---\nvii\nOverview\nDifficulty swallowing (dysphagia) occurs in all age groups, with a high prevalence \nin older individuals. The swallowing process requires intricate coordination \nbetween the central nervous system and multiple muscles of the face, mouth, phar-\nynx, larynx, and esophagus for safe and effective deglutition. Consequently, dys-\nphagia significantly impacts survival and may become a life-threatening \ndisability.\nThe older adult population is increasing worldwide. The proportion of indi-\nviduals ≥60 years of age increased from 9.2% in 1990 to 11.7% in 2013 and is \nexpected to reach 21.1% by 2050 [1]. Japan is at the forefront of the aging popula-\ntion. The older population in Japan is increasing more rapidly than in any of the \ndeveloped Western European countries or the United States [2]. Japan surpasses \nall other nations with the highest proportion of older citizens; 26.5% of citizens \nare >65 years, 12.8% are ≥ 75 years, and 3.9% are ≥ 85 years, according to the\n\n--- Reference 3 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 21) ---\nEating disorder A psychological disorder characterized by abnormal or disturbed \neating behaviors (e.g., anorexia nervosa, bulimia nervosa)\nDys- Impaired or abnormal\nPhag- Eating\nEating problem/dysphagia Eating failure or dysfunction, defined as a disturbance of the \npassage of a swallowed bolus from the mouth to the stomach\nAspiration Entry of saliva, liquid, or food into the airway under the level of \nthe true vocal folds\nPenetration Entry of swallowed material into the laryngeal vestibule during \nswallowing, as above of the level of the true vocal folds\nRetention Presence of a residual swallowed bolus locating in the oral cavity, \nvallecula, and/or hypopharynx (pyriform sinus) that is left behind \nafter the swallow\naAdditional terminology is shown in Appendix (Table 1.2)\nK. Pongpipatpaiboon et al.\n\n--- Reference 4 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 4) ---\nv\nForeword\nDysphagia is a common and potentially serious problem, especially in neurological \ndisorders, and is particularly frequent in elderly individuals. Dysphagia is associated \nwith significant morbidity and mortality including dehydration, malnutrition, airway \nobstruction, and aspiration pneumonia. Severe dysphagia has a devastating impact \non quality of life as it can eliminate the pleasure of eating and drinking. Less recog-\nnized is the impact of dysphagia on psychosocial functions. It can lead to isolation as \nthe patient withdraws from activities involving food such as family mealtimes, group \ndinners, and teatime. These issues are especially important in rapidly aging societies \nsuch as Japan, which has the highest percentage of elderly people in the world.\nJapan is unique in its early recognition and embrace of the team approach to \ndysphagia rehabilitation among professionals across a spectrum of disciplines and\n\n--- Reference 5 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 21) ---\n4\n1.2  Overview of Structures\nFundamental knowledge of the anatomy and motor control of eating and \n swallowing is imperative and serves as an important basis for evaluating the \nphysiology of the swallow. Swallowing is a complicated sequence of move-\nments. A normal swallow requires the precise coordination of more than 30 \nmuscles located within and around the oral cavity, pharynx, larynx, and esopha-\ngus. These muscles are controlled by cranial and peripheral nerves that are cen-\ntrally mediated via the brain stem (mainly the medulla oblongata as the \nswallowing center) and cooperate with the cortical and subcortical regions of \nthe brain [1 , 2].\n1.2.1  Anatomical Structures [1–3]\nThe oral cavity serves as the entrance to both the digestive pathway and upper \nairway. The tongue rests on the floor on the mouth, exposing both the oral and \npharyngeal surfaces. The arched opening of the posterior oral cavity is bordered\n",
+    "sources": [
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 1
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 6
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 21
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 4
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 21
+      }
+    ],
+    "latency_seconds": 1.9484381675720215,
+    "error": null,
+    "timestamp": "2026-07-04T10:17:39.565726+00:00"
+  },
+  {
+    "query_id": "M001",
+    "query": "What would you do for a child who refuses textured foods?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Textured Food Refusal",
+    "reference_answer": "Treatment should involve gradual exposure to different textures while maintaining a positive feeding environment. Starting with preferred foods and slowly progressing to more complex textures can help reduce anxiety and sensory defensiveness. Food chaining can be used. Desensitization techniques and food exploration activities may also facilitate acceptance of new foods.",
+    "predicted_category": "Feeding",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference, there is no specific information addressing how to manage a child who refuses textured foods.\n\nThe provided text focuses on the importance of a team-based approach to dysphagia rehabilitation, involving various specialists such as speech-language-hearing therapists, occupational therapists, physicians, nurses, dentists, and nutritionists. It emphasizes that:\n\n*   **Professional Evaluation:** Imaging is critical for diagnosing the cause of swallowing difficulties and selecting optimal treatments.\n*   **Interdisciplinary Teamwork:** Managing swallowing disorders requires a team of professionals from different disciplines working together to share expertise, knowledge, and skills.\n*   **Rehabilitation Approaches:** Depending on the region and the specific team, management may include direct and indirect dysphagia training exercises or specific exercise training regimens.\n\nIf you are concerned about a child’s refusal of textured foods, it is recommended to seek an evaluation from a qualified healthcare professional or a specialized dysphagia rehabilitation team, as they are equipped to provide the necessary assessments and interventions to ensure safe swallowing and nutrition.",
+        "extras": {
+          "signature": "EjQKMgERTTIP2BECoDD8dxnn2Jr1Wy5BK3mvv/uXkLmpGAWjFDo6fF+qG7Ru2n95OdQIX8L1"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 1) ---\nDysphagia Evaluation and Treatment\n\n--- Reference 2 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 10) ---\ning of both known and undiagnosed etiologies. Imaging is critical for diagnosing \nthe cause of dysphagia, selecting optimal treatments, and assessing the effects of \ntreatment by accurate measurement of the oropharyngeal swallowing response. The \ninstrumental assessment of dysphagia is a relatively new area of expertise within the \nfield of rehabilitation that has developed over the past several decades in Asian \ncountries. Additionally, considering the shortage of formal dysphagia rehabilitation \nteams with several specialized clinicians, highly trained professionals are essential \nfor dysphagia management in all settings.\nThe purpose of this book is to provide all healthcare professionals who are inter-\nested in swallowing with the basic practical knowledge required for a broad clinical \nperspective on dysphagia rehabilitation. This book is neither exhaustive nor ency-\nclopedic; instead, it presents a practical approach to the management and treatment\n\n--- Reference 3 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 9) ---\ndysphagia are not receiving appropriate swallowing evaluation and intervention.\nDysphagia is associated with several problematic outcomes. The severity of dys-\nphagia ranges from mild difficulty to complete inability to swallow and may subse-\nquently give rise to aspiration pneumonia, suffocation, dehydration, malnutrition, \nand declining quality of life. From the viewpoint of rehabilitation medicine, swal-\nlowing is one of the major targets of “activity medicine” (medicine to improve func-\ntion). Thus, physiatrists and all therapists who play a role in dysphagia management \nrequire fundamental knowledge and skills in evaluation and intervention to facili-\ntate safe swallowing and prevent recurrence and other adverse events.\nA team approach is indispensable to dysphagia rehabilitation. Interdisciplinary \nteamwork is a complex process in which staff members from different disciplines \nwork together to share expertise, knowledge, and skills to provide the highest stan-\n\n--- Reference 4 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 10) ---\nperspective on dysphagia rehabilitation. This book is neither exhaustive nor ency-\nclopedic; instead, it presents a practical approach to the management and treatment \nof patients with dysphagia in a real-world clinical setting.\nOthersOccupational therapist\nPhysical therapist\nNutritionist\nDental hygienist\nPhysician\nNurse\nDentist\nSpeech-language-hearing\ntherapist\n34%\n20%\n14%\n8%\n8%\n8%\n2%2% 4%\n© FHUR 2017\nFig. 5 Disciplines \ncomprising the Japanese \nSociety of Dysphagia \nRehabilitation. DH dental \nhygienist, OT occupational \ntherapist, PT physical \ntherapist, SLHT speech-\nlanguage-hearing therapist\nOverview\n\n--- Reference 5 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 9) ---\nnurses, dental hygienists, and dieticians. However, the team may be led by different \npractitioners based on availability. In Japan, for example, a teamwork-centered \napproach to dysphagia rehabilitation is emphasized, and speech-language-hearing \ntherapists lead the team in implementing direct and indirect dysphagia training exer-\ncises and integrating comprehensive treatment with other disciplines. In other Asian \ncountries, such as Thailand, occupational therapists primarily provide dysphagia \nrehabilitation services in the form of exercise training regimens for patients with \nswallowing disorders.\nJSDR is a leader in the development and advancement of dysphagia rehabilita-\ntion in both clinical and research settings. During the past 20 years, the membership \nof the JSDR has rapidly risen to more than 11,000 medical professionals (11,653 as \nof 30 August 2014) from several disciplines (Fig. 5).\nMoreover, the JSDR is currently developing relationships with other dysphagia\n",
+    "sources": [
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 1
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 10
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 9
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 10
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 9
+      }
+    ],
+    "latency_seconds": 2.272446870803833,
+    "error": null,
+    "timestamp": "2026-07-04T10:17:44.841552+00:00"
+  },
+  {
+    "query_id": "M002",
+    "query": "What would you do for tongue thrust during swallowing?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Tongue Thrust",
+    "reference_answer": "Management should focus on establishing an appropriate resting tongue posture and promoting mature swallowing patterns. Therapy may include activities to improve lip closure and oral awareness, along with exercises aimed at coordinating tongue movements during swallowing. Regular sucking through the straw will reduce tongue thrust.",
+    "predicted_category": "Feeding",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference context provided, there is no specific information regarding the management or treatment of \"tongue thrust\" during swallowing.\n\nThe provided documents focus on the general anatomy of swallowing, the definition of dysphagia, and the team-based approach to dysphagia rehabilitation (involving speech-language-hearing therapists, occupational therapists, and other medical professionals). The text emphasizes that swallowing involves a complex sequence of movements requiring the coordination of more than 30 muscles, and that imaging and instrumental assessment are critical for diagnosing the cause of swallowing disorders and selecting optimal treatments.\n\nBecause the provided materials do not address tongue thrust, you should consult with a qualified healthcare professional, such as a speech-language pathologist or a professional specializing in dysphagia rehabilitation, for a clinical evaluation and personalized treatment recommendations.",
+        "extras": {
+          "signature": "EjQKMgERTTIPoNsY/b6IZK8vQtg9CTG15dHESzTPzF5mDvTWDdXqJwcBtCeTdc8fbqeKXvtl"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 1) ---\nDysphagia Evaluation and Treatment\n\n--- Reference 2 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 21) ---\n4\n1.2  Overview of Structures\nFundamental knowledge of the anatomy and motor control of eating and \n swallowing is imperative and serves as an important basis for evaluating the \nphysiology of the swallow. Swallowing is a complicated sequence of move-\nments. A normal swallow requires the precise coordination of more than 30 \nmuscles located within and around the oral cavity, pharynx, larynx, and esopha-\ngus. These muscles are controlled by cranial and peripheral nerves that are cen-\ntrally mediated via the brain stem (mainly the medulla oblongata as the \nswallowing center) and cooperate with the cortical and subcortical regions of \nthe brain [1 , 2].\n1.2.1  Anatomical Structures [1–3]\nThe oral cavity serves as the entrance to both the digestive pathway and upper \nairway. The tongue rests on the floor on the mouth, exposing both the oral and \npharyngeal surfaces. The arched opening of the posterior oral cavity is bordered\n\n--- Reference 3 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 21) ---\nairway. The tongue rests on the floor on the mouth, exposing both the oral and \npharyngeal surfaces. The arched opening of the posterior oral cavity is bordered \nby the fauces, which separate the oral cavity from the pharynx. The pharyngeal \nwall consists of three main pharyngeal constrictor muscle groups (the superior, \nmiddle, and inferior parts) and long pharyngeal muscles (stylopharyngeus, salpin-\ngopharyngeus, and palatopharyngeus). The upper esophageal sphincter (UES) is \ndefined as a high- pressure zone located at the pharyngoesophageal junction and \nTable 1.1 Terminology of dysphagiaa\nSwallowing/deglutition A series of movements that promote bolus transportation from the \nmouth to the stomach\nEating/ingestion The process of taking a bolus into the body by mouth\nEating disorder A psychological disorder characterized by abnormal or disturbed \neating behaviors (e.g., anorexia nervosa, bulimia nervosa)\nDys- Impaired or abnormal\nPhag- Eating\n\n--- Reference 4 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 9) ---\nnurses, dental hygienists, and dieticians. However, the team may be led by different \npractitioners based on availability. In Japan, for example, a teamwork-centered \napproach to dysphagia rehabilitation is emphasized, and speech-language-hearing \ntherapists lead the team in implementing direct and indirect dysphagia training exer-\ncises and integrating comprehensive treatment with other disciplines. In other Asian \ncountries, such as Thailand, occupational therapists primarily provide dysphagia \nrehabilitation services in the form of exercise training regimens for patients with \nswallowing disorders.\nJSDR is a leader in the development and advancement of dysphagia rehabilita-\ntion in both clinical and research settings. During the past 20 years, the membership \nof the JSDR has rapidly risen to more than 11,000 medical professionals (11,653 as \nof 30 August 2014) from several disciplines (Fig. 5).\nMoreover, the JSDR is currently developing relationships with other dysphagia\n\n--- Reference 5 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 10) ---\ning of both known and undiagnosed etiologies. Imaging is critical for diagnosing \nthe cause of dysphagia, selecting optimal treatments, and assessing the effects of \ntreatment by accurate measurement of the oropharyngeal swallowing response. The \ninstrumental assessment of dysphagia is a relatively new area of expertise within the \nfield of rehabilitation that has developed over the past several decades in Asian \ncountries. Additionally, considering the shortage of formal dysphagia rehabilitation \nteams with several specialized clinicians, highly trained professionals are essential \nfor dysphagia management in all settings.\nThe purpose of this book is to provide all healthcare professionals who are inter-\nested in swallowing with the basic practical knowledge required for a broad clinical \nperspective on dysphagia rehabilitation. This book is neither exhaustive nor ency-\nclopedic; instead, it presents a practical approach to the management and treatment\n",
+    "sources": [
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 1
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 21
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 21
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 9
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 10
+      }
+    ],
+    "latency_seconds": 2.4938457012176514,
+    "error": null,
+    "timestamp": "2026-07-04T10:17:50.337165+00:00"
+  },
+  {
+    "query_id": "M003",
+    "query": "How would you manage childhood apraxia of speech?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Childhood Apraxia of Speech",
+    "reference_answer": "Intervention for childhood apraxia of speech should emphasize motor-based approaches with frequent and repetitive practice. Non speech movements can be practiced. Therapy should provide multisensory cues and focus on improving movement sequences for speech production rather than isolated sounds. Depending on the severity, augmentative and alternative communication may be introduced to support functional communication.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference documents, there is no information regarding the management or treatment of childhood apraxia of speech.\n\nThe documents identify that the resource manual contains \"Communicative Behaviors Associated with Childhood Apraxia of Speech\" (Reference 4, Section 6-8) and mention \"Assessment of Apraxia\" (Reference 5, Section 14), but they do not provide specific clinical recommendations for managing or treating the condition.",
+        "extras": {
+          "signature": "EjQKMgERTTIPB3LvsMAAEBb0rqVfzmcoaUpArDApj62DiCdEzPRaeCXhZplpVa0E51iA4oRM"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n 6-6 Distinctive Features of English Consonants 196\n 6-7 Developmental Norms for Phonological Processes 201\n 6-8 Communicative Behaviors Associated with Childhood Apraxia of Speech 203\n 6-9 Words and Phrases for Assessing Stimulability 217\n 7-1 Major Milestones of Language Acquisition in Children 229\n 7-2 Piaget’s Stages of Cognitive Development 232\n 7-3 The Six Substages of Piaget’s Sensorimotor Stage of Cognitive Development 232\n 7-4 Several Formal Tests for the Assessment of Language 236\n 7-5 Derivational and Inflectional Morphemes 240\n 7-6 Brown’s Stages of Language Development 241\n 7-7 Order of Acquisition of Brown’s 14 Grammatical Morphemes 242\n 7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      }
+    ],
+    "latency_seconds": 2.2923927307128906,
+    "error": null,
+    "timestamp": "2026-07-04T10:18:22.633339+00:00"
+  },
+  {
+    "query_id": "M004",
+    "query": "What would you do if a child has poor attention during therapy sessions?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Poor Attention in Therapy",
+    "reference_answer": "The clinician should modify the therapy environment to minimize distractions and use motivating activities that match the child's interests. Sessions should include short tasks with frequent breaks and opportunities for movement. Reinforcement and a predictable routine can help maintain attention and participation.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference context provided, there is no information available regarding how to address or manage poor attention during therapy sessions. The documents focus on assessment procedures, diagnostic criteria, developmental norms, and clinical documentation (such as SOAP notes and assessment reports) rather than specific clinical management strategies for patient attention.",
+        "extras": {
+          "signature": "EjQKMgERTTIP2hulmWlSCsrHcWpVRag9kr4Yg9ZU4dGENWw/zPLcTl99yPQd1w6tQdHkOh96"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 10) ---\nAssessing Sensory and Motor Capabilities 366\nAssessing Language and Cognitive Skills 367\nDetermining the Most Appropriate AAC System 368\nApps for AAC 369\nConcluding Comments 370\nChapter 10 Forms 371\nChapter 11 Assessment of Stuttering and Cluttering 381\nOverview of Assessment 382\nDefining Stuttering 383\nSpeech Sampling 384\nDisfluency Indexes 385\nAccessory Behaviors 386\nSpeech Rate 388\nAssessing Feelings and Attitudes 388\nCriteria for Diagnosing Stuttering 389\nStimulability 390\nCluttering 391\nAssessment 391\nStimulability 393\nConcluding Comments 393\nChapter 11 Forms 395\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 10
+      }
+    ],
+    "latency_seconds": 1.9569458961486816,
+    "error": null,
+    "timestamp": "2026-07-04T10:18:27.592133+00:00"
+  },
+  {
+    "query_id": "M005",
+    "query": "How would you improve joint attention in children with autism?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Joint Attention Deficit (Autism)",
+    "reference_answer": "Joint attention can be facilitated through face-to-face interactions, turn-taking games, imitation activities, and shared book reading. The therapist should follow the child's interests and create opportunities for shared experiences. Parent involvement is essential to generalize these skills across different environments.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference provided, there is no information available regarding specific strategies or interventions to improve joint attention in children with autism.\n\nThe provided text serves as a resource manual index that lists assessment tools and benchmarks rather than therapeutic interventions. For the purpose of assessment, the manual identifies the following resources that may be relevant to an evaluation:\n\n*   **Screening and Assessment:** The manual includes an \"Autism and Social Communication Disorder Screening Form\" (9-1), an \"Assessment for Autism Spectrum Disorder\" (9-3), and a \"Behavioral Analysis Worksheet\" (9-2).\n*   **Pragmatic Skills:** The manual references an \"Assessment of Pragmatic Skills\" (7-8) which may assist in evaluating social communication needs.\n\nFor actionable advice on improving joint attention, please consult a qualified speech-language pathologist or a professional specializing in autism intervention who can perform a formal assessment and develop a tailored treatment plan.",
+        "extras": {
+          "signature": "EjQKMgERTTIP41EJcbnwCwne9iuwXwyH/E1besHJvT9+ALfShmR3sToSmgu0Vc9Zx6wSioWq"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 16) ---\n8-7 Worksheet for Persuasive Writing Analysis 333\n 9-1 Autism and Social Communication Disorder Screening Form 351\n 9-2 Behavioral Analysis Worksheet 353\n 9-3 Assessment for Autism Spectrum Disorder 357\n 9-4 Assessment for Social (Pragmatic) Communication Disorder 361\n 10-1 Augmentative and Alternative Communication Information  \nand Needs Assessment 371\n 10-2 Visual Scanning and Tracking Checklist 379\n 11-1 Fluency Charting Grid 395\n 11-2 Frequency Count for Disfluencies 397\n 11-3 Calculating the Disfluency Index 399\n 11-4 Assessment of Associated Motor Behaviors 401\n 11-5 Assessment of Physiological Factors Associated with Stuttering 405\n 11-6 The Modified S-Scale 407\n 11-7 Adolescent Communication Questionnaire 409\n 11-8 Parental Speech Chart 411\n 11–9 Checklist of Cluttering Characteristics 413\n 12-1 Voice Handicap Index (VHI) 437\n  Voice Handicap Index Summary 439\n 12-2 Vocally Abusive Behaviors Checklist—Adult 441\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 16) ---\n6-2 Sounds That Are Stimulable 211\n 6-3 Phonological Processes Worksheet 213\n 7-1 Worksheet for Analyzing Child–Caregiver Interactions 251\n 7-2 Language Development Survey 259\n 7-3 Assessment of Language Development 263\n 7-4 Parent Questionnaire for Early Language Development 269\n 7-5 Checklist for an Informal Assessment of Language 271\n 7-6 Worksheet for Recording a Language Sample 275\n 7-7 Assessment of Morphologic Features 277\n 7-8 Assessment of Pragmatic Skills 279\n 7-9 Assessment of Semantic Skills 281\n 7-10 Assessment of Syntactic Skills 285\n 8-1 Checklist of Early Literacy Skills 309\n 8-2 Assessment of Phonemic Awareness 313\n 8-3 Worksheet for Narrative Analysis 317\n 8-4 Informal Reading Inventory 321\n 8-5 Worksheet for Analyzing a Writing Sample 323\n 8-6 Worksheet for Expository Writing Analysis 329\n 8-7 Worksheet for Persuasive Writing Analysis 333\n 9-1 Autism and Social Communication Disorder Screening Form 351\n 9-2 Behavioral Analysis Worksheet 353\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 16
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 16
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      }
+    ],
+    "latency_seconds": 2.1844735145568848,
+    "error": null,
+    "timestamp": "2026-07-04T10:18:32.779370+00:00"
+  },
+  {
+    "query_id": "M006",
+    "query": "How would you facilitate first words in a child with delayed speech?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Delayed Speech",
+    "reference_answer": "Intervention should focus on increasing communication opportunities and modeling meaningful words during daily routines. Repetitive play activities, songs, and routines can be used to encourage vocalizations and word approximations. Positive reinforcement should be provided for all attempts to communicate.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference context provided, there is no specific information or instructional guidance available regarding techniques to facilitate first words in a child with delayed speech.\n\nThe provided text consists of lists of reference topics, developmental norms, assessment criteria, and diagnostic categories (such as Piaget’s stages of development and milestones of language acquisition), but it does not contain therapeutic procedures or clinical recommendations for intervention to stimulate first words.",
+        "extras": {
+          "signature": "EjQKMgERTTIPYqVzAgkVcDCcqOten/RY7j3M2U8zxSu0hnR9EUgq9J63yLwKNjb6QZ+orEI5"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n 6-6 Distinctive Features of English Consonants 196\n 6-7 Developmental Norms for Phonological Processes 201\n 6-8 Communicative Behaviors Associated with Childhood Apraxia of Speech 203\n 6-9 Words and Phrases for Assessing Stimulability 217\n 7-1 Major Milestones of Language Acquisition in Children 229\n 7-2 Piaget’s Stages of Cognitive Development 232\n 7-3 The Six Substages of Piaget’s Sensorimotor Stage of Cognitive Development 232\n 7-4 Several Formal Tests for the Assessment of Language 236\n 7-5 Derivational and Inflectional Morphemes 240\n 7-6 Brown’s Stages of Language Development 241\n 7-7 Order of Acquisition of Brown’s 14 Grammatical Morphemes 242\n 7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n2-9 Articulation Differences Commonly Observed Among Spanish Speakers 55\n 2-10 Language Differences Commonly Observed Among Spanish Speakers 56\n 2-11 Lexical Acquisition in Spanish Speakers 57\n 2-12 Acquisition of Morphology and Syntax in Spanish 58\n 2-13 Norms for Morphosyntactic Development in Spanish 60\n 2-14 Articulation Differences Commonly Observed Among Asian Speakers 61\n 2-15 Syntactic and Morphologic Differences Commonly Observed Among Asian Speakers 62\n 4-1 Differences and Similarities of the IFSP and IEP 98\n 4–2 Common Medical Abbreviations 101\n 5-1 Normal Rates of Speech 137\n 5-2 Syllable-by-Syllable Stimulus Phrases 140\n 6–1 Phonetic Symbols of the English Language 185\n 6-2 Five Commonly Cited Norms for Consonant Development 190\n 6-3 Age of Acquisition of Consonant Clusters in Word Initial Positions 191\n 6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      }
+    ],
+    "latency_seconds": 1.8614134788513184,
+    "error": null,
+    "timestamp": "2026-07-04T10:18:37.643311+00:00"
+  },
+  {
+    "query_id": "M007",
+    "query": "What would you do for excessive gagging while introducing solids?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Excessive Gagging",
+    "reference_answer": "Management should include gradual progression of textures, oral sensory stimulation, and opportunities for self-feeding. Caregivers should avoid force feeding and provide positive experiences with food. The child's sensory and motor abilities should be considered while introducing new textures at an appropriate pace.",
+    "predicted_category": "Feeding",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference provided, there is no information addressing the management of excessive gagging specifically during the introduction of solids.\n\nThe provided text focuses on the general clinical perspective of dysphagia, defining it as a disturbance in the passage of a bolus from the mouth to the stomach, and emphasizing that it is a serious condition often associated with neurological disorders or aging. The text highlights that managing dysphagia requires:\n\n*   **Professional Assessment:** Highly trained professionals are essential for management.\n*   **Instrumental Assessment:** Imaging is critical for diagnosing the cause of the swallowing difficulty and for selecting optimal treatments.\n*   **Team Approach:** Effective management often involves a team of specialized clinicians.\n\nBecause excessive gagging can be a symptom of a swallowing problem (dysphagia), it is recommended that you consult with a healthcare professional to receive an accurate diagnosis and an appropriate, individualized treatment plan.",
+        "extras": {
+          "signature": "EjQKMgERTTIPmwiPLG+EqTrs2PzNbqAFWlk3SDI+N7bf/at1yxc+/Qf56vO3Pujh6scak/EM"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 1) ---\nDysphagia Evaluation and Treatment\n\n--- Reference 2 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 10) ---\ning of both known and undiagnosed etiologies. Imaging is critical for diagnosing \nthe cause of dysphagia, selecting optimal treatments, and assessing the effects of \ntreatment by accurate measurement of the oropharyngeal swallowing response. The \ninstrumental assessment of dysphagia is a relatively new area of expertise within the \nfield of rehabilitation that has developed over the past several decades in Asian \ncountries. Additionally, considering the shortage of formal dysphagia rehabilitation \nteams with several specialized clinicians, highly trained professionals are essential \nfor dysphagia management in all settings.\nThe purpose of this book is to provide all healthcare professionals who are inter-\nested in swallowing with the basic practical knowledge required for a broad clinical \nperspective on dysphagia rehabilitation. This book is neither exhaustive nor ency-\nclopedic; instead, it presents a practical approach to the management and treatment\n\n--- Reference 3 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 21) ---\nEating disorder A psychological disorder characterized by abnormal or disturbed \neating behaviors (e.g., anorexia nervosa, bulimia nervosa)\nDys- Impaired or abnormal\nPhag- Eating\nEating problem/dysphagia Eating failure or dysfunction, defined as a disturbance of the \npassage of a swallowed bolus from the mouth to the stomach\nAspiration Entry of saliva, liquid, or food into the airway under the level of \nthe true vocal folds\nPenetration Entry of swallowed material into the laryngeal vestibule during \nswallowing, as above of the level of the true vocal folds\nRetention Presence of a residual swallowed bolus locating in the oral cavity, \nvallecula, and/or hypopharynx (pyriform sinus) that is left behind \nafter the swallow\naAdditional terminology is shown in Appendix (Table 1.2)\nK. Pongpipatpaiboon et al.\n\n--- Reference 4 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 4) ---\nv\nForeword\nDysphagia is a common and potentially serious problem, especially in neurological \ndisorders, and is particularly frequent in elderly individuals. Dysphagia is associated \nwith significant morbidity and mortality including dehydration, malnutrition, airway \nobstruction, and aspiration pneumonia. Severe dysphagia has a devastating impact \non quality of life as it can eliminate the pleasure of eating and drinking. Less recog-\nnized is the impact of dysphagia on psychosocial functions. It can lead to isolation as \nthe patient withdraws from activities involving food such as family mealtimes, group \ndinners, and teatime. These issues are especially important in rapidly aging societies \nsuch as Japan, which has the highest percentage of elderly people in the world.\nJapan is unique in its early recognition and embrace of the team approach to \ndysphagia rehabilitation among professionals across a spectrum of disciplines and\n\n--- Reference 5 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 6) ---\nvii\nOverview\nDifficulty swallowing (dysphagia) occurs in all age groups, with a high prevalence \nin older individuals. The swallowing process requires intricate coordination \nbetween the central nervous system and multiple muscles of the face, mouth, phar-\nynx, larynx, and esophagus for safe and effective deglutition. Consequently, dys-\nphagia significantly impacts survival and may become a life-threatening \ndisability.\nThe older adult population is increasing worldwide. The proportion of indi-\nviduals ≥60 years of age increased from 9.2% in 1990 to 11.7% in 2013 and is \nexpected to reach 21.1% by 2050 [1]. Japan is at the forefront of the aging popula-\ntion. The older population in Japan is increasing more rapidly than in any of the \ndeveloped Western European countries or the United States [2]. Japan surpasses \nall other nations with the highest proportion of older citizens; 26.5% of citizens \nare >65 years, 12.8% are ≥ 75 years, and 3.9% are ≥ 85 years, according to the\n",
+    "sources": [
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 1
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 10
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 21
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 4
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 6
+      }
+    ],
+    "latency_seconds": 2.3759355545043945,
+    "error": null,
+    "timestamp": "2026-07-04T10:18:43.021601+00:00"
+  },
+  {
+    "query_id": "M008",
+    "query": "What would you do if a patient coughs while drinking thin liquids?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Dysphagia (Thin Liquid Aspiration)",
+    "reference_answer": "The first priority is to ensure swallowing safety. Further assessment should be carried out to determine the cause of the difficulty. Appropriate texture modifications, safe swallowing strategies, and postural adjustments may be recommended. Instrumental assessments such as VFSS or FEES may be required to guide treatment planning.",
+    "predicted_category": "Feeding",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference text, there is no specific instruction or clinical protocol provided regarding what to do if a patient coughs while drinking thin liquids.\n\nHowever, the provided documents emphasize the following points regarding dysphagia management:\n\n*   **Clinical Importance:** Dysphagia is a serious condition associated with significant morbidity and mortality, including dehydration, malnutrition, airway obstruction, and aspiration pneumonia.\n*   **Need for Expert Evaluation:** The text notes that swallowing evaluations in patients with dysphagia are often limited or incomplete, and there is a need for highly trained professionals to manage dysphagia across all settings.\n*   **Diagnostic Approach:** Imaging is described as critical for diagnosing the underlying cause of dysphagia, selecting optimal treatments, and assessing the effects of those treatments through the accurate measurement of the oropharyngeal swallowing response.\n*   **Team Approach:** Effective management often involves a team approach among professionals across a spectrum of disciplines.\n\nIf a patient is experiencing coughing while drinking, it is important to consult with a qualified healthcare professional or a dysphagia rehabilitation team, as they are responsible for providing appropriate evaluation and intervention.",
+        "extras": {
+          "signature": "EjQKMgERTTIP5ilap4Q/7FV2iEHLOdFCnIghxobXufg0mXe85LgMuUuUIQDU2va6igRYQyna"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 1) ---\nDysphagia Evaluation and Treatment\n\n--- Reference 2 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 20) ---\na vital primary function to ensure nutrition and hydration and contributes to quality \nof life. Specific terminology is used among healthcare workers to communicate in \na common language and is used every day for speaking and writing in medical \ncharts.\nA description of the common terms used in the field of dysphagia is provided in \nTable 1.1.\nK. Pongpipatpaiboon • Y . Aoyagi • S. Shibata • H. Kagaya \nDepartment of Rehabilitation Medicine I, School of Medicine, Fujita Health University, \nToyoake, Aichi, Japan\ne-mail: ning665@gmail.com; yyy@rc5.so-net.ne.jp; sshibata@fujita-hu.ac.jp;  \nhkagaya2@fujita-hu.ac.jp \nY . Inamoto (\n*) \nFaculty of Rehabilitation, School of Health Sciences, Fujita Health University,  \nToyoake, Aichi, Japan\ne-mail: inamoto@fujita-hu.ac.jp \nK. Matsuo \nDepartment of Dentistry, School of Medicine, Fujita Health University, Toyoake, Aichi, Japan\ne-mail: kmatsuo@fujita-hu.ac.jp\n\n--- Reference 3 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 4) ---\nv\nForeword\nDysphagia is a common and potentially serious problem, especially in neurological \ndisorders, and is particularly frequent in elderly individuals. Dysphagia is associated \nwith significant morbidity and mortality including dehydration, malnutrition, airway \nobstruction, and aspiration pneumonia. Severe dysphagia has a devastating impact \non quality of life as it can eliminate the pleasure of eating and drinking. Less recog-\nnized is the impact of dysphagia on psychosocial functions. It can lead to isolation as \nthe patient withdraws from activities involving food such as family mealtimes, group \ndinners, and teatime. These issues are especially important in rapidly aging societies \nsuch as Japan, which has the highest percentage of elderly people in the world.\nJapan is unique in its early recognition and embrace of the team approach to \ndysphagia rehabilitation among professionals across a spectrum of disciplines and\n\n--- Reference 4 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 10) ---\ning of both known and undiagnosed etiologies. Imaging is critical for diagnosing \nthe cause of dysphagia, selecting optimal treatments, and assessing the effects of \ntreatment by accurate measurement of the oropharyngeal swallowing response. The \ninstrumental assessment of dysphagia is a relatively new area of expertise within the \nfield of rehabilitation that has developed over the past several decades in Asian \ncountries. Additionally, considering the shortage of formal dysphagia rehabilitation \nteams with several specialized clinicians, highly trained professionals are essential \nfor dysphagia management in all settings.\nThe purpose of this book is to provide all healthcare professionals who are inter-\nested in swallowing with the basic practical knowledge required for a broad clinical \nperspective on dysphagia rehabilitation. This book is neither exhaustive nor ency-\nclopedic; instead, it presents a practical approach to the management and treatment\n\n--- Reference 5 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 9) ---\nx\nthat dysphagia-related deaths have been increasing and that dysphagia must be thor-\noughly recognized and understood by healthcare professionals. In 2012, the Fujita \nSwallowing Team at the Fujita Health University Rehabilitation Complex (FHUR) \nsurveyed the prevalence of dysphagia in Japan and reported 73.7% in chronic hospi-\ntals, 59.7% in nursing homes, and 58.7% in long-term care facilities [12]. Similarly, \na national survey in 2009 found a relatively large number of  geriatric long-term care \nresidents with feeding tubes as well as difficulty swallowing in orally fed residents \n[13]. This study also indicated that swallowing evaluation in patients with dysphagia \nis often limited and incomplete [13]. These findings suggest that older residents with \ndysphagia are not receiving appropriate swallowing evaluation and intervention.\nDysphagia is associated with several problematic outcomes. The severity of dys-\n",
+    "sources": [
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 1
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 20
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 4
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 10
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 9
+      }
+    ],
+    "latency_seconds": 2.0654404163360596,
+    "error": null,
+    "timestamp": "2026-07-04T10:19:15.089849+00:00"
+  },
+  {
+    "query_id": "M009",
+    "query": "How would you improve respiratory support for speech?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Poor Respiratory Support for Speech",
+    "reference_answer": "Intervention should focus on improving posture, respiratory control, and coordination between breathing and phonation. Activities should gradually progress from sustained phonation to phrase and sentence production while emphasizing efficient breath support during speech.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference context provided, there is no information available regarding techniques or recommendations for improving respiratory support for speech. The provided documents focus on the tables of contents, assessment chapter outlines, and index references for a speech-language pathology manual, but they do not contain the specific clinical content or therapeutic strategies required to answer your query.",
+        "extras": {
+          "signature": "EjQKMgERTTIPLPVQNZt8Swg85qnFN2aQKEbItpvnJ2+Utu4IJiJ1GiANEWApeng65i4m/M/c"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nand Clients with Cleft Lip and/or Palate 430\nAssessment of Alaryngeal Clients 430\nAlaryngeal Communication Options 432\nAssessment of Clients with Cleft Lip and/or Palate 432\nConcluding Comments 435\nChapter 12 Forms 437\nChapter 13 Assessment of Neurocognitive Disorders 457\nOverview of Assessment 458\nAssessment of Aphasia 459\nAssessment of Right Hemisphere Syndrome 462\nAssessment of Clients with Traumatic Brain Injury 465\nAssessment of Clients with Dementia  \n(Major Neurocognitive Disorder) 469\nConcluding Comments 472\nChapter 13 Forms 475\nChapter 14 Assessment of Motor Speech Disorders 507\nOverview of Assessment 508\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      }
+    ],
+    "latency_seconds": 1.969719409942627,
+    "error": null,
+    "timestamp": "2026-07-04T10:19:20.062732+00:00"
+  },
+  {
+    "query_id": "H001",
+    "query": "What are the priorities in dysphagia management?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Dysphagia",
+    "reference_answer": "The primary goals of dysphagia management are to maintain airway safety, ensure adequate nutrition and hydration, and improve swallowing efficiency. Intervention may involve texture modifications, compensatory strategies, therapeutic exercises, caregiver education, and instrumental assessments when necessary. A multidisciplinary approach is often essential.",
+    "predicted_category": "Feeding",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference material, the priorities in dysphagia management focus on the following:\n\n**Primary Goals**\n*   **Facilitating Safe Swallowing:** The overarching goal is to ensure the patient can swallow safely.\n*   **Preventing Adverse Events:** Management must aim to prevent recurrence of swallowing difficulties and avoid life-threatening complications such as aspiration pneumonia, suffocation, dehydration, and malnutrition.\n*   **Ensuring Nutrition and Hydration:** Swallowing is recognized as a vital primary function for maintaining proper nutrition and hydration.\n*   **Improving Quality of Life:** Effective management seeks to mitigate the negative impacts of dysphagia on quality of life, including the ability to enjoy eating and drinking and the psychosocial isolation often associated with the condition.\n\n**Assessment and Intervention Guidance**\n*   **Need for Comprehensive Evaluation:** The literature highlights that swallowing evaluations are often limited or incomplete. Clinicians must ensure that patients receive thorough, appropriate swallowing evaluations and interventions.\n*   **Fundamental Knowledge and Skills:** Physiatrists and all therapists involved in care require fundamental knowledge and skills in both evaluation and intervention to effectively manage the condition.\n*   **Interdisciplinary Team Approach:** A team approach is considered \"indispensable\" to rehabilitation. Management is most effective when an interdisciplinary team from different disciplines shares expertise, knowledge, and skills to provide the highest standard of care.\n*   **Professional Communication:** Healthcare workers should utilize specific, consistent terminology to communicate effectively in medical charts and during daily clinical practice.",
+        "extras": {
+          "signature": "EjQKMgERTTIPnPA0wOVcKPoMUyXtmM+WHHny7ArWtMDB3auCRW0k5BciFVbPRsFPY1KuFX9m"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 1) ---\nDysphagia Evaluation and Treatment\n\n--- Reference 2 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 9) ---\ndysphagia are not receiving appropriate swallowing evaluation and intervention.\nDysphagia is associated with several problematic outcomes. The severity of dys-\nphagia ranges from mild difficulty to complete inability to swallow and may subse-\nquently give rise to aspiration pneumonia, suffocation, dehydration, malnutrition, \nand declining quality of life. From the viewpoint of rehabilitation medicine, swal-\nlowing is one of the major targets of “activity medicine” (medicine to improve func-\ntion). Thus, physiatrists and all therapists who play a role in dysphagia management \nrequire fundamental knowledge and skills in evaluation and intervention to facili-\ntate safe swallowing and prevent recurrence and other adverse events.\nA team approach is indispensable to dysphagia rehabilitation. Interdisciplinary \nteamwork is a complex process in which staff members from different disciplines \nwork together to share expertise, knowledge, and skills to provide the highest stan-\n\n--- Reference 3 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 4) ---\nv\nForeword\nDysphagia is a common and potentially serious problem, especially in neurological \ndisorders, and is particularly frequent in elderly individuals. Dysphagia is associated \nwith significant morbidity and mortality including dehydration, malnutrition, airway \nobstruction, and aspiration pneumonia. Severe dysphagia has a devastating impact \non quality of life as it can eliminate the pleasure of eating and drinking. Less recog-\nnized is the impact of dysphagia on psychosocial functions. It can lead to isolation as \nthe patient withdraws from activities involving food such as family mealtimes, group \ndinners, and teatime. These issues are especially important in rapidly aging societies \nsuch as Japan, which has the highest percentage of elderly people in the world.\nJapan is unique in its early recognition and embrace of the team approach to \ndysphagia rehabilitation among professionals across a spectrum of disciplines and\n\n--- Reference 4 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 20) ---\na vital primary function to ensure nutrition and hydration and contributes to quality \nof life. Specific terminology is used among healthcare workers to communicate in \na common language and is used every day for speaking and writing in medical \ncharts.\nA description of the common terms used in the field of dysphagia is provided in \nTable 1.1.\nK. Pongpipatpaiboon • Y . Aoyagi • S. Shibata • H. Kagaya \nDepartment of Rehabilitation Medicine I, School of Medicine, Fujita Health University, \nToyoake, Aichi, Japan\ne-mail: ning665@gmail.com; yyy@rc5.so-net.ne.jp; sshibata@fujita-hu.ac.jp;  \nhkagaya2@fujita-hu.ac.jp \nY . Inamoto (\n*) \nFaculty of Rehabilitation, School of Health Sciences, Fujita Health University,  \nToyoake, Aichi, Japan\ne-mail: inamoto@fujita-hu.ac.jp \nK. Matsuo \nDepartment of Dentistry, School of Medicine, Fujita Health University, Toyoake, Aichi, Japan\ne-mail: kmatsuo@fujita-hu.ac.jp\n\n--- Reference 5 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 9) ---\nx\nthat dysphagia-related deaths have been increasing and that dysphagia must be thor-\noughly recognized and understood by healthcare professionals. In 2012, the Fujita \nSwallowing Team at the Fujita Health University Rehabilitation Complex (FHUR) \nsurveyed the prevalence of dysphagia in Japan and reported 73.7% in chronic hospi-\ntals, 59.7% in nursing homes, and 58.7% in long-term care facilities [12]. Similarly, \na national survey in 2009 found a relatively large number of  geriatric long-term care \nresidents with feeding tubes as well as difficulty swallowing in orally fed residents \n[13]. This study also indicated that swallowing evaluation in patients with dysphagia \nis often limited and incomplete [13]. These findings suggest that older residents with \ndysphagia are not receiving appropriate swallowing evaluation and intervention.\nDysphagia is associated with several problematic outcomes. The severity of dys-\n",
+    "sources": [
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 1
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 9
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 4
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 20
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 9
+      }
+    ],
+    "latency_seconds": 2.484151601791382,
+    "error": null,
+    "timestamp": "2026-07-04T10:19:25.549365+00:00"
+  },
+  {
+    "query_id": "H002",
+    "query": "How would you improve tongue lateralization?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Poor Tongue Lateralization",
+    "reference_answer": "Tongue lateralization can be facilitated through functional feeding activities that encourage movement of food from one side of the mouth to the other. Appropriate food placement, bilateral chewing opportunities, and sensory stimulation may help improve tongue mobility and oral awareness. Therapy should emphasize natural movements during feeding rather than isolated non-speech exercises.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "The provided clinical reference documents do not contain information regarding techniques or exercises to improve tongue lateralization. The references provided are a list of tables and topics found in a speech-language pathology manual, covering areas such as developmental norms, diagnostic criteria, audiograms, and phonetic symbols, but they do not include clinical intervention procedures for tongue movement.",
+        "extras": {
+          "signature": "EjQKMgERTTIPnCxCuUN1g9JpmbyE8T9KSrsore75lDaCkT8Xe1O049O+/82kyvikV0OUq6In"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n2-9 Articulation Differences Commonly Observed Among Spanish Speakers 55\n 2-10 Language Differences Commonly Observed Among Spanish Speakers 56\n 2-11 Lexical Acquisition in Spanish Speakers 57\n 2-12 Acquisition of Morphology and Syntax in Spanish 58\n 2-13 Norms for Morphosyntactic Development in Spanish 60\n 2-14 Articulation Differences Commonly Observed Among Asian Speakers 61\n 2-15 Syntactic and Morphologic Differences Commonly Observed Among Asian Speakers 62\n 4-1 Differences and Similarities of the IFSP and IEP 98\n 4–2 Common Medical Abbreviations 101\n 5-1 Normal Rates of Speech 137\n 5-2 Syllable-by-Syllable Stimulus Phrases 140\n 6–1 Phonetic Symbols of the English Language 185\n 6-2 Five Commonly Cited Norms for Consonant Development 190\n 6-3 Age of Acquisition of Consonant Clusters in Word Initial Positions 191\n 6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n 6-6 Distinctive Features of English Consonants 196\n 6-7 Developmental Norms for Phonological Processes 201\n 6-8 Communicative Behaviors Associated with Childhood Apraxia of Speech 203\n 6-9 Words and Phrases for Assessing Stimulability 217\n 7-1 Major Milestones of Language Acquisition in Children 229\n 7-2 Piaget’s Stages of Cognitive Development 232\n 7-3 The Six Substages of Piaget’s Sensorimotor Stage of Cognitive Development 232\n 7-4 Several Formal Tests for the Assessment of Language 236\n 7-5 Derivational and Inflectional Morphemes 240\n 7-6 Brown’s Stages of Language Development 241\n 7-7 Order of Acquisition of Brown’s 14 Grammatical Morphemes 242\n 7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 18) ---\n12-5 Clefts of the Lip and Palate 434\n 14-1 The Brain 509\n 15-1 Stages of a Normal Swallow 527\n 15-2 Anatomical Structures Involved in Swallowing 528\n 16-1 The Ear 586\n 16-2 The Speech Banana 590\n 16-3 Audiogram of a Conductive Hearing Loss.  592\n 16-4 Audiogram of a Sensorineural Hearing Loss 593\n 16-5 Audiogram of a Mixed Hearing Loss 593\n 16-6 Audiogram of a Conductive Hearing Loss Caused by Otosclerosis.  594\n 16-7 Audiogram of a Hearing Loss Caused by Presbycusis 594\n 16-8 Audiogram of a Noise-Induced Sensorineural Hearing Loss 595\n 16-9 Audiogram of a Moderate Sensorineural Hearing Loss 595\n 16-10 Type A Tympanogram—Normal Pressure and Compliance Functions 596\n 16-11 Type B Tympanogram—Fluid in the Middle Ear (flat). This May Indicate Otitis Media 597\n 16-12 Type C Tympanogram—Retracted Tympanic Membranes (Shift to Negative Side).  \nThis May Indicate Eustachian Tube Blockage or Otitis Media 597\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 18
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      }
+    ],
+    "latency_seconds": 2.0621047019958496,
+    "error": null,
+    "timestamp": "2026-07-04T10:19:30.614375+00:00"
+  },
+  {
+    "query_id": "H003",
+    "query": "What are the management priorities for global aphasia?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Global Aphasia",
+    "reference_answer": "Management should focus on maximizing functional communication and participation in daily activities. Alternative methods such as gestures, pictures, communication boards, and augmentative communication systems may be introduced. Family members should be educated on effective communication strategies to support the individual across different settings.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference context provided, there is no information available regarding the management priorities, treatment recommendations, or assessment guidance for global aphasia. The provided text outlines a table of contents and lists of forms/appendices for various speech-language pathology topics, but it does not contain clinical content regarding aphasia management.",
+        "extras": {
+          "signature": "EjQKMgERTTIPqZS13v5e1LXk/PlBCYN6SwO15DoFgYW6DJ0pjGoTT1Ha+k3ARYkO9rIS3uQZ"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nand Clients with Cleft Lip and/or Palate 430\nAssessment of Alaryngeal Clients 430\nAlaryngeal Communication Options 432\nAssessment of Clients with Cleft Lip and/or Palate 432\nConcluding Comments 435\nChapter 12 Forms 437\nChapter 13 Assessment of Neurocognitive Disorders 457\nOverview of Assessment 458\nAssessment of Aphasia 459\nAssessment of Right Hemisphere Syndrome 462\nAssessment of Clients with Traumatic Brain Injury 465\nAssessment of Clients with Dementia  \n(Major Neurocognitive Disorder) 469\nConcluding Comments 472\nChapter 13 Forms 475\nChapter 14 Assessment of Motor Speech Disorders 507\nOverview of Assessment 508\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      }
+    ],
+    "latency_seconds": 1.7534141540527344,
+    "error": null,
+    "timestamp": "2026-07-04T10:19:35.370151+00:00"
+  },
+  {
+    "query_id": "H004",
+    "query": "What are the goals of feeding therapy in children with cerebral palsy?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Feeding Difficulties in Cerebral Palsy",
+    "reference_answer": "Feeding therapy should aim to promote safe swallowing, improve oral motor control, enhance nutritional intake, and support participation during mealtimes. Proper positioning, texture modifications, caregiver training, and collaboration with other healthcare professionals are essential components of management.",
+    "predicted_category": "Feeding",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference, the text does not contain specific information regarding feeding therapy goals tailored specifically for children with cerebral palsy.\n\nHowever, the provided text outlines the general goals and principles of dysphagia management and rehabilitation, which are applicable to patients experiencing swallowing difficulties:\n\n**Goals of Dysphagia Management:**\n*   **Facilitating safe swallowing:** Improving the function of the swallowing mechanism.\n*   **Ensuring nutrition and hydration:** Maintaining vital primary functions necessary for health.\n*   **Preventing adverse events:** Avoiding negative outcomes such as aspiration pneumonia, suffocation, dehydration, malnutrition, and the recurrence of complications.\n*   **Improving quality of life:** Enhancing the patient's overall well-being.\n\n**Treatment and Assessment Guidance:**\n*   **Multidisciplinary Team Approach:** Dysphagia rehabilitation is most effective when managed by an interdisciplinary team (e.g., speech-language therapists, physicians, dietitians, and nurses) who share expertise and skills.\n*   **Instrumental Assessment:** Imaging is considered critical for accurately diagnosing the cause of swallowing disorders, selecting the most appropriate treatments, and measuring the effects of those treatments.\n*   **Scientific Management:** Professionals should utilize a systematic and scientific approach to dysphagia evaluation and intervention to ensure both the effectiveness and efficiency of patient care.",
+        "extras": {
+          "signature": "EjQKMgERTTIPedzOYogmN2JwmEjP4pijWHWa3fObl5/DhFP7ZwTeqvTBkzZRbu3l3noz6rhc"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 1) ---\nDysphagia Evaluation and Treatment\n\n--- Reference 2 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 9) ---\ndysphagia are not receiving appropriate swallowing evaluation and intervention.\nDysphagia is associated with several problematic outcomes. The severity of dys-\nphagia ranges from mild difficulty to complete inability to swallow and may subse-\nquently give rise to aspiration pneumonia, suffocation, dehydration, malnutrition, \nand declining quality of life. From the viewpoint of rehabilitation medicine, swal-\nlowing is one of the major targets of “activity medicine” (medicine to improve func-\ntion). Thus, physiatrists and all therapists who play a role in dysphagia management \nrequire fundamental knowledge and skills in evaluation and intervention to facili-\ntate safe swallowing and prevent recurrence and other adverse events.\nA team approach is indispensable to dysphagia rehabilitation. Interdisciplinary \nteamwork is a complex process in which staff members from different disciplines \nwork together to share expertise, knowledge, and skills to provide the highest stan-\n\n--- Reference 3 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 20) ---\na vital primary function to ensure nutrition and hydration and contributes to quality \nof life. Specific terminology is used among healthcare workers to communicate in \na common language and is used every day for speaking and writing in medical \ncharts.\nA description of the common terms used in the field of dysphagia is provided in \nTable 1.1.\nK. Pongpipatpaiboon • Y . Aoyagi • S. Shibata • H. Kagaya \nDepartment of Rehabilitation Medicine I, School of Medicine, Fujita Health University, \nToyoake, Aichi, Japan\ne-mail: ning665@gmail.com; yyy@rc5.so-net.ne.jp; sshibata@fujita-hu.ac.jp;  \nhkagaya2@fujita-hu.ac.jp \nY . Inamoto (\n*) \nFaculty of Rehabilitation, School of Health Sciences, Fujita Health University,  \nToyoake, Aichi, Japan\ne-mail: inamoto@fujita-hu.ac.jp \nK. Matsuo \nDepartment of Dentistry, School of Medicine, Fujita Health University, Toyoake, Aichi, Japan\ne-mail: kmatsuo@fujita-hu.ac.jp\n\n--- Reference 4 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 10) ---\ning of both known and undiagnosed etiologies. Imaging is critical for diagnosing \nthe cause of dysphagia, selecting optimal treatments, and assessing the effects of \ntreatment by accurate measurement of the oropharyngeal swallowing response. The \ninstrumental assessment of dysphagia is a relatively new area of expertise within the \nfield of rehabilitation that has developed over the past several decades in Asian \ncountries. Additionally, considering the shortage of formal dysphagia rehabilitation \nteams with several specialized clinicians, highly trained professionals are essential \nfor dysphagia management in all settings.\nThe purpose of this book is to provide all healthcare professionals who are inter-\nested in swallowing with the basic practical knowledge required for a broad clinical \nperspective on dysphagia rehabilitation. This book is neither exhaustive nor ency-\nclopedic; instead, it presents a practical approach to the management and treatment\n\n--- Reference 5 (Source: Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf, Page: 4) ---\nJapan is unique in its early recognition and embrace of the team approach to \ndysphagia rehabilitation among professionals across a spectrum of disciplines and \nspecialties. Speech language hearing therapists (SHLTs), dentists, nurses, dental \nhygienists, dieticians, and physiatrists (rehabilitation physicians) actively collabo-\nrate in the Japanese dysphagia team. Indeed, the Japanese Society for Dysphagia \nRehabilitation is the world’s largest multidisciplinary organization dedicated to \nresearch, education, and patient care in swallowing disorders. This team approach \ncontributes to both the effectiveness and efficiency of patient care.\nFujita Health University (FHU) is one of the pioneering facilities where dyspha-\ngia rehabilitation is approached systematically and scientifically using the concept \nof the team approach. Their new textbook, Dysphagia Evaluation and Treatment: \nFrom the Perspective of Rehabilitation Medicine, is designed to support the highest\n",
+    "sources": [
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 1
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 9
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 20
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 10
+      },
+      {
+        "file": "Dysphagia_Evaluation_and_Treatment_From_the_Perspective_of_Rehabilitation.pdf",
+        "page": 4
+      }
+    ],
+    "latency_seconds": 2.9444947242736816,
+    "error": null,
+    "timestamp": "2026-07-04T10:20:08.317872+00:00"
+  },
+  {
+    "query_id": "H005",
+    "query": "How would you improve language comprehension in children with receptive language disorder?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Receptive Language Disorder",
+    "reference_answer": "Intervention should focus on simplifying language, using visual supports, and providing multimodal input to facilitate understanding. Repetition, gestures, pictures, and structured activities can help improve comprehension skills. Therapy should gradually increase the complexity of language as the child's abilities develop.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference documents, there is no information specifically outlining methods or techniques to improve language comprehension for children with receptive language disorder.\n\nThe provided context focuses on assessment frameworks, diagnostic criteria, developmental norms, and administrative procedures (such as writing reports or gathering case history). If you are seeking guidance on intervention strategies, you may wish to consult resources detailing therapeutic techniques or evidence-based practice for language disorders.",
+        "extras": {
+          "signature": "EjQKMgERTTIPzq5+tUcKm4Gf2J4gdeGKw6Vlj3RjWyiP6+lER/knZ5akEaTdVl5wnkUtLpBh"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n 6-6 Distinctive Features of English Consonants 196\n 6-7 Developmental Norms for Phonological Processes 201\n 6-8 Communicative Behaviors Associated with Childhood Apraxia of Speech 203\n 6-9 Words and Phrases for Assessing Stimulability 217\n 7-1 Major Milestones of Language Acquisition in Children 229\n 7-2 Piaget’s Stages of Cognitive Development 232\n 7-3 The Six Substages of Piaget’s Sensorimotor Stage of Cognitive Development 232\n 7-4 Several Formal Tests for the Assessment of Language 236\n 7-5 Derivational and Inflectional Morphemes 240\n 7-6 Brown’s Stages of Language Development 241\n 7-7 Order of Acquisition of Brown’s 14 Grammatical Morphemes 242\n 7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 9) ---\nAssessment of Semantic Skills 245\nAssessment of Syntactic Skills 246\nMaking a Diagnosis 249\nConcluding Comments 249\nChapter 7 Forms 251\nChapter 8 Assessment of Literacy 287\nOverview of Assessment 288\nRole of the Speech-Language Pathologist 289\nNormal Reading and Writing Development 289\nDescriptions and Categories of Reading Disabilities 294\nAssessment of Early Literacy 295\nAssessment of Reading 295\nPhonological Awareness 296\nWord Fluency 297\nReading Fluency 297\nNarrative Schema Knowledge 299\nInformal Reading Inventories 302\nAssessment of Writing 302\nAssessment of Narrative Writing 303\nAssessment of Expository Writing 304\nAssessment of Persuasive Writing 304\nAssessment of Spelling 304\nMulticultural Considerations 306\nConcluding Comments 306\nChapter 8 Forms 309\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 9
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      }
+    ],
+    "latency_seconds": 2.2596359252929688,
+    "error": null,
+    "timestamp": "2026-07-04T10:20:13.580580+00:00"
+  },
+  {
+    "query_id": "H006",
+    "query": "What would you do if a child bites the spoon and cannot remove food from it?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Poor Jaw Grading / Spoon Feeding Difficulty",
+    "reference_answer": "Management should focus on improving jaw grading and oral coordination during feeding. The clinician should use shallow spoon placement and provide controlled amounts of food to encourage appropriate lip activity and tongue movements. Functional feeding experiences should be used to promote efficient bolus removal.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference context provided, there is no information available to address the specific scenario of a child biting a spoon and being unable to remove food from it. The provided documents focus on speech-language pathology assessment manuals, administrative forms, developmental norms, and clinical evaluation checklists, but they do not contain specific instructional procedures for managing this particular feeding issue.",
+        "extras": {
+          "signature": "EjQKMgERTTIP6mkmCXgh4ACgeSxu5QaXIzhpQfOjbv3o+s+flBZtbWosU972XlSVnqFZFU37"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 17) ---\nand Caregiver Questionnaire—Infant 0–6 months 551\n 15-2 Pediatric Dysphagia Case History Form and Caregiver Questionnaire 557\n 15-3 Pediatric Dysphagia Clinical Evaluation 567\n 15-4 Adult Bedside Dysphagia Evaluation 577\n 15-5 Blue-Dye Test Worksheet 581\n 16-1 Hearing Screening Form 605\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n2-9 Articulation Differences Commonly Observed Among Spanish Speakers 55\n 2-10 Language Differences Commonly Observed Among Spanish Speakers 56\n 2-11 Lexical Acquisition in Spanish Speakers 57\n 2-12 Acquisition of Morphology and Syntax in Spanish 58\n 2-13 Norms for Morphosyntactic Development in Spanish 60\n 2-14 Articulation Differences Commonly Observed Among Asian Speakers 61\n 2-15 Syntactic and Morphologic Differences Commonly Observed Among Asian Speakers 62\n 4-1 Differences and Similarities of the IFSP and IEP 98\n 4–2 Common Medical Abbreviations 101\n 5-1 Normal Rates of Speech 137\n 5-2 Syllable-by-Syllable Stimulus Phrases 140\n 6–1 Phonetic Symbols of the English Language 185\n 6-2 Five Commonly Cited Norms for Consonant Development 190\n 6-3 Age of Acquisition of Consonant Clusters in Word Initial Positions 191\n 6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 17
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      }
+    ],
+    "latency_seconds": 1.9666054248809814,
+    "error": null,
+    "timestamp": "2026-07-04T10:20:18.551188+00:00"
+  },
+  {
+    "query_id": "H007",
+    "query": "How would you manage sensory food aversion?",
+    "ground_truth_category": "Feeding",
+    "ground_truth_ailment": "Sensory Food Aversion",
+    "reference_answer": "Treatment should involve gradual desensitization and systematic exposure to different foods. Food chaining techniques and sensory-based approaches can be used to expand the child's food repertoire while maintaining a positive and pressure-free feeding environment. Active caregiver participation is essential for successful outcomes.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the clinical reference materials provided, there is no information available regarding the management or treatment of sensory food aversion. The provided text outlines tables of contents and resource lists for speech-language pathology assessment topics, such as dysphagia, motor speech disorders, hearing screenings, and language development, but it does not contain clinical guidance or management strategies for sensory food aversion.",
+        "extras": {
+          "signature": "EjQKMgERTTIPHVKOHOoiLdpXNT3jnMj5UaUwj8RmKloX+3aB+n1TIfXnEbRViEK/ATdKmwXO"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 17) ---\nand Caregiver Questionnaire—Infant 0–6 months 551\n 15-2 Pediatric Dysphagia Case History Form and Caregiver Questionnaire 557\n 15-3 Pediatric Dysphagia Clinical Evaluation 567\n 15-4 Adult Bedside Dysphagia Evaluation 577\n 15-5 Blue-Dye Test Worksheet 581\n 16-1 Hearing Screening Form 605\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s). \nEditorial review has deemed that any suppressed content does not materially affect the overall learning experience. Cengage Learning reserves the right to remove additional content at any time if subsequent rights restrictions require it.\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 10) ---\nAssessing Sensory and Motor Capabilities 366\nAssessing Language and Cognitive Skills 367\nDetermining the Most Appropriate AAC System 368\nApps for AAC 369\nConcluding Comments 370\nChapter 10 Forms 371\nChapter 11 Assessment of Stuttering and Cluttering 381\nOverview of Assessment 382\nDefining Stuttering 383\nSpeech Sampling 384\nDisfluency Indexes 385\nAccessory Behaviors 386\nSpeech Rate 388\nAssessing Feelings and Attitudes 388\nCriteria for Diagnosing Stuttering 389\nStimulability 390\nCluttering 391\nAssessment 391\nStimulability 393\nConcluding Comments 393\nChapter 11 Forms 395\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 15) ---\n14-2 Differential Characteristics of Dysarthria and Apraxia 510\n 14-3 Differentiating the Six Dysarthrias 512\n 15-1 Physiologic Norms for Newborns 538\n 15-2 Normal Primitive Reflexes 540\n 16-1 Description of Hearing Loss Severity by Decibel Levels 588\n 16-2 Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 589\n 16-3 Audiometric Symbols 591\n 16-4 Environmental Noise Levels 599\n 16-5 Troubleshooting Hearing Aid Problems 602\n  Phonetic Symbols of the English Language 644\n  The Frequency of Occurrence of Individual English Consonants 646\n  Phonemic Awareness Benchmarks 652\n  Spelling Benchmarks 653\n  Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 654\n   Advantages and Disadvantages of the Three Primary Alaryngeal Communication Options 655\n  Effects of Hearing Loss on Communication and Types of Habilitative Intervention  \nwith Children 656\n  Environmental Noise Levels 657\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 11) ---\nand Clients with Cleft Lip and/or Palate 430\nAssessment of Alaryngeal Clients 430\nAlaryngeal Communication Options 432\nAssessment of Clients with Cleft Lip and/or Palate 432\nConcluding Comments 435\nChapter 12 Forms 437\nChapter 13 Assessment of Neurocognitive Disorders 457\nOverview of Assessment 458\nAssessment of Aphasia 459\nAssessment of Right Hemisphere Syndrome 462\nAssessment of Clients with Traumatic Brain Injury 465\nAssessment of Clients with Dementia  \n(Major Neurocognitive Disorder) 469\nConcluding Comments 472\nChapter 13 Forms 475\nChapter 14 Assessment of Motor Speech Disorders 507\nOverview of Assessment 508\nThe Cranial Nerves and the Brain 508\nDifferential Characteristics \nof dysarthria and Apraxia 510\nAssessment of Dysarthria 511\nAssessment of Apraxia 513\nConcluding Comments 515\nChapter 14 Forms 517\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 17
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 10
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 15
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 11
+      }
+    ],
+    "latency_seconds": 1.8635351657867432,
+    "error": null,
+    "timestamp": "2026-07-04T10:20:23.417538+00:00"
+  },
+  {
+    "query_id": "H008",
+    "query": "What would you do when speech progress is very limited?",
+    "ground_truth_category": "Speech",
+    "ground_truth_ailment": "Limited Speech Progress",
+    "reference_answer": "When speech progress is slow, the primary focus should be on ensuring effective communication rather than waiting for speech to emerge. Augmentative and alternative communication systems may be introduced to support functional communication, while speech and language therapy continues to target verbal skills. Family members should be trained to facilitate communication in daily activities.",
+    "predicted_category": "Speech",
+    "predicted_ailment": null,
+    "generated_answer": [
+      {
+        "type": "text",
+        "text": "Based on the provided clinical reference documents, when speech progress is limited, the clinical approach involves assessing the individual's underlying capabilities to determine if alternative communication methods are necessary.\n\nSpecifically, the provided text suggests the following steps:\n\n*   **Assess Sensory and Motor Capabilities:** Evaluate the individual’s physical and sensory status (Reference 2, page 10).\n*   **Assess Language and Cognitive Skills:** Conduct a thorough evaluation of language and cognitive functioning to better understand the barriers to speech progress (Reference 2, page 10).\n*   **AAC Intervention:** Determine the most appropriate Augmentative and Alternative Communication (AAC) system for the individual. This includes exploring various AAC applications (Reference 2, page 10).\n\nIf you are experiencing limited speech progress, it is recommended that you consult with a speech-language pathologist to undergo these assessments to determine if an AAC system is the appropriate path forward for your communication needs.",
+        "extras": {
+          "signature": "EjQKMgERTTIPyLuMTkgbZzHqKNquF/S8XhGbCYbylIFgdTPbETn/TSo3jlx9Vy1RSonFzBWH"
+        }
+      }
+    ],
+    "retrieved_context": "--- Reference 1 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n 8-2 Standardized Tests for the Assessment of Literacy 298\n 8-3 50th Percentile Oral Reading Fluency Norms 300\n 8-4 Spelling Benchmarks 305\n 9-1. Diagnostic Criteria for Autism Spectrum Disorder 339\n 9-2. Autism Spectrum Disorder Severity Indicators 340\n 9-3. Social Communication Benchmarks 342\n 9-4 Milestones of Metacognitive Knowledge ToM and Emotional Knowledge ToM  \nin Normally Developing Children 347\n 11-1 Fluency Modification Techniques 390\n 11-2 Differential Characteristics of Stuttering and Cluttering 392\n 12-1 Self-Perceived Voice Severity per the Voice Handicap Index 421\n 12-2 Normal Fundamental Frequencies 422\n\n--- Reference 2 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 10) ---\nAssessing Sensory and Motor Capabilities 366\nAssessing Language and Cognitive Skills 367\nDetermining the Most Appropriate AAC System 368\nApps for AAC 369\nConcluding Comments 370\nChapter 10 Forms 371\nChapter 11 Assessment of Stuttering and Cluttering 381\nOverview of Assessment 382\nDefining Stuttering 383\nSpeech Sampling 384\nDisfluency Indexes 385\nAccessory Behaviors 386\nSpeech Rate 388\nAssessing Feelings and Attitudes 388\nCriteria for Diagnosing Stuttering 389\nStimulability 390\nCluttering 391\nAssessment 391\nStimulability 393\nConcluding Comments 393\nChapter 11 Forms 395\nCopyright 2016 Cengage Learning. All Rights Reserved. May not be copied, scanned, or duplicated, in whole or in part. Due to electronic rights, some third party content may be suppressed from the eBook and/or eChapter(s).\n\n--- Reference 3 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 7) ---\nChapter 3 Obtaining Preassessment Information 65\nWritten Case Histories 66\nAllergy Awareness 67\nInformation-Gathering Interviews 67\nQuestions Common to Most Communicative Disorders 68\nQuestions Common to Specific Communicative Disorders 69\nInformation from Other Professionals 72\nConcluding Comments 73\nChapter 3 Forms 75\nAppendix 3-A Sample Release of Information 89\nAppendix 3-B Sample Request for Information 90\nAppendix 3-C Sample Referral for Medical Evaluation 91\nChapter 4 Reporting Assessment Findings 92\nInformation-Giving Conferences 93\nIntroduction 93\nDiscussion 93\nConclusion 93\nWriting Assessment Reports 94\nWriting IFSPs and IEPs 97\nClinical Correspondence 100\nWriting Soap Notes 100\nSample SOAP Note 101\nConcluding Comments 105\nAppendix 4-A Three Sample Clinical Reports 107\n\n--- Reference 4 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n2-9 Articulation Differences Commonly Observed Among Spanish Speakers 55\n 2-10 Language Differences Commonly Observed Among Spanish Speakers 56\n 2-11 Lexical Acquisition in Spanish Speakers 57\n 2-12 Acquisition of Morphology and Syntax in Spanish 58\n 2-13 Norms for Morphosyntactic Development in Spanish 60\n 2-14 Articulation Differences Commonly Observed Among Asian Speakers 61\n 2-15 Syntactic and Morphologic Differences Commonly Observed Among Asian Speakers 62\n 4-1 Differences and Similarities of the IFSP and IEP 98\n 4–2 Common Medical Abbreviations 101\n 5-1 Normal Rates of Speech 137\n 5-2 Syllable-by-Syllable Stimulus Phrases 140\n 6–1 Phonetic Symbols of the English Language 185\n 6-2 Five Commonly Cited Norms for Consonant Development 190\n 6-3 Age of Acquisition of Consonant Clusters in Word Initial Positions 191\n 6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n\n--- Reference 5 (Source: Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf, Page: 14) ---\n6-4 The Frequency of Occurrence of Individual English Consonants 193\n 6-5 The Sounds of English Categorized by Place, Manner, and Voicing 194\n 6-6 Distinctive Features of English Consonants 196\n 6-7 Developmental Norms for Phonological Processes 201\n 6-8 Communicative Behaviors Associated with Childhood Apraxia of Speech 203\n 6-9 Words and Phrases for Assessing Stimulability 217\n 7-1 Major Milestones of Language Acquisition in Children 229\n 7-2 Piaget’s Stages of Cognitive Development 232\n 7-3 The Six Substages of Piaget’s Sensorimotor Stage of Cognitive Development 232\n 7-4 Several Formal Tests for the Assessment of Language 236\n 7-5 Derivational and Inflectional Morphemes 240\n 7-6 Brown’s Stages of Language Development 241\n 7-7 Order of Acquisition of Brown’s 14 Grammatical Morphemes 242\n 7-8 Developmental Norms for Mean Length of Utterance 243\n 7-9 Common Semantic Relations 245\n 7-10 Developmental Stages in Early Syntactic Acquisition 248\n 8-1 Phonemic Awareness Benchmarks 296\n",
+    "sources": [
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 10
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 7
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      },
+      {
+        "file": "Assessment-in-Speech-language-Pathology-A-Resource-Manual.pdf",
+        "page": 14
+      }
+    ],
+    "latency_seconds": 40.01887106895447,
+    "error": null,
+    "timestamp": "2026-07-04T10:21:06.439856+00:00"
+  }
+]

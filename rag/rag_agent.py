@@ -6,6 +6,8 @@ store and uses Gemini to generate evidence-based treatment recommendations.
 """
 
 import json
+import os
+import time
 from typing import Any
 
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -16,7 +18,7 @@ from rag.retriever import load_speech_retriever, load_feeding_retriever
 
 
 # ── LLM Config ─────────────────────────────────────────────────────────
-LLM_MODEL = "gemini-2.5-flash"
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
 
 # ── RAG Prompts ────────────────────────────────────────────────────────
 
@@ -87,6 +89,39 @@ def _format_retrieved_docs(docs: list) -> str:
     return "\n".join(formatted)
 
 
+def _invoke_with_retry(chain, params: dict, agent_name: str = "Agent", max_retries: int = 3, base_delay: float = 15.0):
+    """Invoke an LLM chain with retry logic for 429 rate-limit errors.
+
+    Args:
+        chain: The LangChain chain to invoke.
+        params: Parameters to pass to the chain.
+        agent_name: Name of the calling agent for log messages.
+        max_retries: Maximum number of retry attempts.
+        base_delay: Base delay in seconds between retries (multiplied by attempt number).
+
+    Returns:
+        The chain's response.
+
+    Raises:
+        The last exception if all retries are exhausted.
+    """
+    for attempt in range(1, max_retries + 1):
+        try:
+            return chain.invoke(params)
+        except Exception as e:
+            error_str = str(e)
+            if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+                if attempt < max_retries:
+                    wait_time = base_delay * attempt
+                    print(f"   ⏳ [{agent_name}] Rate limited (429). Retrying in {wait_time:.0f}s... (attempt {attempt}/{max_retries})")
+                    time.sleep(wait_time)
+                else:
+                    print(f"   ❌ [{agent_name}] Rate limit exceeded after {max_retries} attempts. Giving up.")
+                    raise
+            else:
+                raise
+
+
 def speech_rag_node(state: dict) -> dict:
     """LangGraph node: Speech RAG Agent.
 
@@ -103,6 +138,10 @@ def speech_rag_node(state: dict) -> dict:
     category = state.get("category", "Speech")
     treatment_questions = state.get("treatment_questions", [])
 
+    print(f"\n{'─'*60}")
+    print(f"📚 [Speech RAG Agent] Starting retrieval...")
+    print(f"   Ailment: {ailment}")
+
     # Build retrieval query from the ailment and questions
     retrieval_query = (
         f"{ailment} treatment assessment. "
@@ -114,22 +153,31 @@ def speech_rag_node(state: dict) -> dict:
         retriever = load_speech_retriever(k=5)
         retrieved_docs = retriever.invoke(retrieval_query)
         retrieved_context = _format_retrieved_docs(retrieved_docs)
+        print(f"   ✅ Retrieved {len(retrieved_docs)} documents from Speech vector store")
+        for doc in retrieved_docs:
+            src = doc.metadata.get('source_file', 'Unknown')
+            pg = doc.metadata.get('page', '?')
+            print(f"      • {src} (page {pg})")
     except FileNotFoundError as e:
         retrieved_context = f"(Vector store not available: {e})"
         retrieved_docs = []
+        print(f"   ⚠️  Speech vector store not available: {e}")
 
-    # Generate RAG response with Gemini
+    # Generate RAG response with Gemini (with retry for rate limits)
+    print(f"   🤖 Generating RAG response with Gemini...")
     llm = ChatGoogleGenerativeAI(model=LLM_MODEL)
     chain = SPEECH_RAG_PROMPT | llm
 
-    response = chain.invoke({
+    response = _invoke_with_retry(chain, {
         "category": category,
         "ailment": ailment,
         "treatment_questions_formatted": _format_treatment_questions(treatment_questions),
         "retrieved_context": retrieved_context,
-    })
+    }, agent_name="Speech RAG Agent")
 
     rag_response_text = response.content if hasattr(response, "content") else str(response)
+    print(f"   ✅ [Speech RAG Agent] Response generated ({len(rag_response_text)} chars)")
+    print(f"{'─'*60}\n")
 
     # Build the enriched output dictionary
     final_output = {
@@ -170,6 +218,10 @@ def feeding_rag_node(state: dict) -> dict:
     category = state.get("category", "Feeding")
     treatment_questions = state.get("treatment_questions", [])
 
+    print(f"\n{'─'*60}")
+    print(f"📚 [Feeding RAG Agent] Starting retrieval...")
+    print(f"   Ailment: {ailment}")
+
     # Build retrieval query
     retrieval_query = (
         f"{ailment} treatment assessment swallowing feeding. "
@@ -181,22 +233,31 @@ def feeding_rag_node(state: dict) -> dict:
         retriever = load_feeding_retriever(k=5)
         retrieved_docs = retriever.invoke(retrieval_query)
         retrieved_context = _format_retrieved_docs(retrieved_docs)
+        print(f"   ✅ Retrieved {len(retrieved_docs)} documents from Feeding vector store")
+        for doc in retrieved_docs:
+            src = doc.metadata.get('source_file', 'Unknown')
+            pg = doc.metadata.get('page', '?')
+            print(f"      • {src} (page {pg})")
     except FileNotFoundError as e:
         retrieved_context = f"(Vector store not available: {e})"
         retrieved_docs = []
+        print(f"   ⚠️  Feeding vector store not available: {e}")
 
-    # Generate RAG response with Gemini
+    # Generate RAG response with Gemini (with retry for rate limits)
+    print(f"   🤖 Generating RAG response with Gemini...")
     llm = ChatGoogleGenerativeAI(model=LLM_MODEL)
     chain = FEEDING_RAG_PROMPT | llm
 
-    response = chain.invoke({
+    response = _invoke_with_retry(chain, {
         "category": category,
         "ailment": ailment,
         "treatment_questions_formatted": _format_treatment_questions(treatment_questions),
         "retrieved_context": retrieved_context,
-    })
+    }, agent_name="Feeding RAG Agent")
 
     rag_response_text = response.content if hasattr(response, "content") else str(response)
+    print(f"   ✅ [Feeding RAG Agent] Response generated ({len(rag_response_text)} chars)")
+    print(f"{'─'*60}\n")
 
     # Build the enriched output dictionary
     final_output = {

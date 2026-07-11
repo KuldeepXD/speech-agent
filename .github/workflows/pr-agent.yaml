@@ -1,0 +1,24 @@
+name: PR Agent
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+  issue_comment:
+    types: [created]
+jobs:
+  pr_agent_job:
+    if: ${{ github.event.sender.type != 'Bot' }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+      contents: write
+    steps:
+      - name: PR Agent action
+        id: pragent
+        uses: Codium-ai/pr-agent@main
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG.MODEL_PROVIDER: "google"
+          CONFIG.MODEL: "gemini/gemini-3.1-flash-lite-preview"
+          CONFIG.FALLBACK_MODELS: "gemini/gemini-2.5-flash-lite-preview-06-17"

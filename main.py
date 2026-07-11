@@ -257,10 +257,10 @@ async def single_query_mode(query: str):
 
 
 def pipeline_mode(query: str):
-    """Run the full LangGraph pipeline (classification + RAG).
+    """Run the full LangGraph pipeline (classification + parallel RAG & PubMed Search + synthesis).
 
     This runs the complete pipeline:
-        Classification → Conditional Router → Speech/Feeding RAG Agent
+        Classification → Parallel [RAG (conditional) + PubMed Search (always)] → Synthesis
 
     Args:
         query: The user's query text.
@@ -268,7 +268,7 @@ def pipeline_mode(query: str):
     from langchain_core.messages import HumanMessage
     from langgraph_bridge import create_pipeline
 
-    print(f"\n[Running full LangGraph pipeline...]")
+    print(f"\n[Running full LangGraph pipeline (RAG + PubMed Search + Synthesis)...]")
     print(f"   Query: {query}\n")
 
     pipeline = create_pipeline()
@@ -288,11 +288,31 @@ def pipeline_mode(query: str):
     category = result.get("category", "Unknown")
     print(f"[Router] Routed to: {category} RAG Agent\n")
 
-    # Print the final RAG-enriched output
+    # Print web search results
+    web_search_context = result.get("web_search_context", {})
+    if web_search_context:
+        print(f"[PubMed Search] Results for {len(web_search_context)} questions:")
+        for key, entry in web_search_context.items():
+            print(f"  • {entry.get('original_question', key)}")
+            print(f"    Query: {entry.get('query', 'N/A')}")
+            results_text = entry.get('results', '')
+            # Truncate long results for display
+            if len(results_text) > 200:
+                print(f"    Results: {results_text[:200]}...")
+            else:
+                print(f"    Results: {results_text}")
+        print()
+
+    # Print the final synthesized output
     final_output = result.get("final_output")
     if final_output:
-        print(f"[Final Output] (dict):")
-        print(json.dumps(final_output, indent=2))
+        synthesis = final_output.get("synthesis_response", "")
+        if synthesis:
+            print(f"[Synthesis] Combined RAG + PubMed Search Answer:")
+            print(f"{synthesis}\n")
+        else:
+            print(f"[Final Output] (dict):")
+            print(json.dumps(final_output, indent=2))
     else:
         # Fallback to RAG response text
         rag_response = result.get("rag_response", "(No RAG response)")

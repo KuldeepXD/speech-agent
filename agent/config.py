@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- Model Configuration ---
-MODEL_NAME = os.getenv("AGENT_MODEL", "gemini-2.5-flash")
+MODEL_NAME = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
 # --- Agent Metadata ---

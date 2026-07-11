@@ -1,40 +1,43 @@
-# 🏥 Speech/Feeding Medical AI Agent
+# 🏥 Therapy Guide — Multi-Agent Speech/Feeding Medical AI
 
-An AI agent built with **Google ADK** that classifies patient queries into **Speech** or **Feeding** categories, identifies medical ailments, and generates targeted treatment assessment questions — with full **conversational memory** and **LangGraph compatibility**.
+A **multi-agent system** built with **Google ADK + LangGraph** that classifies patient queries into **Speech** or **Feeding** categories, identifies medical ailments, retrieves evidence from **curated clinical documents** and **PubMed/MEDLINE**, and synthesizes comprehensive treatment recommendations — with full **conversational memory**.
 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    User Query                           │
-│  "Patient coughs when swallowing liquids after stroke"  │
-└──────────────────────┬──────────────────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────────────────┐
-│              Google ADK Agent (Gemini 2.5 Flash)         │
-│                                                          │
-│  ┌─────────────┐  ┌──────────────┐  ┌────────────────┐  │
-│  │ classify_   │→ │ identify_    │→ │ generate_      │  │
-│  │ query()     │  │ ailment()    │  │ treatment_     │  │
-│  │             │  │              │  │ questions()    │  │
-│  └─────────────┘  └──────────────┘  └────────────────┘  │
-│                                            │             │
-│  ┌─────────────────────────────────────────┘             │
-│  │  save_to_memory() ← Session State (Memory)           │
-│  └───────────────────────────────────────────────────────│
-└──────────────────────────────────────────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────────────────┐
-│  Output Dictionary:                                      │
-│  {                                                       │
-│    "category": "Feeding",                                │
-│    "ailment": "Post-Stroke Oropharyngeal Dysphagia",     │
-│    "treatment_questions": [q1, q2, q3],                  │
-│    "conversation_context": { ... }                       │
-│  }                                                       │
-└──────────────────────────────────────────────────────────┘
+                              ┌──────────────────┐
+                              │    User Query    │
+                              └────────┬─────────┘
+                                       │
+                                       ▼
+        ┌──────────────────────────────────────────────────────────────┐
+        │            Node 1: Classification Agent (Gemini)             │
+        │  - Classifies category (Speech/Feed)                         │
+        │  - Identifies medical ailment                                │
+        │  - Generates 3 treatment questions                           │
+        └─────┬─────────────────────────┬───────────────────────────┬──┘
+              │                         │                           │
+  (Speech RAG)│            (Feeding RAG)│                           │ (User Query &
+              ▼                         ▼                           │  Questions)
+  ┌──────────────────────┐  ┌──────────────────────┐                ▼
+  │  Node 2A: Speech RAG │  │ Node 2B: Feeding RAG │    ┌─────────────┴─────────────┐
+  │  - Speech reference  │  │  - Feeding reference │    │Node 3: PubMed Search Agent│
+  │    documents (FAISS) │  │    documents (FAISS) │    │- Always runs (Parallel)   │
+  └───────────┬──────────┘  └───────────┬──────────┘    │- Searches PubMed API      │
+              │                         │               └─────────────┬─────────────┘
+              │                         │                             │
+ (RAG Context)│            (RAG Context)│                             │ (PubMed Context)
+              ▼                         ▼                             ▼
+        ┌─────┴─────────────────────────┴───────────────────────────┴──┐
+        │             Node 4: Synthesis Agent (Gemini)                 │
+        │  - Combines RAG context + PubMed research findings           │
+        │  - Synthesizes final comprehensive recommendation            │
+        └──────────────────────────────┬───────────────────────────────┘
+                                       │
+                                       ▼
+                              ┌──────────────────┐
+                              │   Final Output   │
+                              └──────────────────┘
 ```
 
 ## 📋 Prerequisites
@@ -81,6 +84,9 @@ python main.py
 
 # Single query mode
 python main.py "My child has trouble pronouncing the R sound"
+
+# Full pipeline mode (Classification + RAG + PubMed Search + Synthesis)
+python main.py --pipeline "How would you manage childhood apraxia of speech?"
 ```
 
 ## 💬 Usage Examples
@@ -127,56 +133,133 @@ Agent ▶ {
 | `help` | Show help information |
 | `quit` | Exit the application |
 
-## 🔗 LangGraph Integration
+## 🔗 LangGraph Pipeline
 
-The agent is designed to be used in LangGraph workflows. Two integration options:
+The full multi-agent pipeline runs:
 
-### Option 1: ADK's Native Bridge (Recommended)
-
-```python
-from langgraph_bridge import create_langgraph_agent
-
-# Wrap the ADK agent for LangGraph
-lg_agent = create_langgraph_agent()
-
-# Use as a node in your LangGraph workflow
-```
-
-### Option 2: Custom StateGraph
+**Classification → Parallel [RAG + PubMed Search] → Synthesis**
 
 ```python
-from langgraph_bridge import create_langgraph_workflow
+from langgraph_bridge import create_pipeline
+from langchain_core.messages import HumanMessage
 
-# Create a pure LangGraph workflow
-graph = create_langgraph_workflow()
-result = graph.invoke({
-    "query": "patient has trouble swallowing",
-    "messages": [],
+pipeline = create_pipeline()
+result = pipeline.invoke({
+    "query": "patient has trouble swallowing after stroke",
+    "messages": [HumanMessage(content="patient has trouble swallowing after stroke")],
 })
-print(result["result"])
+
+# Classification result
+print(result["classification"])
+
+# Final synthesized answer (RAG + PubMed combined)
+print(result["final_output"]["synthesis_response"])
 ```
 
-### Test the Bridge
+### PubMed/MEDLINE Integration
+
+The pipeline uses **Biopython's Entrez API** to search PubMed for peer-reviewed biomedical literature:
+- Searches are built from the ailment + treatment questions
+- Fetches article titles, abstracts, authors, journals, and MeSH terms
+- Results are formatted and injected into the synthesis prompt alongside RAG context
+- Set `PUBMED_EMAIL` in your `.env` for production use (NCBI requires an email)
+
+### Test the Pipeline
 
 ```bash
 python langgraph_bridge.py
 ```
 
+## 📊 Evaluation Benchmarking Framework
+
+A comprehensive benchmarking suite is included to evaluate the performance of the Proposed Therapy Guide-MAS against baselines. It uses **RAGAS**, **Cosine Similarity**, and an **LLM Judge** to compute metrics like Answer Correctness, Context Precision, and Latency across curated test queries.
+
+### Baselines
+1. **Baseline 1**: Single LLM + Web Search Tool (ReAct agent)
+2. **Baseline 2**: Vanilla RAG (Retrieve + Generate directly)
+3. **Proposed**: Full LangGraph Multi-Agent System (Classification + RAG + PubMed + Synthesis)
+
+### Running Evaluations
+
+Use the CLI orchestrator to run benchmarks or compute metrics:
+
+```bash
+# Run the entire pipeline (all baselines + metrics + report)
+python -m evaluation.run_evaluation --all
+
+# Run only a specific baseline
+python -m evaluation.run_evaluation --baseline1
+python -m evaluation.run_evaluation --proposed
+
+# Dry run with only 2 test queries
+python -m evaluation.run_evaluation --all --limit 2
+
+# Only compute metrics and generate the report (if logs already exist)
+python -m evaluation.run_evaluation --metrics --report
+```
+
+### Batch Evaluation (100+ Queries)
+
+For large-scale evaluation runs, the framework supports **batch processing** with automatic rate-limit management and **crash-safe resume**:
+
+```bash
+# Run proposed system in batches of 5 queries, with 30s cooldown between batches
+python -m evaluation.run_evaluation --proposed --batch-size 5 --batch-delay 30
+
+# If the run fails or is interrupted, resume from where it left off
+python -m evaluation.run_evaluation --proposed --resume --batch-size 5 --batch-delay 30
+
+# Once all logs are collected, compute metrics and generate reports
+python -m evaluation.run_evaluation --metrics --report
+```
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--batch-size` | 5 | Number of queries per batch before a cooldown pause |
+| `--batch-delay` | 30s | Cooldown duration between batches (avoids rate limits) |
+| `--delay` | 3s | Delay between individual queries within a batch |
+| `--resume` | off | Skip queries already present in existing log files |
+
+**Key features:**
+- **Incremental saves** — Results are written to disk after every single query, so progress is never lost
+- **Resume support** — Re-run with `--resume` to skip already-completed queries and continue from where you left off
+- **Retry with backoff** — Automatic retry (5 attempts, 30s base delay) on Google API 429/RESOURCE_EXHAUSTED errors
+
+Output reports (CSV, Tables, Radar Charts) will be saved in `evaluation/results/`.
+
 ## 📁 Project Structure
 
 ```
-Speech_Agent/
+speech-agent/
 ├── Documents/                      # Medical reference PDFs
 │   ├── Speech/                     # SLP assessment manuals
 │   └── Feeding/                    # Dysphagia resources
-├── agent/                          # Agent package
+├── agent/                          # Classification agent package
 │   ├── __init__.py                 # Package exports
 │   ├── config.py                   # Configuration & constants
 │   ├── prompts.py                  # System instructions
 │   ├── tools.py                    # Tool functions
+│   ├── models.py                   # Pydantic output models
 │   └── speech_feeding_agent.py     # Agent + Runner factory
+├── rag/                            # RAG + PubMed pipeline
+│   ├── __init__.py                 # Package init
+│   ├── ingest.py                   # PDF → FAISS ingestion
+│   ├── retriever.py                # FAISS vector store retriever
+│   ├── rag_agent.py                # Speech/Feeding RAG nodes
+│   ├── web_search_agent.py         # PubMed/MEDLINE search node
+│   └── synthesis_agent.py          # Synthesis node (RAG + PubMed)
+├── evaluation/                     # Benchmarking framework
+│   ├── baseline1_single_llm.py     # Baseline 1 (Single LLM + Tool)
+│   ├── baseline2_vanilla_rag.py    # Baseline 2 (Vanilla RAG)
+│   ├── proposed_mas.py             # Proposed LangGraph MAS
+│   ├── metrics.py                  # Evaluation metrics engine
+│   ├── generate_report.py          # Tables and charts generator
+│   ├── run_evaluation.py           # CLI orchestrator
+│   ├── test_queries.py             # Curated benchmark dataset
+│   └── test_pubmed.py              # PubMed API test suite
+├── vector_stores/                  # FAISS index files
 ├── main.py                         # CLI entry point
-├── langgraph_bridge.py             # LangGraph integration
+├── langgraph_bridge.py             # LangGraph pipeline factory
 ├── requirements.txt                # Dependencies
 ├── .env.example                    # API key template
 └── README.md                       # This file
