@@ -54,6 +54,25 @@ Include relevant treatment recommendations and assessment guidance.
 """
 )
 
+# Lightweight prompt to extract a structured ailment label from the generated answer
+AILMENT_EXTRACTION_PROMPT = ChatPromptTemplate.from_template(
+    """You are a clinical NLP assistant. Given the query and the AI-generated clinical answer below,
+identify the PRIMARY ailment or condition being discussed.
+
+Respond with ONLY a JSON object in this exact format (no extra text):
+{{"ailment": "<1-3 word clinical term>"}}
+
+Examples of valid ailment values: "Aphasia", "Childhood Apraxia of Speech", "Post-Stroke Dysphagia",
+"Oro-Motor Weakness", "Language Delay", "Drooling", "Sensory Food Aversion".
+
+## Query
+{query}
+
+## Generated Answer
+{generated_answer}
+"""
+)
+
 # Keywords for simple category routing (no LLM classification)
 FEEDING_KEYWORDS = [
     "swallowing", "dysphagia", "feeding", "aspiration", "choking",
@@ -209,6 +228,7 @@ def run_baseline2(
 
     llm = ChatGoogleGenerativeAI(model=LLM_MODEL)
     chain = VANILLA_RAG_PROMPT | llm
+    ailment_chain = AILMENT_EXTRACTION_PROMPT | llm
 
     all_results = list(existing_results)  # Start with existing results
     new_count = 0
@@ -253,13 +273,35 @@ def run_baseline2(
                 for doc in retrieved_docs
             ]
 
-            print(f"       ✅ Done in {latency:.1f}s | Category guess: {guessed_category} | {len(retrieved_docs)} docs")
+            # — Ailment extraction (lightweight second LLM call) —
+            predicted_ailment = None
+            try:
+                ailment_response = _invoke_with_retry(ailment_chain, {
+                    "query": query_text,
+                    "generated_answer": generated_answer[:1500],  # truncate to save tokens
+                })
+                ailment_text = (
+                    ailment_response.content
+                    if hasattr(ailment_response, "content")
+                    else str(ailment_response)
+                )
+                # Normalize: strip markdown code fences if present
+                ailment_cleaned = ailment_text.strip()
+                if ailment_cleaned.startswith("```"):
+                    ailment_cleaned = ailment_cleaned.split("\n", 1)[-1].rsplit("```", 1)[0].strip()
+                ailment_parsed = json.loads(ailment_cleaned)
+                predicted_ailment = ailment_parsed.get("ailment", None)
+            except Exception as ae:
+                predicted_ailment = None  # graceful fallback
+
+            print(f"       ✅ Done in {latency:.1f}s | Category guess: {guessed_category} | {len(retrieved_docs)} docs | Ailment: {predicted_ailment}")
 
         except Exception as e:
             latency = time.time() - start_time
             guessed_category = None
             retrieved_context = ""
             generated_answer = f"(Error: {e})"
+            predicted_ailment = None
             sources = []
             error = str(e)
             print(f"       ❌ Error: {e}")
@@ -272,7 +314,7 @@ def run_baseline2(
             "reference_answer": entry["reference_answer"],
             # — Outputs —
             "predicted_category": guessed_category,
-            "predicted_ailment": None,  # No ailment identification in vanilla RAG
+            "predicted_ailment": predicted_ailment,  # now populated via LLM extraction
             "generated_answer": generated_answer,
             "retrieved_context": retrieved_context,
             "sources": sources,
