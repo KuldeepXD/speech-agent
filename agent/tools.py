@@ -266,7 +266,7 @@ def save_to_memory(
     tool_context.state[STATE_CONVERSATION_HISTORY] = json.dumps(history)
 
     return (
-        f"✅ Saved to memory: {category} → {ailment} "
+        f"Saved to memory: {category} → {ailment} "
         f"(interaction #{interaction_count + 1}). "
         f"Total ailments discussed: {len(previous_ailments)}."
     )

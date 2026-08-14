@@ -38,7 +38,7 @@ def print_banner():
     """Print the application banner."""
     banner = f"""
 {Colors.CYAN}{Colors.BOLD}╔══════════════════════════════════════════════════════════════╗
-║         🏥  Speech/Feeding Medical AI Agent  🏥              ║
+║           Speech/Feeding Medical AI Agent                    ║
 ║                                                              ║
 ║   Classifies conditions · Identifies ailments                ║
 ║   Generates treatment questions · Remembers context          ║
@@ -162,7 +162,7 @@ async def interactive_mode():
 
             # Handle commands
             if user_input.lower() in ("quit", "exit", "q"):
-                print(f"\n{Colors.CYAN}Goodbye! 👋{Colors.RESET}\n")
+                print(f"\n{Colors.CYAN}Goodbye! {Colors.RESET}\n")
                 break
 
             if user_input.lower() == "help":
@@ -184,7 +184,7 @@ async def interactive_mode():
                         except (json.JSONDecodeError, TypeError):
                             history = []
                     if history:
-                        print(f"\n{Colors.YELLOW}{Colors.BOLD}📋 Conversation History:{Colors.RESET}")
+                        print(f"\n{Colors.YELLOW}{Colors.BOLD} Conversation History:{Colors.RESET}")
                         for i, entry in enumerate(history, 1):
                             print(
                                 f"  {Colors.GREEN}{i}.{Colors.RESET} "
@@ -199,7 +199,7 @@ async def interactive_mode():
                 continue
 
             # Run the query
-            print(f"\n{Colors.DIM}🔍 Analyzing...{Colors.RESET}\n")
+            print(f"\n{Colors.DIM} Analyzing...{Colors.RESET}\n")
 
             structured_dict, text_response = await run_agent_query(
                 runner=runner,
@@ -217,7 +217,7 @@ async def interactive_mode():
                 print(f"{Colors.GREEN}{Colors.BOLD}Agent ▶{Colors.RESET} {text_response}\n")
 
         except KeyboardInterrupt:
-            print(f"\n\n{Colors.CYAN}Goodbye! 👋{Colors.RESET}\n")
+            print(f"\n\n{Colors.CYAN}Goodbye! {Colors.RESET}\n")
             break
         except Exception as e:
             print(f"\n{Colors.RED}Error: {e}{Colors.RESET}\n")

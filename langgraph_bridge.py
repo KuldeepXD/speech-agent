@@ -71,7 +71,7 @@ def classification_node(state: PipelineState) -> dict:
     query = state["query"]
 
     print(f"\n{'='*60}")
-    print(f"🔍 [Classification Agent] Processing query...")
+    print(f"[Classification Agent] Processing query...")
     print(f"   Query: \"{query}\"")
     print(f"{'='*60}")
 
@@ -83,7 +83,7 @@ def classification_node(state: PipelineState) -> dict:
         ailment = classification_dict.get("ailment", "Unknown")
         questions = classification_dict.get("treatment_questions", [])
 
-        print(f"✅ [Classification Agent] Done!")
+        print(f"[Classification Agent] Done!")
         print(f"   Category: {category}")
         print(f"   Ailment:  {ailment}")
         print(f"   Treatment Questions Generated:")
@@ -102,7 +102,7 @@ def classification_node(state: PipelineState) -> dict:
             ],
         }
     else:
-        print(f"⚠️  [Classification Agent] ADK agent failed, using keyword fallback...")
+        print(f"[Classification Agent] ADK agent failed, using keyword fallback...")
         # Fallback — keyword-based classification if ADK agent fails
         result = _fallback_classification(query)
         print(f"   Fallback Category: {result['category']}")
@@ -278,7 +278,7 @@ def create_pipeline():
 # ── Quick Test ──────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    print("🏥 Testing LangGraph Pipeline with Parallel RAG + PubMed Search...\n")
+    print("Testing LangGraph Pipeline with Parallel RAG + PubMed Search...\n")
 
     pipeline = create_pipeline()
 
@@ -297,9 +297,9 @@ if __name__ == "__main__":
             "messages": [HumanMessage(content=query)],
         })
 
-        print(f"\n📋 Final Output:")
+        print(f"\nFinal Output:")
         final_output = result.get("final_output", {})
         # Print synthesis response
-        print(f"\n🔬 Synthesized Response:")
+        print(f"\nSynthesized Response:")
         print(final_output.get("synthesis_response", "(No synthesis)"))
         print(f"\n{'='*60}\n")

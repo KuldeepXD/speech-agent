@@ -324,13 +324,13 @@ def run_pipeline_with_ui(query: str) -> dict:
     session_history = get_session_history(max_entries=5)
 
     # Run the pipeline
-    with st.status("🔬 **Running AI Pipeline...**", expanded=True) as status:
+    with st.status("** Running AI Pipeline...**", expanded=True) as status:
 
-        st.markdown("##### ⏳ Processing your query through the multi-agent pipeline")
+        st.markdown("##### Processing your query through the multi-agent pipeline")
 
         # ── Stage 1: Classification ────────────────────────────────
         st.markdown("---")
-        st.markdown("#### 🔍 Stage 1: Classification Agent")
+        st.markdown("####  Stage 1: Classification Agent")
         classification_placeholder = st.empty()
         classification_placeholder.markdown(
             '<span class="status-running">⏳ Classifying...</span>',
@@ -351,7 +351,7 @@ def run_pipeline_with_ui(query: str) -> dict:
                     "session_history": session_history,
                 })
         except Exception as e:
-            status.update(label="❌ Pipeline Error", state="error", expanded=True)
+            status.update(label="Pipeline Error", state="error", expanded=True)
             st.error(f"Pipeline execution failed: {e}")
             return {}
 
@@ -366,7 +366,7 @@ def run_pipeline_with_ui(query: str) -> dict:
 
         with classification_placeholder.container():
             st.markdown(
-                '<span class="status-done">✅ Complete</span>',
+                '<span class="status-done"> Complete</span>',
                 unsafe_allow_html=True,
             )
             col1, col2 = st.columns(2)
@@ -376,42 +376,42 @@ def run_pipeline_with_ui(query: str) -> dict:
                 st.metric("Ailment", ailment)
 
             if ailment_desc:
-                st.caption(f"📋 {ailment_desc}")
+                st.caption(f"{ailment_desc}")
 
             if treatment_questions:
-                with st.expander("🔎 Generated Treatment Questions", expanded=False):
+                with st.expander("Generated Treatment Questions", expanded=False):
                     for i, q in enumerate(treatment_questions, 1):
                         st.markdown(f"**{i}.** {q}")
 
         # ── Stage 2: RAG Agent ─────────────────────────────────────
         st.markdown("---")
-        st.markdown(f"#### 📚 Stage 2: {category} RAG Agent")
+        st.markdown(f"#### Stage 2: {category} RAG Agent")
         rag_context = result.get("rag_context", "")
         rag_response = result.get("rag_response", "")
 
         st.markdown(
-            '<span class="status-done">✅ Complete</span>',
+            '<span class="status-done"> Complete</span>',
             unsafe_allow_html=True,
         )
         st.caption(f"Retrieved context: {len(rag_context):,} characters")
-        with st.expander("📄 RAG Response", expanded=False):
+        with st.expander("RAG Response", expanded=False):
             st.markdown(rag_response if rag_response else "_No RAG response generated_")
 
         # ── Stage 3: PubMed Search ─────────────────────────────────
         st.markdown("---")
-        st.markdown("#### 🌐 Stage 3: PubMed Search Agent")
+        st.markdown("####  Stage 3: PubMed Search Agent")
         web_search_context = result.get("web_search_context", {})
         web_search_summary = result.get("web_search_summary", "")
 
         st.markdown(
-            '<span class="status-done">✅ Complete</span>',
+            '<span class="status-done"> Complete</span>',
             unsafe_allow_html=True,
         )
         st.caption(
             f"Searched {len(web_search_context)} questions • "
             f"{len(web_search_summary):,} chars of context"
         )
-        with st.expander("🔬 PubMed Search Results", expanded=False):
+        with st.expander("PubMed Search Results", expanded=False):
             if web_search_context:
                 for key, entry in web_search_context.items():
                     q = entry.get("original_question", key)
@@ -428,9 +428,9 @@ def run_pipeline_with_ui(query: str) -> dict:
 
         # ── Stage 4: Synthesis Agent ───────────────────────────────
         st.markdown("---")
-        st.markdown("#### 🧪 Stage 4: Synthesis Agent")
+        st.markdown("####  Stage 4: Synthesis Agent")
         st.markdown(
-            '<span class="status-done">✅ Complete</span>',
+            '<span class="status-done"> Complete</span>',
             unsafe_allow_html=True,
         )
         st.caption(
@@ -440,7 +440,7 @@ def run_pipeline_with_ui(query: str) -> dict:
 
         # ── Final Timing ──────────────────────────────────────────
         status.update(
-            label=f"✅ **Pipeline Complete** — {elapsed:.1f}s",
+            label=f"**Pipeline Complete** — {elapsed:.1f}s",
             state="complete",
             expanded=False,
         )
@@ -471,7 +471,7 @@ def render_sidebar():
         # Session Info
         st.markdown("""
         <div class="sidebar-card">
-            <h4>📡 Session</h4>
+            <h4>Session</h4>
             <p><code style="color: #C4C0FF; font-size: 0.78rem;">{session_id}</code></p>
         </div>
         """.format(session_id=st.session_state.session_id), unsafe_allow_html=True)
@@ -496,7 +496,7 @@ def render_sidebar():
         # History
         st.markdown("""
         <div class="sidebar-card">
-            <h4>📋 Conversation History</h4>
+            <h4>Conversation History</h4>
         </div>
         """, unsafe_allow_html=True)
 
@@ -509,7 +509,7 @@ def render_sidebar():
                 # Truncate long queries
                 display_query = query[:60] + "..." if len(query) > 60 else query
 
-                emoji = "🗣️" if category == "Speech" else "🍽️"
+                emoji = "Sppech" if category == "Speech" else "Feeding"
 
                 st.markdown(f"""
                 <div class="history-item">
@@ -527,7 +527,7 @@ def render_sidebar():
         st.markdown("---")
 
         # Clear History button
-        if st.button("🗑️  Clear History", use_container_width=True):
+        if st.button("  Clear History", use_container_width=True):
             st.session_state.conversation_history = []
             st.session_state.messages = []
             st.rerun()
@@ -536,7 +536,7 @@ def render_sidebar():
         st.markdown("""
         <div style="padding: 0.8rem; margin-top: 0.5rem;">
             <p style="color: #4A4D60; font-size: 0.72rem; line-height: 1.5;">
-                💡 <strong style="color: #6B6E85;">How it works:</strong><br>
+                  <strong style="color: #6B6E85;">How it works:</strong><br>
                 Your query goes through a multi-agent pipeline:<br>
                 <span style="color: #6C63FF;">Classification</span> →
                 <span style="color: #6C63FF;">RAG Retrieval</span> →
@@ -544,7 +544,7 @@ def render_sidebar():
                 <span style="color: #6C63FF;">Synthesis</span>
             </p>
             <p style="color: #4A4D60; font-size: 0.72rem; margin-top: 0.5rem;">
-                📝 Last 5 conversations are passed to the Synthesis Agent for context continuity.
+                  Last 5 conversations are passed to the Synthesis Agent for context continuity.
             </p>
         </div>
         """, unsafe_allow_html=True)
@@ -580,7 +580,7 @@ def main():
     # ── Hero Header ────────────────────────────────────────────────
     st.markdown("""
     <div class="hero-header">
-        <h1>🏥 Speech & Feeding AI Agent</h1>
+        <h1> Speech & Feeding AI Agent</h1>
         <p>
             AI-powered clinical assessment for Speech-Language Pathology.
             Describe a patient's symptoms and get evidence-based guidance
@@ -626,7 +626,7 @@ def main():
             synthesis_response = str(synthesis_response)
 
             # Display the final synthesized answer with proper markdown rendering
-            st.markdown("### 💡 Clinical Assessment")
+            st.markdown("### Clinical Assessment")
             st.markdown(synthesis_response)
 
             # Add to chat messages
@@ -647,7 +647,7 @@ def main():
                 "timestamp": datetime.now().strftime("%H:%M:%S"),
             })
         else:
-            error_msg = "⚠️ Pipeline execution failed. Please try again."
+            error_msg = "Pipeline execution failed. Please try again."
             st.markdown(
                 f'<div class="agent-msg">{error_msg}</div>',
                 unsafe_allow_html=True,

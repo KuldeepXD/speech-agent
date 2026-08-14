@@ -87,10 +87,10 @@ def _invoke_with_retry(chain, params: dict, agent_name: str = "Agent", max_retri
             if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
                 if attempt < max_retries:
                     wait_time = base_delay * attempt
-                    print(f"   ⏳ [{agent_name}] Rate limited (429). Retrying in {wait_time:.0f}s... (attempt {attempt}/{max_retries})")
+                    print(f"[{agent_name}] Rate limited (429). Retrying in {wait_time:.0f}s... (attempt {attempt}/{max_retries})")
                     time.sleep(wait_time)
                 else:
-                    print(f"   ❌ [{agent_name}] Rate limit exceeded after {max_retries} attempts. Giving up.")
+                    print(f"[{agent_name}] Rate limit exceeded after {max_retries} attempts. Giving up.")
                     raise
             else:
                 raise
@@ -145,7 +145,7 @@ def synthesis_node(state: dict) -> dict:
     session_history = state.get("session_history", [])
 
     print(f"\n{'='*60}")
-    print(f"🧪 [Synthesis Agent] Combining RAG + PubMed Research context...")
+    print(f"   [Synthesis Agent] Combining RAG + PubMed Research context...")
     print(f"   Query: \"{query}\"")
     print(f"   Ailment: {ailment} | Category: {category}")
     print(f"   Session history: {len(session_history)} previous entries")
@@ -163,7 +163,7 @@ def synthesis_node(state: dict) -> dict:
     print(f"   PubMed context: {len(web_search_summary)} chars ({len(web_search_context)} questions)")
 
     # Generate synthesized response with Gemini (with retry for rate limits)
-    print(f"   🤖 Generating synthesized answer with Gemini...")
+    print(f"Generating synthesized answer with Gemini...")
     llm = ChatGoogleGenerativeAI(model=LLM_MODEL)
     chain = SYNTHESIS_PROMPT | llm
 
@@ -195,7 +195,7 @@ def synthesis_node(state: dict) -> dict:
     else:
         synthesis_text = str(raw_content)
 
-    print(f"   ✅ [Synthesis Agent] Final answer generated ({len(synthesis_text)} chars)")
+    print(f"[Synthesis Agent] Final answer generated ({len(synthesis_text)} chars)")
     print(f"{'='*60}\n")
 
     # Build the final enriched output dictionary
