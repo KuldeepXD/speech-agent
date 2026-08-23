@@ -184,7 +184,7 @@ def web_search_node(state: dict) -> dict:
     category = state.get("category", "Unknown")
 
     print(f"\n{'─'*60}")
-    print(f"📚 [PubMed Search Agent] Searching for {len(treatment_questions)} questions...")
+    print(f"[PubMed Search Agent] Searching for {len(treatment_questions)} questions...")
     print(f"   Ailment: {ailment} | Category: {category}")
 
     # Build search queries by combining ailment context with each question
@@ -194,7 +194,7 @@ def web_search_node(state: dict) -> dict:
         # Build a PubMed-friendly query with the ailment + category context
         search_query = f"{ailment} {category} therapy: {question}"
 
-        print(f"   🔎 [{i}/{len(treatment_questions)}] Searching PubMed: \"{search_query[:70]}...\"")
+        print(f"[{i}/{len(treatment_questions)}] Searching PubMed: \"{search_query[:70]}...\"")
 
         time.sleep(REQUEST_DELAY)  # Rate-limit between searches
         results = _perform_search(search_query)
@@ -202,7 +202,7 @@ def web_search_node(state: dict) -> dict:
         # Count actual results (not error messages)
         has_results = not results.startswith("(")
         result_count = results.count("PubMed Reference") if has_results else 0
-        status = f"✅ {result_count} articles" if has_results else "⚠️  No results"
+        status = f"{result_count} articles" if has_results else "⚠️  No results"
         print(f"      {status}")
 
         web_search_dict[f"question_{i}"] = {
@@ -214,7 +214,7 @@ def web_search_node(state: dict) -> dict:
     # Format all results into a single context string
     web_search_summary = _format_web_results(web_search_dict)
 
-    print(f"   ✅ [PubMed Search Agent] Done! Summary: {len(web_search_summary)} chars")
+    print(f"[PubMed Search Agent] Done! Summary: {len(web_search_summary)} chars")
     print(f"{'─'*60}\n")
 
     return {

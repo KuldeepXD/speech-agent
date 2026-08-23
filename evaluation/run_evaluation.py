@@ -2,6 +2,7 @@
 Evaluation Orchestrator — CLI Entry Point.
 
 Runs the benchmarking pipeline end-to-end or individual components.
+Supports batch evaluation to avoid exceeding Google API rate/token limits.
 
 Usage:
     python -m evaluation.run_evaluation --all              # Run everything
@@ -11,6 +12,11 @@ Usage:
     python -m evaluation.run_evaluation --metrics          # Only compute metrics
     python -m evaluation.run_evaluation --report           # Only generate report
     python -m evaluation.run_evaluation --all --limit 2    # Dry run with 2 queries
+
+Batch evaluation (for 100+ queries):
+    python -m evaluation.run_evaluation --proposed --batch-size 5 --batch-delay 30
+    python -m evaluation.run_evaluation --proposed --resume   # Resume after failure
+    python -m evaluation.run_evaluation --metrics --report    # Generate reports from logs
 """
 
 import argparse
@@ -26,9 +32,11 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python -m evaluation.run_evaluation --all --limit 2     # Quick dry run
-  python -m evaluation.run_evaluation --baseline1         # Run only Baseline 1
-  python -m evaluation.run_evaluation --metrics --report  # Compute metrics + report
+  python -m evaluation.run_evaluation --all --limit 2           # Quick dry run
+  python -m evaluation.run_evaluation --baseline1               # Run only Baseline 1
+  python -m evaluation.run_evaluation --proposed --batch-size 5  # Batched run
+  python -m evaluation.run_evaluation --proposed --resume        # Resume after crash
+  python -m evaluation.run_evaluation --metrics --report         # Compute metrics + report
         """,
     )
 
@@ -39,7 +47,10 @@ Examples:
     parser.add_argument("--metrics", action="store_true", help="Compute evaluation metrics")
     parser.add_argument("--report", action="store_true", help="Generate performance report")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of queries (for dry runs)")
-    parser.add_argument("--delay", type=float, default=2.0, help="Delay between queries in seconds (default: 2.0)")
+    parser.add_argument("--delay", type=float, default=3.0, help="Delay between queries in seconds (default: 3.0)")
+    parser.add_argument("--batch-size", type=int, default=5, help="Number of queries per batch (default: 5)")
+    parser.add_argument("--batch-delay", type=float, default=30.0, help="Cooldown in seconds between batches (default: 30.0)")
+    parser.add_argument("--resume", action="store_true", help="Resume evaluation: skip queries already in log files")
 
     args = parser.parse_args()
 
@@ -54,28 +65,40 @@ Examples:
     run_metrics = args.all or args.metrics
     run_report = args.all or args.report
 
-    print(f"\n{'═'*70}")
-    print(f"  🏥 EVALUATION BENCHMARKING FRAMEWORK")
-    print(f"     Therapy Guide-MAS vs. Baselines")
-    print(f"     Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"\n{'='*70}")
+    print(f"  [*] EVALUATION BENCHMARKING FRAMEWORK")
+    print(f"      Therapy Guide-MAS vs. Baselines")
+    print(f"      Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     if args.limit:
-        print(f"     ⚡ Limited to {args.limit} queries (dry run)")
-    print(f"{'═'*70}\n")
+        print(f"      >> Limited to {args.limit} queries (dry run)")
+    print(f"      >> Batch size: {args.batch_size} | Batch delay: {args.batch_delay}s | Query delay: {args.delay}s")
+    if args.resume:
+        print(f"      >> RESUME MODE: skipping already-completed queries")
+    print(f"{'='*70}\n")
 
     overall_start = time.time()
+
+    # Common batch kwargs passed to all runners
+    batch_kwargs = dict(
+        limit=args.limit,
+        delay=args.delay,
+        batch_size=args.batch_size,
+        batch_delay=args.batch_delay,
+        resume=args.resume,
+    )
 
     # ── Step 1: Run Baselines ──────────────────────────────────────────
     if run_b1:
         from evaluation.baseline1_single_llm import run_baseline1
-        run_baseline1(limit=args.limit, delay=args.delay)
+        run_baseline1(**batch_kwargs)
 
     if run_b2:
         from evaluation.baseline2_vanilla_rag import run_baseline2
-        run_baseline2(limit=args.limit, delay=args.delay)
+        run_baseline2(**batch_kwargs)
 
     if run_proposed:
         from evaluation.proposed_mas import run_proposed as run_proposed_fn
-        run_proposed_fn(limit=args.limit, delay=args.delay)
+        run_proposed_fn(**batch_kwargs)
 
     # ── Step 2: Compute Metrics ────────────────────────────────────────
     if run_metrics:
@@ -89,11 +112,11 @@ Examples:
 
     # ── Done ───────────────────────────────────────────────────────────
     elapsed = time.time() - overall_start
-    print(f"\n{'═'*70}")
-    print(f"  ✅ EVALUATION COMPLETE")
-    print(f"     Total time: {elapsed:.1f}s ({elapsed/60:.1f} minutes)")
-    print(f"     Finished: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"{'═'*70}\n")
+    print(f"\n{'='*70}")
+    print(f"  [OK] EVALUATION COMPLETE")
+    print(f"       Total time: {elapsed:.1f}s ({elapsed/60:.1f} minutes)")
+    print(f"       Finished: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"{'='*70}\n")
 
 
 if __name__ == "__main__":

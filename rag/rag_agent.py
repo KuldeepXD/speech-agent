@@ -113,10 +113,10 @@ def _invoke_with_retry(chain, params: dict, agent_name: str = "Agent", max_retri
             if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
                 if attempt < max_retries:
                     wait_time = base_delay * attempt
-                    print(f"   ⏳ [{agent_name}] Rate limited (429). Retrying in {wait_time:.0f}s... (attempt {attempt}/{max_retries})")
+                    print(f"[{agent_name}] Rate limited (429). Retrying in {wait_time:.0f}s... (attempt {attempt}/{max_retries})")
                     time.sleep(wait_time)
                 else:
-                    print(f"   ❌ [{agent_name}] Rate limit exceeded after {max_retries} attempts. Giving up.")
+                    print(f"[{agent_name}] Rate limit exceeded after {max_retries} attempts. Giving up.")
                     raise
             else:
                 raise
@@ -139,7 +139,7 @@ def speech_rag_node(state: dict) -> dict:
     treatment_questions = state.get("treatment_questions", [])
 
     print(f"\n{'─'*60}")
-    print(f"📚 [Speech RAG Agent] Starting retrieval...")
+    print(f"[Speech RAG Agent] Starting retrieval...")
     print(f"   Ailment: {ailment}")
 
     # Build retrieval query from the ailment and questions
@@ -153,7 +153,7 @@ def speech_rag_node(state: dict) -> dict:
         retriever = load_speech_retriever(k=5)
         retrieved_docs = retriever.invoke(retrieval_query)
         retrieved_context = _format_retrieved_docs(retrieved_docs)
-        print(f"   ✅ Retrieved {len(retrieved_docs)} documents from Speech vector store")
+        print(f"Retrieved {len(retrieved_docs)} documents from Speech vector store")
         for doc in retrieved_docs:
             src = doc.metadata.get('source_file', 'Unknown')
             pg = doc.metadata.get('page', '?')
@@ -161,10 +161,10 @@ def speech_rag_node(state: dict) -> dict:
     except FileNotFoundError as e:
         retrieved_context = f"(Vector store not available: {e})"
         retrieved_docs = []
-        print(f"   ⚠️  Speech vector store not available: {e}")
+        print(f"Speech vector store not available: {e}")
 
     # Generate RAG response with Gemini (with retry for rate limits)
-    print(f"   🤖 Generating RAG response with Gemini...")
+    print(f"Generating RAG response with Gemini...")
     llm = ChatGoogleGenerativeAI(model=LLM_MODEL)
     chain = SPEECH_RAG_PROMPT | llm
 
@@ -176,7 +176,7 @@ def speech_rag_node(state: dict) -> dict:
     }, agent_name="Speech RAG Agent")
 
     rag_response_text = response.content if hasattr(response, "content") else str(response)
-    print(f"   ✅ [Speech RAG Agent] Response generated ({len(rag_response_text)} chars)")
+    print(f"[Speech RAG Agent] Response generated ({len(rag_response_text)} chars)")
     print(f"{'─'*60}\n")
 
     # Build the enriched output dictionary
@@ -219,7 +219,7 @@ def feeding_rag_node(state: dict) -> dict:
     treatment_questions = state.get("treatment_questions", [])
 
     print(f"\n{'─'*60}")
-    print(f"📚 [Feeding RAG Agent] Starting retrieval...")
+    print(f"[Feeding RAG Agent] Starting retrieval...")
     print(f"   Ailment: {ailment}")
 
     # Build retrieval query
@@ -233,7 +233,7 @@ def feeding_rag_node(state: dict) -> dict:
         retriever = load_feeding_retriever(k=5)
         retrieved_docs = retriever.invoke(retrieval_query)
         retrieved_context = _format_retrieved_docs(retrieved_docs)
-        print(f"   ✅ Retrieved {len(retrieved_docs)} documents from Feeding vector store")
+        print(f"Retrieved {len(retrieved_docs)} documents from Feeding vector store")
         for doc in retrieved_docs:
             src = doc.metadata.get('source_file', 'Unknown')
             pg = doc.metadata.get('page', '?')
@@ -241,10 +241,10 @@ def feeding_rag_node(state: dict) -> dict:
     except FileNotFoundError as e:
         retrieved_context = f"(Vector store not available: {e})"
         retrieved_docs = []
-        print(f"   ⚠️  Feeding vector store not available: {e}")
+        print(f"Feeding vector store not available: {e}")
 
     # Generate RAG response with Gemini (with retry for rate limits)
-    print(f"   🤖 Generating RAG response with Gemini...")
+    print(f"Generating RAG response with Gemini...")
     llm = ChatGoogleGenerativeAI(model=LLM_MODEL)
     chain = FEEDING_RAG_PROMPT | llm
 
@@ -256,7 +256,7 @@ def feeding_rag_node(state: dict) -> dict:
     }, agent_name="Feeding RAG Agent")
 
     rag_response_text = response.content if hasattr(response, "content") else str(response)
-    print(f"   ✅ [Feeding RAG Agent] Response generated ({len(rag_response_text)} chars)")
+    print(f"[Feeding RAG Agent] Response generated ({len(rag_response_text)} chars)")
     print(f"{'─'*60}\n")
 
     # Build the enriched output dictionary

@@ -1,0 +1,122 @@
+{
+  "S001": {
+    "score": 3,
+    "reasoning": "The AI correctly identifies the necessity of a professional evaluation, which is the most critical piece of clinical advice. However, it fails to provide the user with basic educational information (e.g., that /r/ is often developmentally late and may not be a disorder at age 4) that an expert system should possess without needing external search results."
+  },
+  "S002": {
+    "score": 4,
+    "reasoning": "The AI provides a very supportive, clear, and empathetic response that is clinically accurate regarding the likely condition (expressive aphasia). It provides excellent practical advice for the caregiver. However, it lacks the specific clinical detail provided in the reference answer, such as naming specific standardized assessment tools (e.g., WAB/BDAE) or evidence-based treatment modalities (e.g., CILT, MIT), which would be beneficial for a comprehensive clinical response."
+  },
+  "S003": {
+    "score": 5,
+    "reasoning": "The AI provided a comprehensive, clinically accurate, and highly structured response. It correctly identified the need for a medical referral (ENT/laryngoscopy) as the priority, included appropriate evidence-based interventions (SOVT, Resonant Voice), and offered actionable advice for a professional voice user. The inclusion of assessment protocols adds significant clinical value."
+  },
+  "F001": {
+    "score": 5,
+    "reasoning": "The AI response is exceptional. It is clinically accurate, thorough, and provides actionable, evidence-based guidance. It correctly identifies the condition as dysphagia, explains the pathophysiology of aspiration, lists gold-standard instrumental assessments (MBS/FEES), and provides appropriate conservative management strategies while emphasizing the urgency of professional evaluation."
+  },
+  "F002": {
+    "score": 5,
+    "reasoning": "The AI response is exceptional. It provides a comprehensive, clinically sound, and highly actionable guide that expands upon the reference answer. It correctly identifies the condition, explains the sensory-motor underlying mechanisms, provides evidence-based strategies (such as the Division of Responsibility and food chaining), and outlines appropriate diagnostic steps. The tone is empathetic, professional, and aligns with current best practices in speech-language pathology."
+  },
+  "E001": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the reference answer in terms of depth, professional scope, and actionable guidance. It correctly emphasizes the necessity of assessment, multidisciplinary referrals, and EBP, and provides specific evidence-based strategies (e.g., Hanen, naturalistic approaches, AAC) that are standard practice in the field."
+  },
+  "E002": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the reference answer in depth and utility. It correctly frames oro-motor weakness within the context of assessment (OME, speech, swallowing), distinguishes between restorative and compensatory strategies, and emphasizes evidence-based practices like task-specific training and instrumental assessment."
+  },
+  "E003": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the scope of the reference answer. It provides a structured, multidisciplinary approach, addresses the underlying physiology of sialorrhea, includes evidence-based management strategies, and emphasizes the importance of objective measurement and quality of life."
+  },
+  "E004": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and surpasses the reference answer in depth and structure. It aligns with current evidence-based practices (NDBI, AAC, Total Communication) and provides actionable, high-quality clinical guidance."
+  },
+  "E005": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is exceptionally high quality. It expands significantly upon the reference answer by providing a formal clinical framework, distinguishing between potential physiological and sensory causes, and emphasizing safety via the necessity of instrumental assessment. The structure is professional, actionable, and aligns with current best practices in pediatric speech-language pathology."
+  },
+  "E006": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and highly structured. It accurately synthesizes current best practices, including NDBI and parent-implemented models, while emphasizing the importance of ruling out comorbid conditions. It exceeds the reference answer by providing a actionable, evidence-based clinical framework."
+  },
+  "E007": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and significantly expands upon the reference answer while maintaining evidence-based principles. It covers etiology, assessment, and treatment, emphasizing the importance of specificity and functional training. The inclusion of clinical framework steps makes it highly actionable for an SLP."
+  },
+  "E008": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and safer than the gold standard. It correctly emphasizes the need for differential diagnosis (underlying causes), safety/risk mitigation (choking), and professional consultation, while providing actionable, evidence-based therapeutic strategies."
+  },
+  "M001": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and far exceeds the reference answer in depth. It correctly identifies the need for differential diagnosis (medical vs. sensory vs. skill-based), lists evidence-based interventions (SOS, food chaining), highlights the importance of the multidisciplinary team, and provides critical safety warnings regarding aspiration and referral criteria."
+  },
+  "M002": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is superior to the reference. It correctly identifies the clinical terminology (Orofacial Myofunctional Disorder), outlines a thorough assessment process, emphasizes a multidisciplinary approach, and provides clear, actionable clinical steps that align with current SLP best practices."
+  },
+  "M003": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the depth of the reference answer. It correctly identifies the core deficit (motor planning/programming), lists validated assessment tools, highlights evidence-based intervention techniques (DTTC, ReST, PROMPT), and emphasizes principles of motor learning, which are essential for treating CAS."
+  },
+  "M004": {
+    "score": 1,
+    "reasoning": "The AI failed to provide any clinical information or guidance, essentially giving a non-response."
+  },
+  "M005": {
+    "score": 1,
+    "reasoning": "The AI failed to provide any information, rendering the response irrelevant and of no clinical value."
+  },
+  "M006": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and highly actionable. It far exceeds the reference answer by incorporating evidence-based frameworks (NDBI), specific intervention techniques (sabotage, focused stimulation, mand-modeling), and clinical best practices (caregiver coaching, differential diagnosis). It maintains professional standards and provides appropriate clinical guidance."
+  },
+  "M007": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and safer than the gold standard. It provides necessary clinical context (differentiating gagging from choking), structured assessment protocols, and evidence-based interventions while maintaining a strong focus on patient safety and appropriate interdisciplinary referrals."
+  },
+  "M008": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and structured appropriately for a clinical audience. It correctly identifies the cough as a red flag, details immediate safety protocols, outlines both clinical and instrumental assessment paths, and includes evidence-based management strategies. The inclusion of clinical documentation and interdisciplinary communication steps adds significant practical value."
+  },
+  "M009": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the reference answer in terms of detail and actionable clinical guidance. It covers physiological mechanisms, assessment metrics (MPD, S/Z ratio), evidence-based interventions (EMST, diaphragmatic breathing), and necessary safety precautions."
+  },
+  "H001": {
+    "score": 5,
+    "reasoning": "The response is clinically excellent, accurate, and comprehensive. It builds upon the gold standard by providing a structured, hierarchical framework that reflects current best practices in SLP, including the crucial balance between safety and quality of life (IDDSI, instrumental assessment, and multidisciplinary collaboration). The formatting is professional and the inclusion of a clinical disclaimer is appropriate."
+  },
+  "H002": {
+    "score": 1,
+    "reasoning": "The AI failed to provide any information, rendering it useless for clinical guidance."
+  },
+  "H003": {
+    "score": 1,
+    "reasoning": "The AI failed to provide any clinical information or address the query, resulting in zero clinical value."
+  },
+  "H004": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is excellent. It expands significantly on the gold standard by providing a structured, evidence-based, and highly actionable framework. It accurately identifies the specific physiological challenges of CP (e.g., postural influence on the swallow), provides clear clinical goals, outlines gold-standard assessment methods, and emphasizes the essential multidisciplinary nature of treatment."
+  },
+  "H005": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the reference answer in depth and professional quality. It incorporates evidence-based practices, clear clinical reasoning, and actionable steps for both clinicians and caregivers."
+  },
+  "H006": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and significantly expands upon the reference answer while remaining accurate. It correctly identifies the etiology of the behavior (e.g., tonic bite, jaw grading, postural stability) and provides actionable, evidence-informed interventions that align with standard speech-language pathology practice."
+  },
+  "H007": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and highly structured. It exceeds the reference answer by detailing specific evidence-based frameworks (SOS, Food Chaining), highlighting the importance of a multidisciplinary team, and emphasizing the 'division of responsibility' model. It correctly prioritizes medical clearance and safety, making it an excellent resource for a clinical setting."
+  },
+  "H008": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and provides a structured, evidence-based framework that far exceeds the scope of the reference answer. It addresses diagnostic, procedural, and environmental variables, and includes essential clinical decision-making strategies like dynamic assessment and data probing."
+  }
+}

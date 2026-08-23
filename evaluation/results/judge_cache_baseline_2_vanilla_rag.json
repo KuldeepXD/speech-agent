@@ -1,0 +1,102 @@
+{
+  "E001": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically robust, and well-structured. It expands significantly on the reference answer by detailing the procedural framework (preassessment, formal planning, documentation) required in a clinical setting, while correctly identifying essential components like hearing, developmental norms, and professional collaboration."
+  },
+  "E002": {
+    "score": 3,
+    "reasoning": "The AI correctly identifies the professional necessity of assessment; however, it fails to provide the requested clinical management/treatment strategies, citing the absence of information in its source rather than synthesizing standard clinical knowledge. It is accurate but lacks the requested actionability."
+  },
+  "E003": {
+    "score": 2,
+    "reasoning": "While the AI correctly identified that the provided context was insufficient, as an 'expert' AI system, it should have utilized its internal clinical knowledge base to answer the query rather than strictly limiting its response to the provided text, which resulted in a failure to provide helpful clinical guidance."
+  },
+  "E004": {
+    "score": 4,
+    "reasoning": "The response is professional and clinically sound, prioritizing formal assessment and AAC intervention. It is more structured and comprehensive than the reference answer. However, it misses the crucial clinical recommendation of focusing on joint attention and communication intent as a prerequisite to more complex AAC integration, which is a foundational principle in pediatric SLP practice for this population."
+  },
+  "E005": {
+    "score": 2,
+    "reasoning": "The AI failed to provide clinical guidance, instead stating it lacked information. While it correctly suggested consulting an SLP, it ignored standard clinical practices for food pocketing (e.g., oral motor techniques, sensory strategies) that fall within the scope of an expert system, rendering it of limited utility compared to the gold standard."
+  },
+  "E006": {
+    "score": 3,
+    "reasoning": "The AI provided a professional framework for the clinical process (assessment and planning) but failed to answer the actual clinical question of how to *start* therapy. It deferred entirely to the manual structure rather than providing the evidence-based treatment strategies (like child-centered modeling or parent coaching) requested by the user."
+  },
+  "E007": {
+    "score": 2,
+    "reasoning": "The AI failed to utilize general clinical knowledge, instead adopting an overly restrictive 'RAG' approach that relied solely on the provided context. While it correctly identified the lack of information in the documents, a high-quality clinical assistant should supplement with evidence-based practices when the provided source material is insufficient."
+  },
+  "E008": {
+    "score": 2,
+    "reasoning": "The AI failed to answer the clinical question, claiming it lacked information despite the query being a general clinical question. It provided a meta-commentary on a non-existent document instead of offering the standard clinical interventions requested."
+  },
+  "M001": {
+    "score": 2,
+    "reasoning": "The AI failed to answer the user's specific clinical query, instead stating the information was missing and providing generic information about dysphagia. It ignored the provided reference answer that contained the correct clinical guidance."
+  },
+  "M002": {
+    "score": 2,
+    "reasoning": "While the AI correctly identifies that its provided internal context lacks information on tongue thrust, it fails to provide any general clinical guidance, despite the query being a standard, well-documented topic in Speech-Language Pathology. A more helpful AI would have acknowledged the limitation but provided standard clinical information or evidence-based practices for the condition."
+  },
+  "M003": {
+    "score": 2,
+    "reasoning": "While the AI correctly identifies that its provided context lacks treatment information, it fails to provide the general clinical knowledge expected of an SLP AI system. A 'Poor' rating is assigned because the AI prioritized a rigid adherence to limited documents over providing accurate, evidence-based clinical guidance on a standard speech disorder."
+  },
+  "M004": {
+    "score": 1,
+    "reasoning": "The AI failed to utilize its inherent clinical knowledge as an expert system, instead claiming it could not answer based on a narrow interpretation of provided context. This results in a total lack of actionable guidance, rendering the response useless for a clinician."
+  },
+  "M005": {
+    "score": 2,
+    "reasoning": "While the response is technically safe, it fails to provide any clinical guidance despite being asked a common clinical question. By stating the reference material is merely an index, it refuses to answer the prompt using general clinical knowledge, which is expected of an AI expert system, thereby limiting its clinical utility."
+  },
+  "M006": {
+    "score": 2,
+    "reasoning": "While the AI correctly notes that the provided reference context may have been insufficient, it failed to provide general clinical knowledge on the topic, which an expert-level AI should possess. A helpful response would have supplemented the missing context with established evidence-based practices (e.g., focused stimulation, environmental arrangement) rather than simply stating it could not answer."
+  },
+  "M007": {
+    "score": 2,
+    "reasoning": "The AI failed to answer the user's specific clinical query, instead stating that the provided reference text lacked the information. It relied solely on its limited context window rather than its internal clinical training knowledge base, resulting in a refusal to provide actionable advice that is well-established in pediatric speech-language pathology."
+  },
+  "M008": {
+    "score": 4,
+    "reasoning": "The AI correctly identifies that coughing is a clinical red flag and appropriately defers to expert evaluation. While it correctly synthesizes general dysphagia management principles, it fails to provide the immediate, actionable safety steps (e.g., stopping intake, positioning, immediate bedside observation) expected of a clinical AI, relying instead on a 'no information provided' disclaimer."
+  },
+  "M009": {
+    "score": 2,
+    "reasoning": "While the AI correctly identified that it lacked specific context from the provided documents, an expert AI system should be able to provide general, evidence-based clinical knowledge on standard practices in speech-language pathology even when not provided in the prompt's source text."
+  },
+  "H001": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and expands upon the reference material while maintaining accuracy. It addresses the clinical goals, the necessity of interdisciplinary collaboration, and the importance of standardizing care, all of which are essential in dysphagia management."
+  },
+  "H002": {
+    "score": 1,
+    "reasoning": "The AI failed to answer the clinical question, claiming the information was not in its references when it should have provided standard clinical knowledge. It is non-helpful and avoids the query entirely."
+  },
+  "H003": {
+    "score": 2,
+    "reasoning": "While the AI correctly identified that the provided reference context was missing information, as a general clinical AI system, it failed to provide the standard of care knowledge expected for such a query, opting for a 'null' response instead of utilizing its internal clinical training data."
+  },
+  "H004": {
+    "score": 4,
+    "reasoning": "The AI correctly identified that the provided context was generic rather than specific to cerebral palsy, which is a sign of high clinical integrity. It provided an accurate and comprehensive overview of dysphagia management that is clinically applicable to the population, though it missed specific pediatric-focused elements like oral-motor development and caregiver-mediated participation found in the gold standard."
+  },
+  "H005": {
+    "score": 2,
+    "reasoning": "The AI failed to answer the clinical question. While it acted correctly as an RAG system by stating the provided context was insufficient, it failed to provide general clinical knowledge, which is expected of an expert AI system when internal data is sufficient to answer the query accurately."
+  },
+  "H006": {
+    "score": 2,
+    "reasoning": "While the AI correctly notes the absence of the specific scenario in the provided context, an expert system should rely on general clinical knowledge rather than stating it cannot address the query. The response provides no actionable clinical guidance, failing to offer the standard of care intervention."
+  },
+  "H007": {
+    "score": 1,
+    "reasoning": "The AI failed to utilize its internal clinical knowledge base to answer a standard SLP query, instead claiming it lacked information based on an arbitrary (and unprovided) reference document. It provided zero clinical guidance."
+  },
+  "H008": {
+    "score": 4,
+    "reasoning": "The response is clinically sound and professional. It correctly identifies the pivot to AAC and the need for comprehensive assessment. It scores slightly lower than the gold standard only because it focuses heavily on the assessment process rather than emphasizing the immediate clinical priority of functional communication, as highlighted in the reference answer."
+  }
+}

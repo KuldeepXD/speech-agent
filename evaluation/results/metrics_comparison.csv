@@ -1,0 +1,10 @@
+Metric,B1: LLM+Tool,B2: Vanilla RAG,Proposed: MAS
+Faithfulness,0.024494491,0.820536624,0.925684523
+Answer Relevancy,0.720641299,0.225241163,0.833346462
+Cosine Similarity,0.750617508,0.766426433,0.77948699
+LLM Judge Score,3.366666667,2.52,4.84
+Classification Accuracy,0.79,0.84,0.88
+Category Precision (macro),0,0.888888889,0.923076923
+Category Recall (macro),0,0.818181818,0.892857143
+Category F1 (macro),0,0.826388889,0.898333333
+Avg Latency (s),8.752407074,3.793962584,19.75285894

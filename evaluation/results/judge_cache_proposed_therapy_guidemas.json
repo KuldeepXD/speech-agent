@@ -1,0 +1,102 @@
+{
+  "E001": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and highly actionable. It covers all the essential components of the reference answer while providing significantly more depth regarding the SLP evaluation process, evidence-based intervention strategies (such as modeling, expanding, and AAC), and the necessity of interdisciplinary collaboration. It maintains a professional tone and clearly outlines practical next steps for the caregiver."
+  },
+  "E002": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and safer than the reference answer. It correctly prioritizes instrumental assessment (VFSS/FEES) and interdisciplinary care, which is critical for dysphagia management. It provides actionable advice while emphasizing patient safety and the necessity of professional intervention, elevating it above a purely exercise-based approach."
+  },
+  "E003": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and highly actionable. It far exceeds the reference answer by situating the advice within a multidisciplinary clinical framework, citing specific literature, and emphasizing the necessity of a formal swallow evaluation while providing practical, safe interim management strategies."
+  },
+  "E004": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and evidence-based. It correctly emphasizes functional communication and AAC, aligns with best practices for early intervention in autism, and provides actionable, structured advice while correctly identifying the necessity of individualized assessment."
+  },
+  "E005": {
+    "score": 5,
+    "reasoning": "The AI-generated response is excellent. It goes beyond the basic strategies mentioned in the reference answer by providing a clinically accurate, comprehensive framework that includes potential etiologies (sensory, motor, fatigue), safety considerations, the importance of interdisciplinary assessment, and actionable, practical advice for parents. The inclusion of clinical terminology and the emphasis on professional evaluation elevate it to a high standard for a clinical AI system."
+  },
+  "E006": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the reference answer in depth. It correctly identifies the role of NDBIs, emphasizes caregiver coaching, and highlights the critical steps of medical screening (hearing) and professional evaluation. The inclusion of citations adds significant clinical credibility."
+  },
+  "E007": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is excellent. It provides a comprehensive, clinically sound, and evidence-based approach to addressing lip closure. It effectively balances theoretical clinical knowledge (motor speech, neurology) with practical, actionable strategies while emphasizing the importance of professional SLP assessment."
+  },
+  "E008": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and emphasizes safety and professional evaluation. It expands on the gold standard by detailing the physiological importance of mastication, providing clear actionable steps (positioning, pacing, texture modification), and highlighting the necessity of an SLP assessment to avoid potential complications like aspiration."
+  },
+  "M001": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and highly professional. It accurately differentiates between sensory-based aversion and physiological feeding disorders (dysphagia), emphasizes multidisciplinary care, and provides actionable, evidence-based recommendations. It correctly prioritizes safety red flags while maintaining a supportive tone."
+  },
+  "M002": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and highly accurate. It correctly identifies Orofacial Myofunctional Therapy (OMT) as the standard of care, emphasizes the necessity of a multi-disciplinary approach (including dental/orthodontic collaboration), and provides actionable, evidence-based guidance that exceeds the baseline requirements of the prompt."
+  },
+  "M003": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far superior to the reference answer. It correctly identifies motor learning principles as the foundation for treatment, cites specific evidence-based approaches (DTTC, ReST), references relevant research (PMIDs), and provides actionable, nuanced advice for families and clinicians."
+  },
+  "M004": {
+    "score": 5,
+    "reasoning": "The AI response is excellent. It provides all elements of the reference answer while expanding with high-level clinical professionalism, evidence-based citations (PMIDs), and actionable, multi-disciplinary strategies. It appropriately frames attention as a foundational cognitive-communication prerequisite."
+  },
+  "M005": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the reference answer in depth. It correctly identifies evidence-based strategies (Naturalistic Developmental Behavioral Interventions), emphasizes the importance of parent coaching and interdisciplinary collaboration, and provides specific, actionable steps while citing relevant clinical resources."
+  },
+  "M006": {
+    "score": 5,
+    "reasoning": "The response is clinically excellent. It significantly expands on the gold standard by providing actionable, evidence-based strategies (Serve and Return, expectant pauses, functional communication) while maintaining an appropriate clinical tone. It correctly identifies the importance of pre-linguistic skills and provides a clear, professional pathway for seeking services."
+  },
+  "M007": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sophisticated, and safer than the reference answer. It correctly identifies the clinical context (Pediatric Feeding Disorder), emphasizes the distinction between a protective reflex and potential dysphagia, cites relevant literature, and provides clear, actionable advice while prioritizing safety."
+  },
+  "M008": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and safety-focused. It correctly identifies the physiological significance of the cough (penetration/aspiration), outlines a systematic clinical approach, emphasizes the need for instrumental assessment, and provides actionable, responsible advice regarding patient safety and interdisciplinary care."
+  },
+  "M009": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the reference answer in depth and utility. It effectively contextualizes respiratory support within the framework of motor speech disorders (dysarthria), provides evidence-based interventions (LSVT LOUD, EMST), outlines standard assessment practices, and includes actionable, safe patient guidance with appropriate medical disclaimers."
+  },
+  "H001": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and well-structured. It aligns perfectly with the gold standard while providing additional depth regarding interdisciplinary care, specific compensatory/rehabilitative strategies, and actionable advice for the patient. The inclusion of relevant terminology and evidence-based practice nuances makes it an excellent resource."
+  },
+  "H002": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically sound, and professional. It correctly emphasizes functional feeding over non-speech oral motor exercises while providing appropriate caveats regarding instrumental assessment and safety. It goes beyond the reference answer by adding necessary clinical context, safety precautions, and an actionable roadmap for the user."
+  },
+  "H003": {
+    "score": 1,
+    "reasoning": "Error or no response generated"
+  },
+  "H004": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and well-structured. It expands significantly on the reference answer by detailing the specific mechanisms of dysphagia in CP, emphasizing the importance of a multidisciplinary team, and providing actionable, evidence-informed guidance for caregivers and clinicians. The tone is appropriate and professional."
+  },
+  "H005": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and far exceeds the reference answer by providing specific, evidence-based strategies, professional context, and actionable advice. It incorporates relevant research citations and addresses the clinical complexity of the disorder while remaining accessible and practical."
+  },
+  "H006": {
+    "score": 5,
+    "reasoning": "The AI response is clinically excellent. It accurately identifies the 'tonic bite' reflex, explains the underlying motor/sensory mechanisms, provides actionable, evidence-based compensatory strategies (e.g., spoon choice, 'wait' strategy), and correctly emphasizes multidisciplinary collaboration and safety protocols."
+  },
+  "H007": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is comprehensive, clinically accurate, and superior to the reference. It correctly identifies the need for multidisciplinary care, distinguishes sensory aversion from dysphagia, details evidence-based techniques (like SOS), and emphasizes the critical importance of a low-pressure environment."
+  },
+  "H008": {
+    "score": 5,
+    "reasoning": "The AI-generated answer is excellent. It expands on the gold standard by providing a structured, evidence-based clinical framework for handling therapy plateaus. It correctly identifies the need for re-assessment, the introduction of AAC, and the shift from impairment-based rehabilitation to functional compensation. The inclusion of professional terminology and actionable steps makes it highly valuable for a clinical audience while remaining accessible."
+  }
+}

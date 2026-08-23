@@ -27,6 +27,9 @@ You have access to TWO sources of information that were gathered to help you ans
 1. **Clinical Reference Materials** (from RAG retrieval over curated clinical documents)
 2. **PubMed Research** (peer-reviewed biomedical literature from PubMed/MEDLINE)
 
+## Previous Conversation Context
+{session_history}
+
 ## User's Original Query
 {query}
 
@@ -51,6 +54,8 @@ Your response should:
 2. **Clinical Overview**: Explain the identified condition in clear, accessible terms relevant to the user's concern.
 3. **Evidence-Based Guidance**: Provide treatment approaches, assessment recommendations, and actionable strategies drawn from both clinical references and PubMed research.
 4. **Practical Next Steps**: What should the user do next? Include referrals, home strategies, or professional guidance as appropriate.
+
+If there is relevant previous conversation context, use it to provide continuity and avoid repeating information already discussed. Reference previous queries when appropriate to show awareness of the conversation flow.
 
 Be empathetic, clinically accurate, and practical. Cite relevant information from both sources where helpful. When citing PubMed articles, include the PMID for reference.
 Do NOT list or answer the 3 treatment questions — they were only used to gather information for you.
@@ -82,10 +87,10 @@ def _invoke_with_retry(chain, params: dict, agent_name: str = "Agent", max_retri
             if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
                 if attempt < max_retries:
                     wait_time = base_delay * attempt
-                    print(f"   ⏳ [{agent_name}] Rate limited (429). Retrying in {wait_time:.0f}s... (attempt {attempt}/{max_retries})")
+                    print(f"[{agent_name}] Rate limited (429). Retrying in {wait_time:.0f}s... (attempt {attempt}/{max_retries})")
                     time.sleep(wait_time)
                 else:
-                    print(f"   ❌ [{agent_name}] Rate limit exceeded after {max_retries} attempts. Giving up.")
+                    print(f"[{agent_name}] Rate limit exceeded after {max_retries} attempts. Giving up.")
                     raise
             else:
                 raise
@@ -94,6 +99,29 @@ def _invoke_with_retry(chain, params: dict, agent_name: str = "Agent", max_retri
 def _format_treatment_questions(questions: list[str]) -> str:
     """Format treatment questions as a numbered list."""
     return "\n".join(f"  {i+1}. {q}" for i, q in enumerate(questions))
+
+
+def _format_session_history(history: list[dict]) -> str:
+    """Format the session history (last N Q&A pairs) into a prompt-ready string.
+
+    Args:
+        history: List of dicts with 'query' and 'answer' keys.
+
+    Returns:
+        Formatted string of previous conversation, or a note if empty.
+    """
+    if not history:
+        return "(No previous conversation in this session)"
+
+    parts = []
+    for i, entry in enumerate(history, 1):
+        q = entry.get("query", "")
+        a = entry.get("answer", "")
+        # Truncate long answers to keep prompt manageable
+        if len(a) > 500:
+            a = a[:500] + "..."
+        parts.append(f"Q{i}: {q}\nA{i}: {a}")
+    return "\n\n".join(parts)
 
 
 def synthesis_node(state: dict) -> dict:
@@ -114,11 +142,13 @@ def synthesis_node(state: dict) -> dict:
     ailment = state.get("ailment", "Unknown")
     ailment_description = state.get("ailment_description", "")
     treatment_questions = state.get("treatment_questions", [])
+    session_history = state.get("session_history", [])
 
     print(f"\n{'='*60}")
-    print(f"🧪 [Synthesis Agent] Combining RAG + PubMed Research context...")
+    print(f"   [Synthesis Agent] Combining RAG + PubMed Research context...")
     print(f"   Query: \"{query}\"")
     print(f"   Ailment: {ailment} | Category: {category}")
+    print(f"   Session history: {len(session_history)} previous entries")
 
     # Get RAG context
     rag_context = state.get("rag_context", "(No RAG context available)")
@@ -133,7 +163,7 @@ def synthesis_node(state: dict) -> dict:
     print(f"   PubMed context: {len(web_search_summary)} chars ({len(web_search_context)} questions)")
 
     # Generate synthesized response with Gemini (with retry for rate limits)
-    print(f"   🤖 Generating synthesized answer with Gemini...")
+    print(f"Generating synthesized answer with Gemini...")
     llm = ChatGoogleGenerativeAI(model=LLM_MODEL)
     chain = SYNTHESIS_PROMPT | llm
 
@@ -147,13 +177,25 @@ def synthesis_node(state: dict) -> dict:
         ),
         "rag_context": rag_context,
         "web_search_summary": web_search_summary,
+        "session_history": _format_session_history(session_history),
     }, agent_name="Synthesis Agent")
 
-    synthesis_text = (
-        response.content if hasattr(response, "content") else str(response)
-    )
+    raw_content = response.content if hasattr(response, "content") else str(response)
 
-    print(f"   ✅ [Synthesis Agent] Final answer generated ({len(synthesis_text)} chars)")
+    # Gemini may return content as a list of dicts like [{'type': 'text', 'text': '...'}]
+    # Extract the actual text string from it
+    if isinstance(raw_content, list):
+        text_parts = []
+        for block in raw_content:
+            if isinstance(block, dict) and "text" in block:
+                text_parts.append(block["text"])
+            elif isinstance(block, str):
+                text_parts.append(block)
+        synthesis_text = "\n".join(text_parts)
+    else:
+        synthesis_text = str(raw_content)
+
+    print(f"[Synthesis Agent] Final answer generated ({len(synthesis_text)} chars)")
     print(f"{'='*60}\n")
 
     # Build the final enriched output dictionary
